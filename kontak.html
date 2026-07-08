@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Jasaweb_Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS: buat kirim email otomatis tanpa buka aplikasi email customer -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+            <img src="img/jasaweb_store_icon.svg" alt="Logo" class="brand-img">
+            <span class="brand-title">Jasaweb_Store</span>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-menu-container">
+                <a href="index.html" class="home-logo" title="Beranda">
+                    <div class="house-roof"></div>
+                    <div class="house-body"></div>
+                </a>
+
+                <a href="layanan.html" class="nav-link">Layanan</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+                <a href="tentang_kami.html" class="nav-link">Tentang Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Kontak -->
+    <section class="hero hero-kontak">
+        <div class="hero-content">
+            <h1>Hubungi Kami</h1>
+            <p>Ada pertanyaan atau mau mulai proyek? Kirim pesan atau datang langsung ke kantor kami.</p>
+        </div>
+    </section>
+
+    <!-- Info + Form Kontak -->
+    <section class="kontak-section">
+        <div class="container kontak-grid">
+
+            <!-- Kolom kiri: info & peta -->
+            <div class="kontak-info">
+                <h2>Informasi Kontak</h2>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4>Alamat Kantor</h4>
+                        <p>SMKN 1 Panji<br>Jl. Gunung Arjuno No.17, Mimbaan Tengah,<br>Kec. Panji, Kabupaten Situbondo,<br>Jawa Timur 68322</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4>Telepon Kantor</h4>
+                        <p><a href="tel:+62338672507">+62 338 672507</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:venaxusmaulana@gmail.com">venaxusmaulana@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div>
+                        <h4>WhatsApp Customer Service</h4>
+                        <p><a href="https://wa.me/6285936546553">+62 859-3654-6553</a></p>
+                    </div>
+                </div>
+
+                <div class="map-wrap">
+                    <iframe
+                        src="https://www.google.com/maps?q=-7.7041999,114.0223320&hl=id&z=17&output=embed"
+                        width="100%" height="260" style="border: 3px solid #0047AB; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Lokasi Kantor Jasaweb_Store">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Kolom kanan: form pesan -->
+            <div class="kontak-form-wrap">
+                <h2>Kirim Pesan</h2>
+                <p class="form-desc">Isi form di bawah ini, nanti pesan kamu langsung kebuka lewat aplikasi email Kami.</p>
+
+                <form id="kontak-form" class="kontak-form">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+
+                    <label for="subjek">Subjek</label>
+                    <input type="text" id="subjek" name="subjek" placeholder="Contoh: Tanya paket website">
+
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+
+                    <button type="submit" class="btn btn-form" id="btn-kirim">Kirim Pesan</button>
+
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Jasaweb_Store</h3>
+                <p class="footer-desc">
+                    Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Bantuan</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html"><b>FAQ</b></a></li>
+                    <li><a href="https://wa.me/6285936546553">Customer Service: +62 859-3654-6553</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Ikuti Kami</h3>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/arista.maulana311/" target="_blank" rel="noopener" class="social-icon instagram"><img src="img/instagram.png" width="20" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@arista.032" target="_blank" rel="noopener" class="social-icon tiktok"><img src="img/tiktok.png" width="20" alt="TikTok"></a>
+                    <a href="https://polybuzz.ai/su/XV21kIvupog" target="_blank" rel="noopener" class="social-icon pollybuzz"><img src="img/pollybuzz.png" width="20" alt="PollyBuzz"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer-box">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p><strong>Peringatan Penting:</strong> Ini hanya semata website buatan anak pelajar, jadi jika ada kesalahan ini bukan website serius. Ini hanya website kami yang mau merintis ke dunia perbisnisan, jadi ini hanya semata-mata website biasa. Jika Anda minat, kemungkinan kami akan mengerjakan juga, namun yang jelas bahwa ini adalah TEMPLATE buat kami kedepannya. Terima kasih.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jasaweb_Store. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <script>
+        // =========================================================
+        // KONFIGURASI EMAILJS
+        // =========================================================
+        const EMAILJS_PUBLIC_KEY  = '4pNUSHd4z-zxUZePc';
+        const EMAILJS_SERVICE_ID  = 'service_JasawebStore';
+        const EMAILJS_TEMPLATE_ID = 'template_zo95hcs';
+        // =========================================================
+
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+
+        const form = document.getElementById('kontak-form');
+        const btnKirim = document.getElementById('btn-kirim');
+        const statusEl = document.getElementById('form-status');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subjek = document.getElementById('subjek').value.trim() || 'Pesan dari Website Jasaweb_Store';
+            const pesan = document.getElementById('pesan').value.trim();
+
+            btnKirim.disabled = true;
+            btnKirim.textContent = 'Mengirim...';
+            statusEl.textContent = '';
+            statusEl.className = 'form-status';
+
+            // Nama variabel ini HARUS sama persis dengan yang ada di template EmailJS kamu
+            const templateParams = {
+                name: nama,
+                email: email,
+                title: subjek,
+                message: pesan
+            };
+
+            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                .then(function() {
+                    statusEl.textContent = '✅ Pesan berhasil terkirim! Kami akan segera menghubungi Anda.';
+                    statusEl.className = 'form-status status-sukses';
+                    form.reset();
+                })
+                .catch(function(error) {
+                    console.error('EmailJS error:', error);
+                    statusEl.textContent = '❌ Gagal mengirim pesan. Silakan coba lagi atau hubungi kami via WhatsApp.';
+                    statusEl.className = 'form-status status-gagal';
+                })
+                .finally(function() {
+                    btnKirim.disabled = false;
+                    btnKirim.textContent = 'Kirim Pesan';
+                });
+        });
+    </script>
+
+</body>
+</html>

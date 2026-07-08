@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasaweb_Store - Solusi Digital Terdepan</title>
+    <!-- Menggunakan Font Awesome untuk Icon Teknologi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+      <nav class="navbar">
+        <!-- Baris Atas: Logo dan Nama Brand -->
+        <div class="brand">
+            <!-- Ganti src sesuai dengan folder/nama file logomu, contoh: img/logo.png -->
+            <img src="img/jasaweb_store_icon.svg" alt="Logo" class="brand-img">
+            <span class="brand-title">Jasaweb_Store</span>
+        </div>
+
+        <!-- Baris Bawah: Menu Navigasi yang Bisa Dipencet -->
+        <div class="nav-menu">
+            <div class="nav-menu-container">
+                <!-- Tombol Beranda Berbentuk Rumah (Bisa Diklik) -->
+                <a href="index.html" class="home-logo" title="Beranda">
+                    <div class="house-roof"></div>
+                    <div class="house-body"></div>
+                </a>
+                
+                <!-- Link Menu Navigasi -->
+                <a href="layanan.html" class="nav-link">Layanan</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+                <a href="tentang_kami.html" class="nav-link">Tentang Kami</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Hero Section: Slider Crossfade -->
+    <section class="hs-section">
+        <div class="hs-slider">
+            <div class="hs-track">
+
+                <div class="hs-slide active">
+                    <svg class="hs-illustration" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hsGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#002080"/>
+                                <stop offset="100%" stop-color="#0047AB"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="450" fill="url(#hsGrad1)"/>
+
+                        <!-- Garis penghubung -->
+                        <g stroke="#82C8E5" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5">
+                            <line x1="400" y1="225" x2="180" y2="110"/>
+                            <line x1="400" y1="225" x2="150" y2="300"/>
+                            <line x1="400" y1="225" x2="620" y2="100"/>
+                            <line x1="400" y1="225" x2="660" y2="310"/>
+                            <line x1="400" y1="225" x2="400" y2="80"/>
+                        </g>
+
+                        <!-- Browser window pusat -->
+                        <rect x="320" y="165" width="160" height="120" rx="10" fill="#ffffff"/>
+                        <rect x="320" y="165" width="160" height="26" rx="10" fill="#e2e8f0"/>
+                        <circle cx="335" cy="178" r="4" fill="#ff5f57"/>
+                        <circle cx="349" cy="178" r="4" fill="#febc2e"/>
+                        <circle cx="363" cy="178" r="4" fill="#28c840"/>
+                        <text x="400" y="240" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="26" fill="#0047AB">&lt;/&gt;</text>
+
+                        <!-- Badge bahasa pemrograman -->
+                        <circle cx="180" cy="110" r="42" fill="#82C8E5"/>
+                        <text x="180" y="117" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="17" fill="#000080">HTML5</text>
+
+                        <circle cx="150" cy="300" r="42" fill="#ffffff"/>
+                        <text x="150" y="307" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="17" fill="#0047AB">CSS3</text>
+
+                        <circle cx="620" cy="100" r="42" fill="#0047AB"/>
+                        <text x="620" y="107" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="18" fill="#ffffff">JS</text>
+
+                        <circle cx="660" cy="310" r="42" fill="#82C8E5"/>
+                        <text x="660" y="317" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="17" fill="#000080">PHP</text>
+
+                        <circle cx="400" cy="80" r="34" fill="#ffffff"/>
+                        <text x="400" y="86" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="14" fill="#0047AB">SQL</text>
+                    </svg>
+                    <div class="hs-caption">
+                        <h1>Website Profesional & Kredibel</h1>
+                        <p>Dibangun dengan HTML, CSS, JavaScript, PHP, dan MySQL — cepat, aman, dan siap bersaing.</p>
+                    </div>
+                </div>
+
+                <div class="hs-slide">
+                    <svg class="hs-illustration" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hsGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0047AB"/>
+                                <stop offset="100%" stop-color="#2a6fd6"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="450" fill="url(#hsGrad2)"/>
+
+                        <!-- Bubble chat besar -->
+                        <rect x="230" y="120" width="230" height="130" rx="24" fill="#ffffff"/>
+                        <path d="M 260 250 L 260 285 L 300 250 Z" fill="#ffffff"/>
+                        <circle cx="290" cy="185" r="10" fill="#82C8E5"/>
+                        <circle cx="345" cy="185" r="10" fill="#0047AB"/>
+                        <circle cx="400" cy="185" r="10" fill="#000080"/>
+
+                        <!-- Bubble chat kecil -->
+                        <rect x="490" y="230" width="180" height="100" rx="20" fill="#82C8E5"/>
+                        <path d="M 520 330 L 520 358 L 552 330 Z" fill="#82C8E5"/>
+                        <rect x="515" y="255" width="130" height="10" rx="5" fill="#ffffff"/>
+                        <rect x="515" y="278" width="90" height="10" rx="5" fill="#ffffff"/>
+
+                        <!-- Ikon lampu ide -->
+                        <circle cx="180" cy="330" r="38" fill="#ffffff"/>
+                        <path d="M 180 310 a 16 16 0 1 1 -8 30 l 0 8 l 16 0 l 0 -8 a 16 16 0 0 1 -8 -30 Z" fill="#febc2e"/>
+                    </svg>
+                    <div class="hs-caption">
+                        <div class="hs-title">Konsultasi Gratis Bersama Tim Kami</div>
+                        <p>Diskusikan kebutuhan proyek Anda tanpa biaya, kami bantu carikan solusi paling pas.</p>
+                    </div>
+                </div>
+
+                <div class="hs-slide">
+                    <svg class="hs-illustration" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hsGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#000080"/>
+                                <stop offset="100%" stop-color="#0047AB"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="450" fill="url(#hsGrad3)"/>
+
+                        <!-- Grafik batang -->
+                        <rect x="260" y="260" width="40" height="80" rx="4" fill="#82C8E5"/>
+                        <rect x="320" y="220" width="40" height="120" rx="4" fill="#ffffff"/>
+                        <rect x="380" y="180" width="40" height="160" rx="4" fill="#82C8E5"/>
+                        <rect x="440" y="140" width="40" height="200" rx="4" fill="#ffffff"/>
+                        <line x1="240" y1="340" x2="500" y2="340" stroke="#ffffff" stroke-width="2"/>
+
+                        <!-- Panah tren naik -->
+                        <path d="M 270 250 L 340 210 L 400 170 L 470 120" fill="none" stroke="#febc2e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 445 118 L 470 120 L 468 145" fill="none" stroke="#febc2e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+                        <!-- Kaca pembesar (SEO) -->
+                        <circle cx="590" cy="200" r="40" fill="none" stroke="#ffffff" stroke-width="10"/>
+                        <line x1="618" y1="228" x2="655" y2="265" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+                    </svg>
+                    <div class="hs-caption">
+                        <div class="hs-title">Optimasi SEO & Tracking Pengunjung</div>
+                        <p>Website Anda lebih mudah ditemukan di Google, sekaligus terpantau lewat Google Analytics.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hs-dots">
+                <span class="hs-dot active"></span>
+                <span class="hs-dot"></span>
+                <span class="hs-dot"></span>
+            </div>
+        </div>
+
+        <a href="kontak.html" class="btn hs-cta">Mulai Proyek Anda</a>
+    </section>
+
+    <!-- Profil Singkat / Visi -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title">Profil Website Kami</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 18px; color: #555;">
+                "Menjadi agensi solusi digital terdepan yang inovatif, tepercaya, dan mampu membantu siapa saja menciptakan produk digital berkualitas global, baik berupa website, game, maupun desain kreatif."
+            </p>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section class="services">
+        <div class="container">
+            <center><h2 class="section-title">Layanan Yang Kami Ditawarkan</h2></center>
+            <div class="services-grid">
+                <!-- Jasa Web -->
+                <div class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Pembuatan website profesional yang responsif, cepat, aman, dan ramah pengguna (user-friendly) menggunakan teknologi HTML, CSS, JS, PHP, & MySQL.</p>
+                </div>
+                <!-- Jasa Game -->
+                <div class="service-card">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h3>Game Development</h3>
+                    <p>Pengembangan game interaktif yang seru, fungsional, dan kustom sesuai kebutuhan konsumen berbasis Construct, Unity, & Game Engine Modern.</p>
+                </div>
+                <!-- Jasa Desain -->
+                <div class="service-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX & Branding</h3>
+                    <p>Menghadirkan desain grafis memukau serta strategi branding visual lewat Figma, Photoshop, dan CorelDraw untuk menaikkan nilai jual bisnis Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Harga -->
+    <section class="harga">
+        <div class="container">
+            <center><h2 class="section-title">Paket Harga</h2></center>
+            <p class="harga-subtitle">Semua paket sudah termasuk hosting, domain, dan maintenance dasar 1 tahun.</p>
+
+            <div class="harga-grid">
+
+                <div class="harga-card">
+                    <h3>Landing Page</h3>
+                    <p class="harga-angka">Rp 953.930</p>
+                    <p class="harga-ket">Sekali bayar</p>
+                    <ul class="harga-fitur">
+                        <li><i class="fa-solid fa-check"></i> 1 halaman utama</li>
+                        <li><i class="fa-solid fa-check"></i> Domain .com + hosting 1 tahun</li>
+                        <li><i class="fa-solid fa-check"></i> Desain responsif (mobile-friendly)</li>
+                        <li><i class="fa-solid fa-check"></i> Integrasi tombol WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Pengerjaan ±4 hari kerja</li>
+                    </ul>
+                    <a href="kontak.html" class="btn harga-btn">Pilih Paket</a>
+                </div>
+
+                <div class="harga-card harga-populer">
+                    <span class="harga-badge">Paling Diminati</span>
+                    <h3>Company Profile</h3>
+                    <p class="harga-angka">Rp 1.275.000</p>
+                    <p class="harga-ket">Sekali bayar</p>
+                    <ul class="harga-fitur">
+                        <li><i class="fa-solid fa-check"></i> Hingga 5 halaman (Beranda, Tentang, Layanan, dll)</li>
+                        <li><i class="fa-solid fa-check"></i> Domain .com + hosting 1 tahun</li>
+                        <li><i class="fa-solid fa-check"></i> SEO On-Page dasar</li>
+                        <li><i class="fa-solid fa-check"></i> Google Analytics & Search Console</li>
+                        <li><i class="fa-solid fa-check"></i> Pengerjaan ±7 hari kerja</li>
+                    </ul>
+                    <a href="kontak.html" class="btn harga-btn">Pilih Paket</a>
+                </div>
+
+                <div class="harga-card">
+                    <h3>Toko Online</h3>
+                    <p class="harga-angka">Rp 1.575.000</p>
+                    <p class="harga-ket">Sekali bayar</p>
+                    <ul class="harga-fitur">
+                        <li><i class="fa-solid fa-check"></i> Semua fitur paket Company Profile</li>
+                        <li><i class="fa-solid fa-check"></i> Katalog produk & keranjang belanja</li>
+                        <li><i class="fa-solid fa-check"></i> Integrasi pembayaran & checkout WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Panel kelola produk sendiri</li>
+                        <li><i class="fa-solid fa-check"></i> Pengerjaan ±10 hari kerja</li>
+                    </ul>
+                    <a href="kontak.html" class="btn harga-btn">Pilih Paket</a>
+                </div>
+
+                <div class="harga-card">
+                    <h3>Custom Badan Usaha</h3>
+                    <p class="harga-angka">Rp 1.865.900</p>
+                    <p class="harga-ket">Sekali bayar</p>
+                    <ul class="harga-fitur">
+                        <li><i class="fa-solid fa-check"></i> Semua fitur paket Toko Online</li>
+                        <li><i class="fa-solid fa-check"></i> Domain resmi .co.id</li>
+                        <li><i class="fa-solid fa-check"></i> Desain & fitur 100% custom</li>
+                        <li><i class="fa-solid fa-check"></i> Garansi keamanan anti-hack</li>
+                        <li><i class="fa-solid fa-check"></i> Konsultasi prioritas</li>
+                    </ul>
+                    <a href="kontak.html" class="btn harga-btn">Pilih Paket</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Punya Proyek Seru Yang Ingin Diwujudkan?</h2>
+            <p style="margin-bottom: 25px; opacity: 0.9;">Tim talenta muda berbakat kami dari SMKN 1 Panji siap merealisasikannya bersama Anda.</p>
+            <a href="tentang_kami.html" class="btn">Kenali Tim Kami</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h3>Jasaweb_Store</h3>
+                    <p class="footer-desc">
+                        Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.
+                    </p>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Bantuan</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html"><b>FAQ</b></a></li>
+                        <li><a href="https://wa.me/6285936546553">Customer Service: +62 859-3654-6553</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Ikuti Kami</h3>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/arista.maulana311/" target="_blank" rel="noopener" class="social-icon instagram"><img src="img/instagram.png" width="20" alt="Instagram"></a>
+                        <a href="https://www.tiktok.com/@arista.032" target="_blank" rel="noopener" class="social-icon tiktok"><img src="img/tiktok.png" width="20" alt="TikTok"></a>
+                        <a href="https://polybuzz.ai/su/XV21kIvupog" target="_blank" rel="noopener" class="social-icon pollybuzz"><img src="img/pollybuzz.png" width="20" alt="PollyBuzz"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disclaimer-box">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p><strong>Peringatan Penting:</strong> Ini hanya semata website buatan anak pelajar, jadi jika ada kesalahan ini bukan website serius. Ini hanya website kami yang mau merintis ke dunia perbisnisan, jadi ini hanya semata-mata website biasa. Jika Anda minat, kemungkinan kami akan mengerjakan juga, namun yang jelas bahwa ini adalah TEMPLATE buat kami kedepannya. Terima kasih.</p>
+            </div>
+ 
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jasaweb_Store. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Hero slider crossfade otomatis
+        const hsSlides = document.querySelectorAll('.hs-slide');
+        const hsDots = document.querySelectorAll('.hs-dot');
+        let hsCurrent = 0;
+        const hsInterval = 4000;
+ 
+        function hsGoTo(index) {
+            hsSlides[hsCurrent].classList.remove('active');
+            hsDots[hsCurrent].classList.remove('active');
+            hsCurrent = index;
+            hsSlides[hsCurrent].classList.add('active');
+            hsDots[hsCurrent].classList.add('active');
+        }
+ 
+        function hsNext() {
+            const next = (hsCurrent + 1) % hsSlides.length;
+            hsGoTo(next);
+        }
+ 
+        if (hsSlides.length > 0) {
+            setInterval(hsNext, hsInterval);
+ 
+            hsDots.forEach((dot, i) => {
+                dot.addEventListener('click', () => hsGoTo(i));
+            });
+        }
+    </script>
+ 
+</body>
+</html>

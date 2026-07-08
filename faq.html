@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Pertanyaan yang Sering Ditanya - Jasaweb_Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .faq-title {
+            font-size: 2.2rem;
+            color: #000080;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .faq-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+
+        .accordion-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .accordion-item {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 32, 128, 0.12);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-header {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 22px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #000080;
+            gap: 20px;
+        }
+
+        .accordion-icon {
+            font-size: 1.4rem;
+            color: #0047AB;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: #ffffff;
+            color: #475569;
+            font-size: 0.98rem;
+            line-height: 1.6;
+            padding: 0 28px;
+        }
+
+        .accordion-item.active {
+            box-shadow: 0 10px 25px rgba(0, 32, 128, 0.15);
+            border-color: #82C8E5;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+            color: #d94141;
+        }
+
+        .accordion-item.active .accordion-content {
+            padding-bottom: 24px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 640px) {
+            .faq-title { font-size: 1.8rem; }
+            .faq-subtitle { font-size: 0.95rem; }
+            .accordion-header { padding: 18px 20px; font-size: 0.95rem; }
+            .accordion-content { padding: 0 20px; }
+            .accordion-item.active .accordion-content { padding-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+            <img src="img/jasaweb_store_icon.svg" alt="Logo" class="brand-img">
+            <span class="brand-title">Jasaweb_Store</span>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-menu-container">
+                <a href="index.html" class="home-logo" title="Beranda">
+                    <div class="house-roof"></div>
+                    <div class="house-body"></div>
+                </a>
+
+                <a href="layanan.html" class="nav-link">Layanan</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+                <a href="tentang_kami.html" class="nav-link">Tentang Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="faq-container">
+        <h1 class="faq-title">Pertanyaan yang sering ditanya</h1>
+        <p class="faq-subtitle">Seputar jasa pembuatan website company profile di Jasaweb_Store.</p>
+
+        <div class="accordion-wrapper">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Berapa biaya jasa pembuatan website company profile?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Biaya pembuatan website bervariasi mulai dari Rp 953.930 untuk paket Landing Page hingga Rp 1.865.900 untuk paket custom badan usaha (co.id). Biaya ini sudah all-in termasuk hosting, domain, dan maintenance dasar selama satu tahun penuh.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Berapa lama website perusahaan saya selesai?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Durasi pengerjaan sangat bergantung pada paket yang dipilih. Untuk paket Landing Page standar membutuhkan waktu sekitar 4 hari kerja, sedangkan untuk paket Company Profile lengkap berkisar antara 7 hari kerja setelah seluruh data konten kami terima.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Pilih domain apa — .com atau .co.id? Apa bedanya?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Domain <b>.com</b> bersifat komersial umum global dan dapat didaftarkan oleh siapa saja tanpa persyaratan khusus. Sementara domain <b>.co.id</b> dikhususkan untuk badan usaha resmi di Indonesia (CV/PT) dan memerlukan dokumen legalitas resmi seperti SIUP/NIB. Menggunakan .co.id memberikan tingkat kepercayaan tinggi di mata korporat.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Apakah ada tracking biar tahu jumlah pengunjung & leads?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Ya, tentu saja. Setiap website yang kami buat sudah kami integrasikan dengan Google Analytics 4 (GA4) dan Google Tag Manager (GTM). Anda bisa memantau data jumlah pengunjung harian hingga tombol aksi mana saja (seperti tombol WhatsApp) yang paling sering diklik oleh prospek.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Apakah website-nya bisa muncul di Google (SEO)?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Kami menerapkan optimasi struktur SEO On-Page standar di setiap rancangan web, termasuk pengaturan meta tags, optimasi kecepatan gambar, dan pendaftaran sitemap ke Google Search Console agar website Anda lebih mudah merangkak naik dan terindeks di mesin pencari.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Apakah bisa tambah halaman / custom desain?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Bisa sekali. Sistem website kami dibangun menggunakan struktur modular yang fleksibel. Jika di kemudian hari bisnis Anda berkembang dan membutuhkan tambahan halaman layanan, integrasi blog, maupun rombakan desain layout, tim kami siap membantu melakukan pengembangan lanjutan.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Saya belum punya konten/foto, apakah dibantu?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Jangan khawatir. Jika Anda belum memiliki materi tertulis, tim copywriting kami akan membantu merancang teks penawaran yang menarik berdasarkan profil bisnis Anda. Untuk kebutuhan foto, kami juga menyediakan aset gambar ilustrasi premium bebas hak cipta yang relevan dengan bidang industri Anda.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Bagaimana cara kerja garansi anti-hack-nya?</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Kami menerapkan sistem keamanan berlapis meliputi pemasangan SSL bersertifikasi, pembatasan hak akses login, serta backup data berkala secara otomatis. Jika terjadi kendala sistem atau serangan siber dalam masa aktif maintenance, tim teknis kami akan memulihkan dan membersihkan website Anda tanpa biaya tambahan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="kontak">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Jasaweb_Store</h3>
+                <p class="footer-desc">
+                    Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Bantuan</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html"><b>FAQ</b></a></li>
+                    <li><a href="https://wa.me/6285936546553">Customer Service: +62 859-3654-6553</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Ikuti Kami</h3>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/arista.maulana311/" target="_blank" rel="noopener" class="social-icon instagram"><img src="img/instagram.png" width="20" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@arista.032" target="_blank" rel="noopener" class="social-icon tiktok"><img src="img/tiktok.png" width="20" alt="TikTok"></a>
+                    <a href="https://polybuzz.ai/su/XV21kIvupog" target="_blank" rel="noopener" class="social-icon pollybuzz"><img src="img/pollybuzz.png" width="20" alt="PollyBuzz"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer-box">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p><strong>Peringatan Penting:</strong> Ini hanya semata website buatan anak pelajar, jadi jika ada kesalahan ini bukan website serius. Ini hanya website kami yang mau merintis ke dunia perbisnisan, jadi ini hanya semata-mata website biasa. Jika Anda minat, kemungkinan kami akan mengerjakan juga, namun yang jelas bahwa ini adalah TEMPLATE buat kami kedepannya. Terima kasih.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jasaweb_Store. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const content = item.querySelector('.accordion-content');
+
+                const isActive = item.classList.contains('active');
+
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.accordion-content').style.maxHeight = null;
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
