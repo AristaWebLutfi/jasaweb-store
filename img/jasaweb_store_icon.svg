@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002080"/>
+      <stop offset="100%" stop-color="#0047AB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Badge -->
+  <rect x="0" y="0" width="200" height="200" rx="46" fill="url(#badgeGradIcon)"/>
+
+  <!-- Bracket '>' : simbol web/kode -->
+  <path d="M 68 65 L 116 100 L 68 135"
+        fill="none" stroke="#82C8E5" stroke-width="20"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tag dot : simbol store/produk -->
+  <circle cx="132" cy="60" r="20" fill="#F9F7F7" stroke="#82C8E5" stroke-width="7"/>
+  <circle cx="132" cy="60" r="6" fill="#002080"/>
+</svg>
