@@ -317,33 +317,32 @@
         let startX;
         let scrollLeft;
 
-        // Pas mouse ditekan (Klik dan Tahan)
+      
         track.addEventListener('mousedown', (e) => {
             isDown = true;
             startX = e.pageX - track.offsetLeft;
             scrollLeft = track.scrollLeft;
         });
 
-        // Pas mouse keluar dari area gambar
+
         track.addEventListener('mouseleave', () => {
             isDown = false;
         });
 
-        // Pas klik mouse dilepas
+       
         track.addEventListener('mouseup', () => {
             isDown = false;
         });
 
-        // Pas mouse digerakkan (Proses geser ke kiri/kanan)
+     
         track.addEventListener('mousemove', (e) => {
-            if(!isDown) return; // Stop fungsi kalau mouse gak ditekan
+            if(!isDown) return; 
             e.preventDefault();
             
             const x = e.pageX - track.offsetLeft;
-            const walk = (x - startX) * 2; // Angka 2 ini kecepatan sensitivitas gesernya, bisa kamu naikin/turunin
+            const walk = (x - startX) * 2; 
             track.scrollLeft = scrollLeft - walk;
         });
     </script>
-
 </body>
 </html>
