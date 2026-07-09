@@ -189,7 +189,7 @@
                 name: nama,
                 email: email,
                 title: subjek,
-                message: `Subjek: ${subjek}\n\n${pesan}`
+                message: pesan
             };
 
             emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
