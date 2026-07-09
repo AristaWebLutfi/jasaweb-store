@@ -1,20 +1,29 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="badgeGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#002080"/>
-      <stop offset="100%" stop-color="#0047AB"/>
-    </linearGradient>
-  </defs>
+    <defs>
+        <linearGradient id="jwsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#424874"/>
+            <stop offset="100%" stop-color="#A6B1E1"/>
+        </linearGradient>
+        <clipPath id="jwsClip">
+            <rect x="10" y="10" width="180" height="180" rx="46"/>
+        </clipPath>
+    </defs>
 
-  <!-- Badge -->
-  <rect x="0" y="0" width="200" height="200" rx="46" fill="url(#badgeGradIcon)"/>
+    <!-- Background badge -->
+    <rect x="10" y="10" width="180" height="180" rx="46" fill="url(#jwsGrad)"/>
 
-  <!-- Bracket '>' : simbol web/kode -->
-  <path d="M 68 65 L 116 100 L 68 135"
-        fill="none" stroke="#82C8E5" stroke-width="20"
-        stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Glossy top highlight -->
+    <g clip-path="url(#jwsClip)">
+        <ellipse cx="100" cy="30" rx="120" ry="55" fill="#ffffff" opacity="0.08"/>
+    </g>
 
-  <!-- Tag dot : simbol store/produk -->
-  <circle cx="132" cy="60" r="20" fill="#F9F7F7" stroke="#82C8E5" stroke-width="7"/>
-  <circle cx="132" cy="60" r="6" fill="#002080"/>
+    <!-- Code bracket mark </> -->
+    <g fill="none" stroke="#F4EEFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="80,68 56,100 80,132"/>
+        <polyline points="120,68 144,100 120,132"/>
+        <line x1="97" y1="136" x2="113" y2="64"/>
+    </g>
+
+    <!-- Accent dot: menandakan "toko" / layanan -->
+    <circle cx="156" cy="44" r="11" fill="#DCD6F7"/>
 </svg>
