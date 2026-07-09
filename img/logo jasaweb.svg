@@ -1,0 +1,29 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="jwsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#424874"/>
+            <stop offset="100%" stop-color="#A6B1E1"/>
+        </linearGradient>
+        <clipPath id="jwsClip">
+            <rect x="10" y="10" width="180" height="180" rx="46"/>
+        </clipPath>
+    </defs>
+
+    <!-- Background badge -->
+    <rect x="10" y="10" width="180" height="180" rx="46" fill="url(#jwsGrad)"/>
+
+    <!-- Glossy top highlight -->
+    <g clip-path="url(#jwsClip)">
+        <ellipse cx="100" cy="30" rx="120" ry="55" fill="#ffffff" opacity="0.08"/>
+    </g>
+
+    <!-- Code bracket mark </> -->
+    <g fill="none" stroke="#F4EEFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="80,68 56,100 80,132"/>
+        <polyline points="120,68 144,100 120,132"/>
+        <line x1="97" y1="136" x2="113" y2="64"/>
+    </g>
+
+    <!-- Accent dot: menandakan "toko" / layanan -->
+    <circle cx="156" cy="44" r="11" fill="#DCD6F7"/>
+</svg>
