@@ -1,5 +1,5 @@
 .hero {
-              background: linear-gradient(135deg, #002080 0%, #0040ff 100%);
+              background: linear-gradient(135deg, #424874 0%, #A6B1E1 100%);
               color: white;
               padding: 100px 0;
               text-align: center;
@@ -10,7 +10,7 @@
    ============================= */
 
 .hs-section {
-    background-color: #f1f4f9;
+    background-color: #F4EEFF;
     padding: 30px 20px 50px 20px;
     text-align: center;
 }
@@ -21,7 +21,7 @@
     margin: 0 auto;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 32, 128, 0.18);
+    box-shadow: 0 10px 30px rgba(66, 72, 116, 0.18);
 }
 
 .hs-track {
@@ -56,7 +56,7 @@
     box-sizing: border-box;
     padding: 45px 35px 28px 35px;
     text-align: left;
-    background: linear-gradient(transparent, rgba(0, 0, 60, 0.85) 65%);
+    background: linear-gradient(transparent, rgba(66, 72, 116, 0.85) 65%);
 }
 
 .hs-caption h1,
@@ -69,7 +69,7 @@
 
 .hs-caption p {
     font-size: 1rem;
-    color: #cfe0fb;
+    color: #DCD6F7;
     max-width: 600px;
     line-height: 1.5;
 }
@@ -92,7 +92,7 @@
 }
 
 .hs-dot.active {
-    background: #82C8E5;
+    background: #DCD6F7;
     transform: scale(1.3);
 }
 
@@ -125,7 +125,7 @@
 
           .btn {
               display: inline-block;
-              background-color: #82C8E5;
+              background-color: #DCD6F7;
               color: #ffffff;
               padding: 12px 30px;
               text-decoration: none;
@@ -136,7 +136,7 @@
 
           .btn:hover {
               transform: translateY(-3px);
-              background-color: #002080;
+              background-color: #424874;
           }
 
           .intro {
@@ -152,7 +152,7 @@
 
           .section-title {
               font-size: 28px;
-              color: #002080;
+              color: #424874;
               margin-bottom: 40px;
               position: relative;
               display: inline-block;
@@ -162,7 +162,7 @@
               content: '';
               width: 50px;
               height: 4px;
-              background-color: #002080;
+              background-color: #424874;
               position: absolute;
               bottom: -10px;
               left: 50%;
@@ -172,7 +172,7 @@
           /* Services Section */
           .services {
               padding: 60px 0;
-              background-color: #f1f4f9;
+              background-color: #F4EEFF;
           }
 
           .services-grid {
@@ -189,7 +189,7 @@
               text-align: center;
               box-shadow: 0 4px 15px rgba(0,0,0,0.05);
               transition: transform 0.3s;
-              border-top: 4px solid #002080;
+              border-top: 4px solid #424874;
           }
 
           .service-card:hover {
@@ -198,7 +198,7 @@
 
           .service-card i {
               font-size: 45px;
-              color: #002080;
+              color: #424874;
               margin-bottom: 20px;
           }
 
@@ -209,7 +209,7 @@
 
           /* CTA Section */
           .cta {
-              background-color: #002080;
+              background-color: #424874;
               color: white;
               padding: 50px 0;
               text-align: center;
@@ -221,11 +221,11 @@
 
           .cta .btn {
               background-color: white;
-              color: #002080;
+              color: #424874;
           }
 
           .cta .btn:hover {
-              background-color: #f1f4f9;
+              background-color: #F4EEFF;
           }
 
 
@@ -257,14 +257,14 @@
 }
 
 body {
-  background-color: #F9F7F7; 
+  background-color: #F4EEFF; 
   min-height: 100vh;
 }
 
 .navbar {
   display: flex;
   flex-direction: column; 
-  background-color: #000080; /* UBAH: Jadi Navy Blue */
+  background-color: #424874; /* UBAH: Jadi Navy Blue */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -297,10 +297,10 @@ body {
 }
 
 .nav-menu {
-  background-color: #0047AB; /* UBAH: Jadi Royal Blue */
+  background-color: #A6B1E1; /* UBAH: Jadi Royal Blue */
   display: flex;
   align-items: center;
-  border-bottom: 4px solid #82C8E5; /* UBAH: Jadi Sky Blue */
+  border-bottom: 4px solid #DCD6F7; /* UBAH: Jadi Sky Blue */
   width: 100%;
 }
 
@@ -316,7 +316,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #F9F7F7;
+  color: #F4EEFF;
   font-weight: 500;
   font-size: 1rem;
   transition: transform 0.2s ease;
@@ -365,12 +365,12 @@ body {
   left: 7px;
   width: 6px;
   height: 8px;
-  background-color: #0047AB; /* UBAH: Menyesuaikan warna menu background */
+  background-color: #A6B1E1; /* UBAH: Menyesuaikan warna menu background */
 }
 
 footer {
-  background-color: #000080; /* UBAH: Jadi Navy Blue */
-  color: #F9F7F7;
+  background-color: #424874; /* UBAH: Jadi Navy Blue */
+  color: #F4EEFF;
   padding: 40px 0 0 0;
   margin-top: 50px; 
   width: 100%;
@@ -394,19 +394,19 @@ footer {
 .footer-box h3 {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #F9F7F7;
-  border-bottom: 2px solid #0047AB; /* UBAH: Jadi Royal Blue */
+  color: #F4EEFF;
+  border-bottom: 2px solid #A6B1E1; /* UBAH: Jadi Royal Blue */
   padding-bottom: 8px;
 }
 
 .footer-desc {
   font-size: 0.95rem;
-  color: #82C8E5; /* UBAH: Jadi Sky Blue agar cerah di atas background gelap */
+  color: #DCD6F7; /* UBAH: Jadi Sky Blue agar cerah di atas background gelap */
   line-height: 1.6;
 }
 
 .footer-links a {
-  color: #82C8E5; /* UBAH: Jadi Sky Blue */
+  color: #DCD6F7; /* UBAH: Jadi Sky Blue */
   text-decoration: none;
   font-size: 0.95rem;
   line-height: 2;
@@ -430,7 +430,7 @@ footer {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #F9F7F7; 
+  background-color: #F4EEFF; 
   border-radius: 50%;       
   transition: all 0.3s ease; 
 }
@@ -473,7 +473,7 @@ footer {
 .disclaimer-box p {
     font-size: 0.85rem;
     line-height: 1.6;
-    color: #cbd8ef;
+    color: #DCD6F7;
     margin: 0;
 }
 
@@ -482,16 +482,16 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #000050; /* UBAH: Dibuat navy yang jauh lebih pekat */
+  background-color: #2E3251; /* UBAH: Dibuat navy yang jauh lebih pekat */
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  border-top: 1px solid #002266;
+  border-top: 1px solid #363B63;
 }
 
 .footer-bottom p {
   font-size: 0.85rem;
-  color: #6D8196; /* UBAH: Jadi Slate Blue yang kalem */
+  color: #9AA0CC; /* UBAH: Jadi Slate Blue yang kalem */
 }
 
 /* Style struktur konten halaman */
@@ -507,7 +507,7 @@ footer {
 /* Bikin judul h1 kamu otomatis di tengah */
 .judul-tengah {
     text-align: center;
-    color: #000000; /* Tetap hitam atau bisa ganti #000080 biar senada */
+    color: #000000; /* Tetap hitam atau bisa ganti #424874 biar senada */
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -531,10 +531,10 @@ footer {
 }
 
 .seksi-tentang h2 {
-    color: #000080; /* UBAH: Jadi Navy Blue */
+    color: #424874; /* UBAH: Jadi Navy Blue */
     margin-bottom: 15px;
     font-size: 1.5rem;
-    border-left: 4px solid #0047AB; /* UBAH: Jadi Royal Blue */
+    border-left: 4px solid #A6B1E1; /* UBAH: Jadi Royal Blue */
     padding-left: 10px;
 }
 
@@ -554,17 +554,17 @@ footer {
 }
 
 .kartu-developer {
-    background-color: rgba(130, 200, 229, 0.15); /* UBAH: Pakai Sky Blue dengan opasitas tipis agar background kartu terlihat soft blue */
+    background-color: rgba(220, 214, 247, 0.3); /* UBAH: Pakai Sky Blue dengan opasitas tipis agar background kartu terlihat soft blue */
     padding: 15px;
     border-radius: 8px;
     margin-top: 15px;
-    border: 1px solid #82C8E5; /* UBAH: Border pakai warna Sky Blue */
+    border: 1px solid #DCD6F7; /* UBAH: Border pakai warna Sky Blue */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .kartu-developer h3 {
     margin: 0 0 5px 0;
-    color: #000080; /* UBAH: Jadi Navy Blue */
+    color: #424874; /* UBAH: Jadi Navy Blue */
 }
 
 .kartu-developer p {
@@ -610,19 +610,19 @@ footer {
 .kartu-tech:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    border-color: #0047AB; /* UBAH: Border hover jadi Royal Blue */
+    border-color: #A6B1E1; /* UBAH: Border hover jadi Royal Blue */
 }
 
 .ikon-tech {
     font-size: 2.5rem;
-    color: #0047AB; /* UBAH: Jadi Royal Blue */
+    color: #A6B1E1; /* UBAH: Jadi Royal Blue */
     margin-bottom: 15px;
 }
 
 .kartu-tech h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #000080; /* UBAH: Jadi Navy Blue */
+    color: #424874; /* UBAH: Jadi Navy Blue */
 }
 
 .kartu-tech p {
@@ -670,8 +670,8 @@ footer {
     padding: 20px;
     color: #ffffff;
     text-align: left;
-    /* UBAH: Gradasi linear pakai basis warna Navy Blue (#000080) */
-    background: linear-gradient(transparent, rgba(0, 0, 128, 0.95)); 
+    /* UBAH: Gradasi linear pakai basis warna Navy Blue (#424874) */
+    background: linear-gradient(transparent, rgba(66, 72, 116, 0.95)); 
     width: 100%;
     border-radius: 0 0 8px 8px;
     white-space: normal; 
@@ -742,8 +742,8 @@ footer {
 }
 
 .harga-populer {
-    background: #000080;
-    border-color: #000080;
+    background: #424874;
+    border-color: #424874;
     color: white;
 }
 
@@ -752,8 +752,8 @@ footer {
     top: -13px;
     left: 50%;
     transform: translateX(-50%);
-    background: #82C8E5;
-    color: #000080;
+    background: #DCD6F7;
+    color: #424874;
     font-size: 0.75rem;
     font-weight: 700;
     padding: 5px 14px;
@@ -763,7 +763,7 @@ footer {
 
 .harga-card h3 {
     font-size: 1.2rem;
-    color: #000080;
+    color: #424874;
     margin-bottom: 12px;
 }
 
@@ -774,12 +774,12 @@ footer {
 .harga-angka {
     font-size: 1.7rem;
     font-weight: 800;
-    color: #0047AB;
+    color: #A6B1E1;
     margin-bottom: 2px;
 }
 
 .harga-populer .harga-angka {
-    color: #82C8E5;
+    color: #DCD6F7;
 }
 
 .harga-ket {
@@ -789,7 +789,7 @@ footer {
 }
 
 .harga-populer .harga-ket {
-    color: #cbd8ef;
+    color: #DCD6F7;
 }
 
 .harga-fitur {
@@ -814,24 +814,24 @@ footer {
 }
 
 .harga-fitur li i {
-    color: #0047AB;
+    color: #A6B1E1;
     margin-top: 3px;
     flex-shrink: 0;
 }
 
 .harga-populer .harga-fitur li i {
-    color: #82C8E5;
+    color: #DCD6F7;
 }
 
 .harga-btn {
-    background-color: #002080;
+    background-color: #424874;
     align-self: center;
     padding: 10px 26px;
 }
 
 .harga-populer .harga-btn {
-    background-color: #82C8E5;
-    color: #000080;
+    background-color: #DCD6F7;
+    color: #424874;
 }
 
 .harga-populer .harga-btn:hover {
@@ -860,10 +860,10 @@ footer {
 
 .kontak-info h2,
 .kontak-form-wrap h2 {
-    color: #000080;
+    color: #424874;
     font-size: 1.5rem;
     margin-bottom: 20px;
-    border-left: 4px solid #0047AB;
+    border-left: 4px solid #A6B1E1;
     padding-left: 10px;
 }
 
@@ -878,8 +878,8 @@ footer {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #002080 0%, #0047AB 100%);
-    color: #82C8E5;
+    background: linear-gradient(135deg, #424874 0%, #A6B1E1 100%);
+    color: #DCD6F7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -887,7 +887,7 @@ footer {
 }
 
 .info-item h4 {
-    color: #000080;
+    color: #424874;
     font-size: 1rem;
     margin-bottom: 4px;
 }
@@ -899,7 +899,7 @@ footer {
 }
 
 .info-item a {
-    color: #0047AB;
+    color: #A6B1E1;
     text-decoration: none;
     font-weight: 600;
 }
@@ -929,7 +929,7 @@ footer {
 .kontak-form label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #000080;
+    color: #424874;
     margin-bottom: 6px;
     margin-top: 14px;
 }
@@ -952,20 +952,20 @@ footer {
 .kontak-form input:focus,
 .kontak-form textarea:focus {
     outline: none;
-    border-color: #0047AB;
+    border-color: #A6B1E1;
 }
 
 .btn-form {
     margin-top: 22px;
     border: none;
     cursor: pointer;
-    background-color: #002080;
+    background-color: #424874;
     align-self: flex-start;
 }
 
 .btn-form:hover {
     transform: translateY(-3px);
-    background-color: #0047AB;
+    background-color: #A6B1E1;
 }
 
 @media (max-width: 800px) {
@@ -1009,7 +1009,7 @@ footer {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #002080 0%, #0047AB 100%);
+    background: linear-gradient(135deg, #424874 0%, #A6B1E1 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1017,7 +1017,7 @@ footer {
 
 .layanan-icon-wrap i {
     font-size: 50px;
-    color: #82C8E5;
+    color: #DCD6F7;
 }
 
 .layanan-text {
@@ -1030,12 +1030,12 @@ footer {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #0047AB;
+    color: #A6B1E1;
     margin-bottom: 8px;
 }
 
 .layanan-text h2 {
-    color: #000080;
+    color: #424874;
     font-size: 1.7rem;
     margin-bottom: 12px;
 }
@@ -1062,14 +1062,14 @@ footer {
 }
 
 .layanan-list li i {
-    color: #0047AB;
+    color: #A6B1E1;
     font-size: 0.85rem;
 }
 
 /* Alur Kerja */
 .alur-kerja {
     padding: 60px 0;
-    background-color: #f1f4f9;
+    background-color: #F4EEFF;
 }
 
 .alur-grid {
@@ -1092,12 +1092,12 @@ footer {
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 800;
-    color: #82C8E5;
+    color: #DCD6F7;
     margin-bottom: 10px;
 }
 
 .alur-step h3 {
-    color: #000080;
+    color: #424874;
     font-size: 1.1rem;
     margin-bottom: 8px;
 }
