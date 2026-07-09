@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- EmailJS: buat kirim email otomatis tanpa buka aplikasi email customer -->
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
@@ -33,7 +33,6 @@
         </div>
     </nav>
 
-    <!-- Hero Kontak -->
     <section class="hero hero-kontak">
         <div class="hero-content">
             <h1>Hubungi Kami</h1>
@@ -41,11 +40,8 @@
         </div>
     </section>
 
-    <!-- Info + Form Kontak -->
     <section class="kontak-section">
         <div class="container kontak-grid">
-
-            <!-- Kolom kiri: info & peta -->
             <div class="kontak-info">
                 <h2>Informasi Kontak</h2>
 
@@ -90,8 +86,7 @@
                     </iframe>
                 </div>
             </div>
-
-            <!-- Kolom kanan: form pesan -->
+            
             <div class="kontak-form-wrap">
                 <h2>Kirim Pesan</h2>
                 <p class="form-desc">Isi form di bawah ini, nanti pesan kamu langsung kebuka lewat aplikasi email Kami.</p>
@@ -118,7 +113,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer id="kontak">
         <div class="footer-container">
             <div class="footer-box">
@@ -157,13 +152,9 @@
     </footer>
 
     <script>
-        // =========================================================
-        // KONFIGURASI EMAILJS
-        // =========================================================
         const EMAILJS_PUBLIC_KEY  = '4pNUSHd4z-zxUZePc';
         const EMAILJS_SERVICE_ID  = 'service_JasawebStore';
         const EMAILJS_TEMPLATE_ID = 'template_zo95hcs';
-        // =========================================================
 
         emailjs.init(EMAILJS_PUBLIC_KEY);
 
@@ -183,8 +174,6 @@
             btnKirim.textContent = 'Mengirim...';
             statusEl.textContent = '';
             statusEl.className = 'form-status';
-
-            // Nama variabel ini HARUS sama persis dengan yang ada di template EmailJS kamu
             const templateParams = {
                 name: nama,
                 email: email,
