@@ -1,0 +1,799 @@
+/* =========================================================
+   Jasaweb_Store — Fitur Multi Bahasa (Indonesia / English / Malaysia)
+   File ini berdiri sendiri, khusus untuk urusan terjemahan.
+   ========================================================= */
+
+/* ---------- 1. KAMUS TERJEMAHAN ---------- */
+const translations = {
+  id: {
+    "nav.beranda": "Beranda",
+    "nav.layanan": "Layanan",
+    "nav.kontak": "Kontak",
+    "nav.tentang": "Tentang Kami",
+
+    "common.footer.brand": "Jasaweb_Store",
+    "common.footer.desc": "Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.",
+    "common.footer.bantuan": "Bantuan",
+    "common.footer.faq": "FAQ",
+    "common.footer.cs": "Customer Service: +62 859-3654-6553",
+    "common.footer.ikuti": "Ikuti Kami",
+    "common.disclaimer": "Peringatan Penting:",
+    "common.disclaimer.text": "Ini hanya semata website buatan anak pelajar, jadi jika ada kesalahan ini bukan website serius. Ini hanya website kami yang mau merintis ke dunia perbisnisan, jadi ini hanya semata-mata website biasa. Jika Anda minat, kemungkinan kami akan mengerjakan juga, namun yang jelas bahwa ini adalah TEMPLATE buat kami kedepannya. Terima kasih.",
+    "common.copyright": "© 2026 Jasaweb_Store. Hak Cipta Dilindungi Undang-Undang.",
+
+    "index.title": "Jasaweb_Store - Solusi Digital Terdepan",
+    "index.slide1.title": "Website Profesional & Kredibel",
+    "index.slide1.desc": "Dibangun dengan HTML, CSS, JavaScript, PHP, dan MySQL — cepat, aman, dan siap bersaing.",
+    "index.slide2.title": "Konsultasi Gratis Bersama Tim Kami",
+    "index.slide2.desc": "Diskusikan kebutuhan proyek Anda tanpa biaya, kami bantu carikan solusi paling pas.",
+    "index.slide3.title": "Optimasi SEO & Tracking Pengunjung",
+    "index.slide3.desc": "Website Anda lebih mudah ditemukan di Google, sekaligus terpantau lewat Google Analytics.",
+    "index.hero.cta": "Mulai Proyek Anda",
+
+    "index.profile.title": "Profil Website Kami",
+    "index.profile.desc": "\"Menjadi agensi solusi digital terdepan yang inovatif, tepercaya, dan mampu membantu siapa saja menciptakan produk digital berkualitas global, baik berupa website, game, maupun desain kreatif.\"",
+
+    "index.services.title": "Layanan Yang Kami Ditawarkan",
+    "index.services.web.title": "Web Development",
+    "index.services.web.desc": "Pembuatan website profesional yang responsif, cepat, aman, dan ramah pengguna (user-friendly) menggunakan teknologi HTML, CSS, JS, PHP, & MySQL.",
+    "index.services.game.title": "Game Development",
+    "index.services.game.desc": "Pengembangan game interaktif yang seru, fungsional, dan kustom sesuai kebutuhan konsumen berbasis Construct, Unity, & Game Engine Modern.",
+    "index.services.design.title": "UI/UX & Branding",
+    "index.services.design.desc": "Menghadirkan desain grafis memukau serta strategi branding visual lewat Figma, Photoshop, dan CorelDraw untuk menaikkan nilai jual bisnis Anda.",
+
+    "index.harga.title": "Paket Harga",
+    "index.harga.subtitle": "Semua paket sudah termasuk hosting, domain, dan maintenance dasar 1 tahun.",
+    "index.harga.sekali": "Sekali bayar",
+    "index.harga.btn": "Pilih Paket",
+    "index.harga.badge": "Paling Diminati",
+
+    "index.harga.landing.title": "Landing Page",
+    "index.harga.landing.f1": "1 halaman utama",
+    "index.harga.landing.f2": "Domain .com + hosting 1 tahun",
+    "index.harga.landing.f3": "Desain responsif (mobile-friendly)",
+    "index.harga.landing.f4": "Integrasi tombol WhatsApp",
+    "index.harga.landing.f5": "Pengerjaan ±4 hari kerja",
+
+    "index.harga.company.title": "Company Profile",
+    "index.harga.company.f1": "Hingga 5 halaman (Beranda, Tentang, Layanan, dll)",
+    "index.harga.company.f2": "Domain .com + hosting 1 tahun",
+    "index.harga.company.f3": "SEO On-Page dasar",
+    "index.harga.company.f4": "Google Analytics & Search Console",
+    "index.harga.company.f5": "Pengerjaan ±7 hari kerja",
+
+    "index.harga.toko.title": "Toko Online",
+    "index.harga.toko.f1": "Semua fitur paket Company Profile",
+    "index.harga.toko.f2": "Katalog produk & keranjang belanja",
+    "index.harga.toko.f3": "Integrasi pembayaran & checkout WhatsApp",
+    "index.harga.toko.f4": "Panel kelola produk sendiri",
+    "index.harga.toko.f5": "Pengerjaan ±10 hari kerja",
+
+    "index.harga.custom.title": "Custom Badan Usaha",
+    "index.harga.custom.f1": "Semua fitur paket Toko Online",
+    "index.harga.custom.f2": "Domain resmi .co.id",
+    "index.harga.custom.f3": "Desain & fitur 100% custom",
+    "index.harga.custom.f4": "Garansi keamanan anti-hack",
+    "index.harga.custom.f5": "Konsultasi prioritas",
+
+    "index.cta.title": "Punya Proyek Seru Yang Ingin Diwujudkan?",
+    "index.cta.desc": "Tim talenta muda berbakat kami dari SMKN 1 Panji siap merealisasikannya bersama Anda.",
+    "index.cta.btn": "Kenali Tim Kami",
+
+    "kontak.title": "Kontak Kami - Jasaweb_Store",
+    "kontak.hero.title": "Hubungi Kami",
+    "kontak.hero.desc": "Ada pertanyaan atau mau mulai proyek? Kirim pesan atau datang langsung ke kantor kami.",
+    "kontak.info.title": "Informasi Kontak",
+    "kontak.alamat.title": "Alamat Kantor",
+    "kontak.telp.title": "Telepon Kantor",
+    "kontak.email.title": "Email",
+    "kontak.wa.title": "WhatsApp Customer Service",
+    "kontak.form.title": "Kirim Pesan",
+    "kontak.form.desc": "Isi form di bawah ini, nanti pesan kamu langsung kebuka lewat aplikasi email Kami.",
+    "kontak.form.nama": "Nama Lengkap",
+    "kontak.form.nama.ph": "Nama kamu",
+    "kontak.form.email.ph": "nama@email.com",
+    "kontak.form.subjek": "Subjek",
+    "kontak.form.subjek.ph": "Contoh: Tanya paket website",
+    "kontak.form.pesan": "Pesan",
+    "kontak.form.pesan.ph": "Tulis pesan kamu di sini...",
+    "kontak.form.btn": "Kirim Pesan",
+    "kontak.form.sending": "Mengirim...",
+    "kontak.form.success": "✅ Pesan berhasil terkirim! Kami akan segera menghubungi Anda.",
+    "kontak.form.fail": "❌ Gagal mengirim pesan. Silakan coba lagi atau hubungi kami via WhatsApp.",
+
+    "layanan.title": "Layanan Kami - Jasaweb_Store",
+    "layanan.hero.title": "Layanan Kami",
+    "layanan.hero.desc": "Tiga bidang keahlian, satu tujuan: mengubah ide Anda menjadi produk digital yang siap pakai.",
+
+    "layanan.web.eyebrow": "Web Development",
+    "layanan.web.title": "Pembuatan Website Profesional",
+    "layanan.web.desc": "Website yang responsif, cepat diakses, dan aman untuk berbagai kebutuhan bisnis maupun personal, dibangun dengan HTML, CSS, JavaScript, PHP, dan MySQL.",
+    "layanan.web.l1": "Company profile & landing page",
+    "layanan.web.l2": "Toko online (E-Commerce)",
+    "layanan.web.l3": "Sistem manajemen konten (CMS)",
+    "layanan.web.l4": "Optimasi kecepatan & SEO dasar",
+
+    "layanan.game.eyebrow": "Game Development",
+    "layanan.game.title": "Pengembangan Game Interaktif",
+    "layanan.game.desc": "Game kasual hingga edukatif yang dirancang seru dan fungsional, dikembangkan menggunakan Construct dan Unity sesuai kebutuhan konsumen.",
+    "layanan.game.l1": "Game 2D kasual & edukasi",
+    "layanan.game.l2": "Prototipe & mekanisme gameplay",
+    "layanan.game.l3": "Desain karakter & aset visual",
+    "layanan.game.l4": "Rilis ke Play Store / Web",
+
+    "layanan.design.eyebrow": "UI/UX & Branding",
+    "layanan.design.title": "Desain Grafis dan Branding",
+    "layanan.design.desc": "Identitas visual yang memukau dan konsisten untuk menaikkan nilai jual bisnis Anda, dikerjakan lewat Figma, Adobe Photoshop, dan CorelDraw.",
+    "layanan.design.l1": "Logo & identitas merek",
+    "layanan.design.l2": "Desain antarmuka (UI) aplikasi/website",
+    "layanan.design.l3": "Materi promosi (poster, feed sosial media)",
+    "layanan.design.l4": "Panduan penggunaan merek (brand guideline)",
+
+    "layanan.alur.title": "Bagaimana Kami Bekerja",
+    "layanan.alur1.title": "Konsultasi",
+    "layanan.alur1.desc": "Diskusi kebutuhan, target, dan anggaran proyek Anda.",
+    "layanan.alur2.title": "Desain & Rencana",
+    "layanan.alur2.desc": "Menyusun konsep visual dan rencana teknis pengerjaan.",
+    "layanan.alur3.title": "Pengembangan",
+    "layanan.alur3.desc": "Proses pembuatan produk sesuai rencana yang disepakati.",
+    "layanan.alur4.title": "Revisi & Rilis",
+    "layanan.alur4.desc": "Penyesuaian akhir lalu produk siap digunakan.",
+
+    "layanan.cta.title": "Siap Wujudkan Proyek Anda?",
+    "layanan.cta.desc": "Hubungi tim kami dan ceritakan kebutuhan digital Anda.",
+    "layanan.cta.btn": "Hubungi Kami",
+
+    "faq.title": "Pertanyaan yang Sering Ditanya - Jasaweb_Store",
+    "faq.heading": "Pertanyaan yang sering ditanya",
+    "faq.subtitle": "Seputar jasa pembuatan website company profile di Jasaweb_Store.",
+    "faq.q1": "Berapa biaya jasa pembuatan website company profile?",
+    "faq.a1": "Biaya pembuatan website bervariasi mulai dari Rp 953.930 untuk paket Landing Page hingga Rp 1.865.900 untuk paket custom badan usaha (co.id). Biaya ini sudah all-in termasuk hosting, domain, dan maintenance dasar selama satu tahun penuh.",
+    "faq.q2": "Berapa lama website perusahaan saya selesai?",
+    "faq.a2": "Durasi pengerjaan sangat bergantung pada paket yang dipilih. Untuk paket Landing Page standar membutuhkan waktu sekitar 4 hari kerja, sedangkan untuk paket Company Profile lengkap berkisar antara 7 hari kerja setelah seluruh data konten kami terima.",
+    "faq.q3": "Pilih domain apa — .com atau .co.id? Apa bedanya?",
+    "faq.a3": "Domain <b>.com</b> bersifat komersial umum global dan dapat didaftarkan oleh siapa saja tanpa persyaratan khusus. Sementara domain <b>.co.id</b> dikhususkan untuk badan usaha resmi di Indonesia (CV/PT) dan memerlukan dokumen legalitas resmi seperti SIUP/NIB. Menggunakan .co.id memberikan tingkat kepercayaan tinggi di mata korporat.",
+    "faq.q4": "Apakah ada tracking biar tahu jumlah pengunjung & leads?",
+    "faq.a4": "Ya, tentu saja. Setiap website yang kami buat sudah kami integrasikan dengan Google Analytics 4 (GA4) dan Google Tag Manager (GTM). Anda bisa memantau data jumlah pengunjung harian hingga tombol aksi mana saja (seperti tombol WhatsApp) yang paling sering diklik oleh prospek.",
+    "faq.q5": "Apakah website-nya bisa muncul di Google (SEO)?",
+    "faq.a5": "Kami menerapkan optimasi struktur SEO On-Page standar di setiap rancangan web, termasuk pengaturan meta tags, optimasi kecepatan gambar, dan pendaftaran sitemap ke Google Search Console agar website Anda lebih mudah merangkak naik dan terindeks di mesin pencari.",
+    "faq.q6": "Apakah bisa tambah halaman / custom desain?",
+    "faq.a6": "Bisa sekali. Sistem website kami dibangun menggunakan struktur modular yang fleksibel. Jika di kemudian hari bisnis Anda berkembang dan membutuhkan tambahan halaman layanan, integrasi blog, maupun rombakan desain layout, tim kami siap membantu melakukan pengembangan lanjutan.",
+    "faq.q7": "Saya belum punya konten/foto, apakah dibantu?",
+    "faq.a7": "Jangan khawatir. Jika Anda belum memiliki materi tertulis, tim copywriting kami akan membantu merancang teks penawaran yang menarik berdasarkan profil bisnis Anda. Untuk kebutuhan foto, kami juga menyediakan aset gambar ilustrasi premium bebas hak cipta yang relevan dengan bidang industri Anda.",
+    "faq.q8": "Bagaimana cara kerja garansi anti-hack-nya?",
+    "faq.a8": "Kami menerapkan sistem keamanan berlapis meliputi pemasangan SSL bersertifikasi, pembatasan hak akses login, serta backup data berkala secara otomatis. Jika terjadi kendala sistem atau serangan siber dalam masa aktif maintenance, tim teknis kami akan memulihkan dan membersihkan website Anda tanpa biaya tambahan.",
+
+    "tentang.title": "Arista Maulana Lutfi",
+    "tentang.hero.title": "Tentang Kami",
+    "tentang.hero.desc": "Kenali lebih dekat siapa kami, visi kami, dan perjalanan Jasaweb_Store dari awal dirintis.",
+    "tentang.judul": "INFORMASI TENTANG SITUS SAYA",
+    "tentang.subintro": "Selamat datang di Jasaweb_Store. Kami siap membantu mentransformasikan ide-ide kreatif Anda menjadi produk nyata bernilai tinggi melalui keahlian kami di bidang teknologi, game, dan desain visual.",
+
+    "tentang.profil.title": "Profil Website Kami",
+    "tentang.profil.desc": "Kami menyediakan semua layanan digital yang berbasis teknologi. dimulai dari pembuatan Website dari ide konsumen, Permintaan pembuatan game dengan simple, Desain Grafis yang sangat memukau untuk dilihat dan penyediaan Branding.",
+
+    "tentang.visimisi.title": "Visi & Misi",
+    "tentang.visi.title": "Visi",
+    "tentang.visi.desc": "\"Menjadi agensi solusi digital terdepan yang inovatif, tepercaya, dan mampu membantu siapa saja menciptakan produk digital berkualitas global, baik berupa website, game, maupun desain kreatif.\"",
+    "tentang.misi.title": "Misi",
+    "tentang.misi.l1": "Menyediakan layanan pembuatan website yang responsif, cepat, aman, dan ramah pengguna (user-friendly).",
+    "tentang.misi.l2": "Mengembangkan game interaktif yang seru dan fungsional sesuai dengan kebutuhan konsumen.",
+    "tentang.misi.l3": "Menghadirkan desain grafis serta strategi branding visual yang memukau untuk menaikkan nilai jual bisnis klien.",
+
+    "tentang.latar.title": "Latar Belakang",
+    "tentang.latar.p1": "Platform ini awalnya dirintis bersama sebagai sebuah langkah kreatif untuk memanfaatkan waktu luang kami dengan kegiatan yang jauh lebih produktif dan bermanfaat. Berawal dari diskusi ringan di sela-sela kesibukan, kami melihat adanya peluang besar untuk menyalurkan minat dan keahlian bersama di bidang teknologi ke dalam sebuah proyek nyata yang terstruktur.",
+    "tentang.latar.p2": "Dari yang semula hanya sekadar mengisi waktu kosong, ide tersebut perlahan bertransformasi menjadi sebuah komitmen serius dan fokus jangka panjang. Kini, kami mendedikasikan platform agensi digital ini untuk menghadirkan berbagai solusi pengembangan web yang kokoh, integrasi sistem yang optimal, serta desain visual kreatif yang mampu membantu digitalisasi dan meningkatkan nilai jual dari setiap proyek maupun bisnis klien kami.",
+
+    "tentang.layananditawarkan.title": "Layanan Yang Ditawarkan",
+    "tentang.layanan.l1.title": "E-Katalog Lengkap:",
+    "tentang.layanan.l1.desc": "Showcase portofolio digital yang memajang template website siap pakai, demo game interaktif, dan aset desain grafis terbaik karya tim kami untuk memudahkan Anda memilih kebutuhan bisnis.",
+    "tentang.layanan.l2.title": "Keanggotaan Digital:",
+    "tentang.layanan.l2.desc": "Sistem pendaftaran akun klien yang memberikan kemudahan untuk memantau progres pengerjaan proyek, mengakses revisi, serta mendapatkan promo khusus layanan digital kami.",
+    "tentang.layanan.l3.title": "Manajemen Jasa:",
+    "tentang.layanan.l3.m1": "1) Jasa Pembuatan Web Profesional",
+    "tentang.layanan.l3.m2": "2) Jasa Pembuatan Game",
+    "tentang.layanan.l3.m3": "3) Jasa Desain Grafis Dan Branding",
+
+    "tentang.tech.title": "Teknologi Yang Kami Gunakan",
+    "tentang.tech.desc": "Kami memanfaatkan ekosistem perangkat lunak dan bahasa pemrograman modern untuk memastikan kualitas produk terbaik:",
+    "tentang.tech1.title": "Web Development",
+    "tentang.tech1.desc": "HTML, CSS, JavaScript, PHP, & MySQL",
+    "tentang.tech2.title": "Game Development",
+    "tentang.tech2.desc": "Construct, Unity, & Game Engine Modern",
+    "tentang.tech3.title": "UI/UX & Branding",
+    "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
+
+    "tentang.portfolio.title": "Portofolio Kami",
+    "tentang.portfolio.desc": "Beberapa hasil karya terbaik yang telah dibangun oleh tim pengembang kami:",
+    "tentang.portfolio1.title": "E-Commerce Platform",
+    "tentang.portfolio1.desc": "Website toko online responsif yang dilengkapi sistem keranjang belanja otomatis.",
+    "tentang.portfolio2.title": "Sistem Perpustakaan Digital",
+    "tentang.portfolio2.desc": "Aplikasi manajemen buku berbasis web lengkap dengan sistem database pendaftaran anggota.",
+    "tentang.portfolio3.title": "Mini-Game Arcade 2D",
+    "tentang.portfolio3.desc": "Game kasual interaktif berbasis HTML5/Construct yang ringan, responsif, dan adiktif.",
+
+    "tentang.prinsip.title": "Prinsip & Nilai Kami",
+    "tentang.prinsip.desc": "Pondasi utama yang kami pegang teguh dalam menyelesaikan setiap proyek konsumen:",
+    "tentang.prinsip1.title": "Inovatif & Kreatif",
+    "tentang.prinsip1.desc": "Selalu menghadirkan ide-ide segar dan desain unik agar produk digital Anda tampil beda dari kompetitor.",
+    "tentang.prinsip2.title": "Integritas & Kepercayaan",
+    "tentang.prinsip2.desc": "Membangun transparansi kerja, menjaga keamanan data, serta berkomitmen penuh menyelesaikan proyek tepat waktu.",
+    "tentang.prinsip3.title": "Kualitas Optimal",
+    "tentang.prinsip3.desc": "Memastikan setiap baris kode pemrograman bersih, responsif di HP, serta memiliki kecepatan akses yang tinggi.",
+
+    "tentang.tim.title": "Tim Pengembang",
+    "tentang.tim.desc": "Aplikasi ini dibangun dan dikembangkan dengan dedikasi penuh oleh talenta muda berbakat:",
+    "tentang.tim1.role": "Lead Web Developer",
+    "tentang.tim2.role": "Penyedia, Pembantu, Jasa Web",
+    "tentang.tim3.role": "Manajemen Kontak Keanggotaan",
+    "tentang.tim4.role": "UI/UX Designer",
+
+    "tentang.timeline.title": "Hal Hal Yang Akan Kami Lakukan",
+    "tentang.timeline1.title": "Early",
+    "tentang.timeline1.desc": "Awal pembuatan website Jasaweb_Store.",
+    "tentang.timeline2.title": "Kegiatan",
+    "tentang.timeline2.desc": "Mengembangkan pondasi aplikasi, database kustom, dan aset UI/UX.",
+    "tentang.timeline3.title": "2026",
+    "tentang.timeline3.desc": "Resmi meluncurkan platform web \"Jasaweb_Store\" dengan fitur E-Katalog.",
+    "tentang.timeline4.title": "Late 2026",
+    "tentang.timeline4.desc": "Target menyelesaikan 10+ proyek web dan desain branding untuk UMKM lokal.",
+    "tentang.timeline5.title": "Tujuan",
+    "tentang.timeline5.desc": "Memberikan konsultasi gratis sebelum membeli jasa kami.",
+    "tentang.timeline6.title": "Future Target",
+    "tentang.timeline6.desc": "Akan menjadi agensi digital berbadan hukum yang dipercaya perusahaan nasional.",
+
+    "tentang.hubungi.title": "Hubungi Kami"
+  },
+
+  en: {
+    "nav.beranda": "Home",
+    "nav.layanan": "Services",
+    "nav.kontak": "Contact",
+    "nav.tentang": "About Us",
+
+    "common.footer.brand": "Jasaweb_Store",
+    "common.footer.desc": "We provide the best professional services to help deliver high-quality, fast, secure, and conversion-ready digital platforms and business websites.",
+    "common.footer.bantuan": "Help",
+    "common.footer.faq": "FAQ",
+    "common.footer.cs": "Customer Service: +62 859-3654-6553",
+    "common.footer.ikuti": "Follow Us",
+    "common.disclaimer": "Important Notice:",
+    "common.disclaimer.text": "This is simply a website made by students, so any mistakes here don't mean it's not a serious website. This is just our website as we're starting out in the business world, so it's purely an ordinary website for now. If you're interested, we may take on the project as well, but do note this is a TEMPLATE for our future work. Thank you.",
+    "common.copyright": "© 2026 Jasaweb_Store. All Rights Reserved.",
+
+    "index.title": "Jasaweb_Store - Leading Digital Solutions",
+    "index.slide1.title": "Professional & Credible Websites",
+    "index.slide1.desc": "Built with HTML, CSS, JavaScript, PHP, and MySQL — fast, secure, and ready to compete.",
+    "index.slide2.title": "Free Consultation With Our Team",
+    "index.slide2.desc": "Discuss your project needs at no cost, we'll help you find the best-fit solution.",
+    "index.slide3.title": "SEO Optimization & Visitor Tracking",
+    "index.slide3.desc": "Your website becomes easier to find on Google, while being monitored via Google Analytics.",
+    "index.hero.cta": "Start Your Project",
+
+    "index.profile.title": "Our Website Profile",
+    "index.profile.desc": "\"To become a leading digital solutions agency that is innovative, trusted, and able to help anyone create globally-competitive digital products, whether websites, games, or creative design.\"",
+
+    "index.services.title": "Services We Offer",
+    "index.services.web.title": "Web Development",
+    "index.services.web.desc": "Building professional websites that are responsive, fast, secure, and user-friendly using HTML, CSS, JS, PHP, & MySQL technology.",
+    "index.services.game.title": "Game Development",
+    "index.services.game.desc": "Development of fun, functional, and custom interactive games tailored to client needs using Construct, Unity, & modern game engines.",
+    "index.services.design.title": "UI/UX & Branding",
+    "index.services.design.desc": "Delivering stunning graphic design and visual branding strategy through Figma, Photoshop, and CorelDraw to boost your business's market value.",
+
+    "index.harga.title": "Pricing Packages",
+    "index.harga.subtitle": "All packages already include hosting, domain, and 1 year of basic maintenance.",
+    "index.harga.sekali": "One-time payment",
+    "index.harga.btn": "Choose Package",
+    "index.harga.badge": "Most Popular",
+
+    "index.harga.landing.title": "Landing Page",
+    "index.harga.landing.f1": "1 main page",
+    "index.harga.landing.f2": ".com domain + 1 year hosting",
+    "index.harga.landing.f3": "Responsive (mobile-friendly) design",
+    "index.harga.landing.f4": "WhatsApp button integration",
+    "index.harga.landing.f5": "±4 business days delivery",
+
+    "index.harga.company.title": "Company Profile",
+    "index.harga.company.f1": "Up to 5 pages (Home, About, Services, etc.)",
+    "index.harga.company.f2": ".com domain + 1 year hosting",
+    "index.harga.company.f3": "Basic On-Page SEO",
+    "index.harga.company.f4": "Google Analytics & Search Console",
+    "index.harga.company.f5": "±7 business days delivery",
+
+    "index.harga.toko.title": "Online Store",
+    "index.harga.toko.f1": "All Company Profile package features",
+    "index.harga.toko.f2": "Product catalog & shopping cart",
+    "index.harga.toko.f3": "Payment integration & WhatsApp checkout",
+    "index.harga.toko.f4": "Self-managed product panel",
+    "index.harga.toko.f5": "±10 business days delivery",
+
+    "index.harga.custom.title": "Custom Business Entity",
+    "index.harga.custom.f1": "All Online Store package features",
+    "index.harga.custom.f2": "Official .co.id domain",
+    "index.harga.custom.f3": "100% custom design & features",
+    "index.harga.custom.f4": "Anti-hack security guarantee",
+    "index.harga.custom.f5": "Priority consultation",
+
+    "index.cta.title": "Have An Exciting Project To Bring To Life?",
+    "index.cta.desc": "Our talented young team from SMKN 1 Panji is ready to make it happen with you.",
+    "index.cta.btn": "Meet Our Team",
+
+    "kontak.title": "Contact Us - Jasaweb_Store",
+    "kontak.hero.title": "Contact Us",
+    "kontak.hero.desc": "Have a question or want to start a project? Send a message or visit our office directly.",
+    "kontak.info.title": "Contact Information",
+    "kontak.alamat.title": "Office Address",
+    "kontak.telp.title": "Office Phone",
+    "kontak.email.title": "Email",
+    "kontak.wa.title": "WhatsApp Customer Service",
+    "kontak.form.title": "Send a Message",
+    "kontak.form.desc": "Fill in the form below, your message will open directly through our email application.",
+    "kontak.form.nama": "Full Name",
+    "kontak.form.nama.ph": "Your name",
+    "kontak.form.email.ph": "name@email.com",
+    "kontak.form.subjek": "Subject",
+    "kontak.form.subjek.ph": "e.g.: Asking about website package",
+    "kontak.form.pesan": "Message",
+    "kontak.form.pesan.ph": "Write your message here...",
+    "kontak.form.btn": "Send Message",
+    "kontak.form.sending": "Sending...",
+    "kontak.form.success": "✅ Message sent successfully! We'll get back to you soon.",
+    "kontak.form.fail": "❌ Failed to send message. Please try again or contact us via WhatsApp.",
+
+    "layanan.title": "Our Services - Jasaweb_Store",
+    "layanan.hero.title": "Our Services",
+    "layanan.hero.desc": "Three areas of expertise, one goal: turning your ideas into a ready-to-use digital product.",
+
+    "layanan.web.eyebrow": "Web Development",
+    "layanan.web.title": "Professional Website Development",
+    "layanan.web.desc": "Responsive, fast, and secure websites for a variety of business and personal needs, built with HTML, CSS, JavaScript, PHP, and MySQL.",
+    "layanan.web.l1": "Company profile & landing page",
+    "layanan.web.l2": "Online store (E-Commerce)",
+    "layanan.web.l3": "Content management system (CMS)",
+    "layanan.web.l4": "Speed optimization & basic SEO",
+
+    "layanan.game.eyebrow": "Game Development",
+    "layanan.game.title": "Interactive Game Development",
+    "layanan.game.desc": "Casual to educational games designed to be fun and functional, built using Construct and Unity based on client needs.",
+    "layanan.game.l1": "Casual & educational 2D games",
+    "layanan.game.l2": "Prototypes & gameplay mechanics",
+    "layanan.game.l3": "Character design & visual assets",
+    "layanan.game.l4": "Release to Play Store / Web",
+
+    "layanan.design.eyebrow": "UI/UX & Branding",
+    "layanan.design.title": "Graphic Design and Branding",
+    "layanan.design.desc": "Stunning, consistent visual identity to boost your business's market value, crafted with Figma, Adobe Photoshop, and CorelDraw.",
+    "layanan.design.l1": "Logo & brand identity",
+    "layanan.design.l2": "App/website interface (UI) design",
+    "layanan.design.l3": "Promotional materials (posters, social media feeds)",
+    "layanan.design.l4": "Brand usage guidelines",
+
+    "layanan.alur.title": "How We Work",
+    "layanan.alur1.title": "Consultation",
+    "layanan.alur1.desc": "Discussing your project's needs, goals, and budget.",
+    "layanan.alur2.title": "Design & Planning",
+    "layanan.alur2.desc": "Putting together the visual concept and technical work plan.",
+    "layanan.alur3.title": "Development",
+    "layanan.alur3.desc": "Building the product according to the agreed plan.",
+    "layanan.alur4.title": "Revision & Launch",
+    "layanan.alur4.desc": "Final adjustments, then the product is ready to use.",
+
+    "layanan.cta.title": "Ready To Bring Your Project To Life?",
+    "layanan.cta.desc": "Contact our team and tell us about your digital needs.",
+    "layanan.cta.btn": "Contact Us",
+
+    "faq.title": "Frequently Asked Questions - Jasaweb_Store",
+    "faq.heading": "Frequently Asked Questions",
+    "faq.subtitle": "About our company profile website development service at Jasaweb_Store.",
+    "faq.q1": "How much does a company profile website cost?",
+    "faq.a1": "Website costs vary, starting from Rp 953,930 for the Landing Page package up to Rp 1,865,900 for the custom business entity (co.id) package. This is an all-in price including hosting, domain, and basic maintenance for a full year.",
+    "faq.q2": "How long will my company website take to finish?",
+    "faq.a2": "Delivery time depends heavily on the package chosen. The standard Landing Page package takes about 4 business days, while the full Company Profile package takes around 7 business days once we've received all the content.",
+    "faq.q3": "Which domain should I choose — .com or .co.id? What's the difference?",
+    "faq.a3": "The <b>.com</b> domain is a general global commercial domain that anyone can register without special requirements. Meanwhile, <b>.co.id</b> is reserved for official Indonesian business entities (CV/PT) and requires official legal documents such as a business license/NIB. Using .co.id gives a higher level of trust in the eyes of corporate clients.",
+    "faq.q4": "Is there tracking so I know visitor & lead numbers?",
+    "faq.a4": "Yes, of course. Every website we build is already integrated with Google Analytics 4 (GA4) and Google Tag Manager (GTM). You can monitor daily visitor data down to which action buttons (like the WhatsApp button) prospects click most often.",
+    "faq.q5": "Can the website appear on Google (SEO)?",
+    "faq.a5": "We apply standard On-Page SEO optimization to every web design, including meta tag setup, image speed optimization, and sitemap submission to Google Search Console so your website climbs and gets indexed more easily by search engines.",
+    "faq.q6": "Can I add pages / a custom design later?",
+    "faq.a6": "Absolutely. Our website system is built on a flexible, modular structure. If your business grows down the road and needs additional service pages, blog integration, or a layout redesign, our team is ready to help with further development.",
+    "faq.q7": "I don't have content/photos yet, can you help with that?",
+    "faq.a7": "No worries. If you don't have written material yet, our copywriting team will help craft engaging copy based on your business profile. For photo needs, we also provide premium, royalty-free illustration assets relevant to your industry.",
+    "faq.q8": "How does the anti-hack guarantee work?",
+    "faq.a8": "We apply a layered security system including certified SSL installation, restricted login access, and automatic periodic data backups. If a system issue or cyberattack occurs during the active maintenance period, our technical team will restore and clean up your website at no extra cost.",
+
+    "tentang.title": "Arista Maulana Lutfi",
+    "tentang.hero.title": "About Us",
+    "tentang.hero.desc": "Get to know who we are, our vision, and Jasaweb_Store's journey from the very start.",
+    "tentang.judul": "INFORMATION ABOUT OUR SITE",
+    "tentang.subintro": "Welcome to Jasaweb_Store. We're ready to help transform your creative ideas into high-value real products through our expertise in technology, games, and visual design.",
+
+    "tentang.profil.title": "Our Website Profile",
+    "tentang.profil.desc": "We provide all technology-based digital services, starting from building websites from client ideas, simple game development requests, stunning graphic design, and branding services.",
+
+    "tentang.visimisi.title": "Vision & Mission",
+    "tentang.visi.title": "Vision",
+    "tentang.visi.desc": "\"To become a leading digital solutions agency that is innovative, trusted, and able to help anyone create globally-competitive digital products, whether websites, games, or creative design.\"",
+    "tentang.misi.title": "Mission",
+    "tentang.misi.l1": "Providing responsive, fast, secure, and user-friendly website development services.",
+    "tentang.misi.l2": "Developing fun and functional interactive games according to client needs.",
+    "tentang.misi.l3": "Delivering stunning graphic design and visual branding strategy to boost clients' business value.",
+
+    "tentang.latar.title": "Background",
+    "tentang.latar.p1": "This platform was originally started together as a creative way to use our free time on something far more productive and worthwhile. Beginning with a casual discussion between our busy schedules, we saw a great opportunity to channel our shared interest and skills in technology into a real, structured project.",
+    "tentang.latar.p2": "What started as simply a way to fill spare time gradually turned into a serious commitment and long-term focus. Today, we dedicate this digital agency platform to delivering solid web development solutions, optimal system integration, and creative visual design that helps digitalize and boost the market value of every client project and business.",
+
+    "tentang.layananditawarkan.title": "Services We Offer",
+    "tentang.layanan.l1.title": "Complete E-Catalog:",
+    "tentang.layanan.l1.desc": "A digital portfolio showcase featuring ready-to-use website templates, interactive game demos, and our team's best graphic design assets to make choosing your business needs easier.",
+    "tentang.layanan.l2.title": "Digital Membership:",
+    "tentang.layanan.l2.desc": "A client account registration system that makes it easy to track project progress, access revisions, and get exclusive promos on our digital services.",
+    "tentang.layanan.l3.title": "Service Management:",
+    "tentang.layanan.l3.m1": "1) Professional Web Development Service",
+    "tentang.layanan.l3.m2": "2) Game Development Service",
+    "tentang.layanan.l3.m3": "3) Graphic Design and Branding Service",
+
+    "tentang.tech.title": "Technologies We Use",
+    "tentang.tech.desc": "We leverage a modern software and programming language ecosystem to ensure the best product quality:",
+    "tentang.tech1.title": "Web Development",
+    "tentang.tech1.desc": "HTML, CSS, JavaScript, PHP, & MySQL",
+    "tentang.tech2.title": "Game Development",
+    "tentang.tech2.desc": "Construct, Unity, & Modern Game Engines",
+    "tentang.tech3.title": "UI/UX & Branding",
+    "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
+
+    "tentang.portfolio.title": "Our Portfolio",
+    "tentang.portfolio.desc": "Some of the best work built by our development team:",
+    "tentang.portfolio1.title": "E-Commerce Platform",
+    "tentang.portfolio1.desc": "A responsive online store website equipped with an automatic shopping cart system.",
+    "tentang.portfolio2.title": "Digital Library System",
+    "tentang.portfolio2.desc": "A web-based book management application complete with a member registration database system.",
+    "tentang.portfolio3.title": "2D Mini-Game Arcade",
+    "tentang.portfolio3.desc": "A lightweight, responsive, and addictive HTML5/Construct-based casual game.",
+
+    "tentang.prinsip.title": "Our Principles & Values",
+    "tentang.prinsip.desc": "The core foundations we firmly hold to in completing every client project:",
+    "tentang.prinsip1.title": "Innovative & Creative",
+    "tentang.prinsip1.desc": "Always bringing fresh ideas and unique designs so your digital product stands out from competitors.",
+    "tentang.prinsip2.title": "Integrity & Trust",
+    "tentang.prinsip2.desc": "Building transparent workflows, safeguarding data security, and fully committing to completing projects on time.",
+    "tentang.prinsip3.title": "Optimal Quality",
+    "tentang.prinsip3.desc": "Ensuring every line of code is clean, mobile-responsive, and has high access speed.",
+
+    "tentang.tim.title": "Development Team",
+    "tentang.tim.desc": "This application was built and developed with full dedication by talented young talents:",
+    "tentang.tim1.role": "Lead Web Developer",
+    "tentang.tim2.role": "Web Service Provider & Support",
+    "tentang.tim3.role": "Membership Contact Management",
+    "tentang.tim4.role": "UI/UX Designer",
+
+    "tentang.timeline.title": "What We Plan To Do",
+    "tentang.timeline1.title": "Early",
+    "tentang.timeline1.desc": "The beginning of Jasaweb_Store's website development.",
+    "tentang.timeline2.title": "Activities",
+    "tentang.timeline2.desc": "Developing the app foundation, custom database, and UI/UX assets.",
+    "tentang.timeline3.title": "2026",
+    "tentang.timeline3.desc": "Officially launching the \"Jasaweb_Store\" web platform with an E-Catalog feature.",
+    "tentang.timeline4.title": "Late 2026",
+    "tentang.timeline4.desc": "Target of completing 10+ web and branding design projects for local SMEs.",
+    "tentang.timeline5.title": "Goal",
+    "tentang.timeline5.desc": "Offering a free consultation before purchasing our services.",
+    "tentang.timeline6.title": "Future Target",
+    "tentang.timeline6.desc": "Becoming a legally-registered digital agency trusted by national companies.",
+
+    "tentang.hubungi.title": "Contact Us"
+  },
+
+  ms: {
+    "nav.beranda": "Laman Utama",
+    "nav.layanan": "Perkhidmatan",
+    "nav.kontak": "Hubungi",
+    "nav.tentang": "Tentang Kami",
+
+    "common.footer.brand": "Jasaweb_Store",
+    "common.footer.desc": "Kami menyediakan perkhidmatan profesional terbaik untuk membantu menyediakan platform digital dan laman web perniagaan berkualiti tinggi, pantas, selamat, serta berkesan.",
+    "common.footer.bantuan": "Bantuan",
+    "common.footer.faq": "Soalan Lazim",
+    "common.footer.cs": "Khidmat Pelanggan: +62 859-3654-6553",
+    "common.footer.ikuti": "Ikuti Kami",
+    "common.disclaimer": "Amaran Penting:",
+    "common.disclaimer.text": "Ini hanyalah laman web ciptaan pelajar, jadi jika terdapat sebarang kesilapan, ini bukanlah laman web yang serius. Ini hanyalah laman web kami yang baru bermula dalam dunia perniagaan, jadi ia hanyalah laman web biasa buat masa ini. Jika anda berminat, kemungkinan besar kami akan mengusahakannya juga, namun yang jelas ini adalah TEMPLAT untuk kegunaan kami pada masa hadapan. Terima kasih.",
+    "common.copyright": "© 2026 Jasaweb_Store. Hak Cipta Terpelihara.",
+
+    "index.title": "Jasaweb_Store - Penyelesaian Digital Terkehadapan",
+    "index.slide1.title": "Laman Web Profesional & Dipercayai",
+    "index.slide1.desc": "Dibina menggunakan HTML, CSS, JavaScript, PHP, dan MySQL — pantas, selamat, dan bersedia untuk bersaing.",
+    "index.slide2.title": "Konsultasi Percuma Bersama Pasukan Kami",
+    "index.slide2.desc": "Bincangkan keperluan projek anda tanpa kos, kami bantu carikan penyelesaian yang paling sesuai.",
+    "index.slide3.title": "Pengoptimuman SEO & Penjejakan Pelawat",
+    "index.slide3.desc": "Laman web anda lebih mudah ditemui di Google, sambil dipantau melalui Google Analytics.",
+    "index.hero.cta": "Mulakan Projek Anda",
+
+    "index.profile.title": "Profil Laman Web Kami",
+    "index.profile.desc": "\"Menjadi agensi penyelesaian digital terkehadapan yang inovatif, dipercayai, dan mampu membantu sesiapa sahaja mencipta produk digital bertaraf global, sama ada laman web, permainan, mahupun reka bentuk kreatif.\"",
+
+    "index.services.title": "Perkhidmatan Yang Kami Tawarkan",
+    "index.services.web.title": "Pembangunan Web",
+    "index.services.web.desc": "Pembinaan laman web profesional yang responsif, pantas, selamat, dan mesra pengguna menggunakan teknologi HTML, CSS, JS, PHP, & MySQL.",
+    "index.services.game.title": "Pembangunan Permainan",
+    "index.services.game.desc": "Pembangunan permainan interaktif yang seronok, berfungsi, dan disesuaikan mengikut keperluan pelanggan berasaskan Construct, Unity, & Enjin Permainan Moden.",
+    "index.services.design.title": "UI/UX & Penjenamaan",
+    "index.services.design.desc": "Menghadirkan reka bentuk grafik yang menarik serta strategi penjenamaan visual melalui Figma, Photoshop, dan CorelDraw untuk meningkatkan nilai jualan perniagaan anda.",
+
+    "index.harga.title": "Pakej Harga",
+    "index.harga.subtitle": "Semua pakej sudah termasuk hosting, domain, dan penyelenggaraan asas selama 1 tahun.",
+    "index.harga.sekali": "Bayaran sekali sahaja",
+    "index.harga.btn": "Pilih Pakej",
+    "index.harga.badge": "Paling Popular",
+
+    "index.harga.landing.title": "Landing Page",
+    "index.harga.landing.f1": "1 halaman utama",
+    "index.harga.landing.f2": "Domain .com + hosting 1 tahun",
+    "index.harga.landing.f3": "Reka bentuk responsif (mesra mudah alih)",
+    "index.harga.landing.f4": "Integrasi butang WhatsApp",
+    "index.harga.landing.f5": "Siap dalam ±4 hari bekerja",
+
+    "index.harga.company.title": "Profil Syarikat",
+    "index.harga.company.f1": "Sehingga 5 halaman (Utama, Tentang, Perkhidmatan, dll)",
+    "index.harga.company.f2": "Domain .com + hosting 1 tahun",
+    "index.harga.company.f3": "SEO On-Page asas",
+    "index.harga.company.f4": "Google Analytics & Search Console",
+    "index.harga.company.f5": "Siap dalam ±7 hari bekerja",
+
+    "index.harga.toko.title": "Kedai Dalam Talian",
+    "index.harga.toko.f1": "Semua ciri pakej Profil Syarikat",
+    "index.harga.toko.f2": "Katalog produk & troli beli-belah",
+    "index.harga.toko.f3": "Integrasi pembayaran & checkout WhatsApp",
+    "index.harga.toko.f4": "Panel pengurusan produk sendiri",
+    "index.harga.toko.f5": "Siap dalam ±10 hari bekerja",
+
+    "index.harga.custom.title": "Tersuai Badan Perniagaan",
+    "index.harga.custom.f1": "Semua ciri pakej Kedai Dalam Talian",
+    "index.harga.custom.f2": "Domain rasmi .co.id",
+    "index.harga.custom.f3": "Reka bentuk & ciri 100% tersuai",
+    "index.harga.custom.f4": "Jaminan keselamatan anti-hack",
+    "index.harga.custom.f5": "Konsultasi keutamaan",
+
+    "index.cta.title": "Ada Projek Menarik Yang Ingin Direalisasikan?",
+    "index.cta.desc": "Pasukan bertalenta muda kami dari SMKN 1 Panji sedia merealisasikannya bersama anda.",
+    "index.cta.btn": "Kenali Pasukan Kami",
+
+    "kontak.title": "Hubungi Kami - Jasaweb_Store",
+    "kontak.hero.title": "Hubungi Kami",
+    "kontak.hero.desc": "Ada pertanyaan atau mahu memulakan projek? Hantar mesej atau datang terus ke pejabat kami.",
+    "kontak.info.title": "Maklumat Hubungan",
+    "kontak.alamat.title": "Alamat Pejabat",
+    "kontak.telp.title": "Telefon Pejabat",
+    "kontak.email.title": "Emel",
+    "kontak.wa.title": "WhatsApp Khidmat Pelanggan",
+    "kontak.form.title": "Hantar Mesej",
+    "kontak.form.desc": "Isikan borang di bawah, mesej anda akan terus dibuka melalui aplikasi emel kami.",
+    "kontak.form.nama": "Nama Penuh",
+    "kontak.form.nama.ph": "Nama anda",
+    "kontak.form.email.ph": "nama@emel.com",
+    "kontak.form.subjek": "Subjek",
+    "kontak.form.subjek.ph": "Contoh: Tanya pakej laman web",
+    "kontak.form.pesan": "Mesej",
+    "kontak.form.pesan.ph": "Tulis mesej anda di sini...",
+    "kontak.form.btn": "Hantar Mesej",
+    "kontak.form.sending": "Menghantar...",
+    "kontak.form.success": "✅ Mesej berjaya dihantar! Kami akan segera menghubungi anda.",
+    "kontak.form.fail": "❌ Gagal menghantar mesej. Sila cuba lagi atau hubungi kami melalui WhatsApp.",
+
+    "layanan.title": "Perkhidmatan Kami - Jasaweb_Store",
+    "layanan.hero.title": "Perkhidmatan Kami",
+    "layanan.hero.desc": "Tiga bidang kepakaran, satu matlamat: mengubah idea anda menjadi produk digital yang sedia digunakan.",
+
+    "layanan.web.eyebrow": "Pembangunan Web",
+    "layanan.web.title": "Pembinaan Laman Web Profesional",
+    "layanan.web.desc": "Laman web yang responsif, pantas diakses, dan selamat untuk pelbagai keperluan perniagaan mahupun peribadi, dibina menggunakan HTML, CSS, JavaScript, PHP, dan MySQL.",
+    "layanan.web.l1": "Profil syarikat & landing page",
+    "layanan.web.l2": "Kedai dalam talian (E-Commerce)",
+    "layanan.web.l3": "Sistem pengurusan kandungan (CMS)",
+    "layanan.web.l4": "Pengoptimuman kelajuan & SEO asas",
+
+    "layanan.game.eyebrow": "Pembangunan Permainan",
+    "layanan.game.title": "Pembangunan Permainan Interaktif",
+    "layanan.game.desc": "Permainan kasual hingga edukatif yang direka seronok dan berfungsi, dibangunkan menggunakan Construct dan Unity mengikut keperluan pelanggan.",
+    "layanan.game.l1": "Permainan 2D kasual & pendidikan",
+    "layanan.game.l2": "Prototaip & mekanisme permainan",
+    "layanan.game.l3": "Reka bentuk watak & aset visual",
+    "layanan.game.l4": "Pelancaran ke Play Store / Web",
+
+    "layanan.design.eyebrow": "UI/UX & Penjenamaan",
+    "layanan.design.title": "Reka Bentuk Grafik dan Penjenamaan",
+    "layanan.design.desc": "Identiti visual yang menarik dan konsisten untuk meningkatkan nilai jualan perniagaan anda, dihasilkan melalui Figma, Adobe Photoshop, dan CorelDraw.",
+    "layanan.design.l1": "Logo & identiti jenama",
+    "layanan.design.l2": "Reka bentuk antara muka (UI) aplikasi/laman web",
+    "layanan.design.l3": "Bahan promosi (poster, feed media sosial)",
+    "layanan.design.l4": "Panduan penggunaan jenama",
+
+    "layanan.alur.title": "Cara Kami Bekerja",
+    "layanan.alur1.title": "Konsultasi",
+    "layanan.alur1.desc": "Perbincangan keperluan, sasaran, dan bajet projek anda.",
+    "layanan.alur2.title": "Reka Bentuk & Perancangan",
+    "layanan.alur2.desc": "Menyusun konsep visual dan pelan teknikal pelaksanaan.",
+    "layanan.alur3.title": "Pembangunan",
+    "layanan.alur3.desc": "Proses pembinaan produk mengikut pelan yang dipersetujui.",
+    "layanan.alur4.title": "Semakan & Pelancaran",
+    "layanan.alur4.desc": "Penyesuaian akhir sebelum produk sedia digunakan.",
+
+    "layanan.cta.title": "Bersedia Merealisasikan Projek Anda?",
+    "layanan.cta.desc": "Hubungi pasukan kami dan ceritakan keperluan digital anda.",
+    "layanan.cta.btn": "Hubungi Kami",
+
+    "faq.title": "Soalan Lazim - Jasaweb_Store",
+    "faq.heading": "Soalan yang kerap ditanya",
+    "faq.subtitle": "Berkaitan perkhidmatan pembinaan laman web profil syarikat di Jasaweb_Store.",
+    "faq.q1": "Berapakah kos perkhidmatan pembinaan laman web profil syarikat?",
+    "faq.a1": "Kos pembinaan laman web berbeza-beza bermula dari Rp 953,930 untuk pakej Landing Page sehingga Rp 1,865,900 untuk pakej tersuai badan perniagaan (co.id). Kos ini sudah termasuk hosting, domain, dan penyelenggaraan asas selama setahun penuh.",
+    "faq.q2": "Berapa lama laman web syarikat saya siap?",
+    "faq.a2": "Tempoh siap sangat bergantung pada pakej yang dipilih. Pakej Landing Page standard mengambil masa sekitar 4 hari bekerja, manakala pakej Profil Syarikat lengkap mengambil masa sekitar 7 hari bekerja selepas semua kandungan diterima.",
+    "faq.q3": "Domain apa yang perlu dipilih — .com atau .co.id? Apa bezanya?",
+    "faq.a3": "Domain <b>.com</b> bersifat komersial global umum dan boleh didaftarkan oleh sesiapa sahaja tanpa syarat khas. Manakala domain <b>.co.id</b> dikhususkan untuk badan perniagaan rasmi di Indonesia (CV/PT) dan memerlukan dokumen sah seperti lesen perniagaan/NIB. Penggunaan .co.id memberikan tahap kepercayaan yang lebih tinggi di mata korporat.",
+    "faq.q4": "Adakah terdapat penjejakan untuk mengetahui jumlah pelawat & leads?",
+    "faq.a4": "Ya, sudah tentu. Setiap laman web yang kami bina telah diintegrasikan dengan Google Analytics 4 (GA4) dan Google Tag Manager (GTM). Anda boleh memantau data jumlah pelawat harian hingga butang tindakan mana (seperti butang WhatsApp) yang paling kerap diklik oleh prospek.",
+    "faq.q5": "Bolehkah laman web muncul di Google (SEO)?",
+    "faq.a5": "Kami menerapkan pengoptimuman struktur SEO On-Page standard pada setiap reka bentuk web, termasuk penetapan meta tag, pengoptimuman kelajuan imej, dan pendaftaran sitemap ke Google Search Console supaya laman web anda lebih mudah naik dan diindeks oleh enjin carian.",
+    "faq.q6": "Bolehkah tambah halaman / reka bentuk tersuai?",
+    "faq.a6": "Boleh sahaja. Sistem laman web kami dibina menggunakan struktur modular yang fleksibel. Jika perniagaan anda berkembang di kemudian hari dan memerlukan halaman perkhidmatan tambahan, integrasi blog, mahupun ubah suai reka bentuk, pasukan kami sedia membantu pembangunan lanjutan.",
+    "faq.q7": "Saya belum ada kandungan/foto, adakah dibantu?",
+    "faq.a7": "Jangan risau. Jika anda belum mempunyai bahan bertulis, pasukan penulisan kandungan kami akan membantu mereka bentuk teks tawaran yang menarik berdasarkan profil perniagaan anda. Untuk keperluan foto, kami turut menyediakan aset ilustrasi premium bebas royalti yang relevan dengan bidang industri anda.",
+    "faq.q8": "Bagaimana cara jaminan anti-hack berfungsi?",
+    "faq.a8": "Kami menerapkan sistem keselamatan berlapis termasuk pemasangan SSL bertauliah, sekatan akses log masuk, serta sandaran data berkala secara automatik. Jika berlaku masalah sistem atau serangan siber dalam tempoh penyelenggaraan aktif, pasukan teknikal kami akan memulihkan dan membersihkan laman web anda tanpa kos tambahan.",
+
+    "tentang.title": "Arista Maulana Lutfi",
+    "tentang.hero.title": "Tentang Kami",
+    "tentang.hero.desc": "Kenali dengan lebih dekat siapa kami, visi kami, dan perjalanan Jasaweb_Store sejak awal ditubuhkan.",
+    "tentang.judul": "MAKLUMAT MENGENAI LAMAN KAMI",
+    "tentang.subintro": "Selamat datang ke Jasaweb_Store. Kami sedia membantu mengubah idea kreatif anda menjadi produk sebenar bernilai tinggi melalui kepakaran kami dalam bidang teknologi, permainan, dan reka bentuk visual.",
+
+    "tentang.profil.title": "Profil Laman Web Kami",
+    "tentang.profil.desc": "Kami menyediakan semua perkhidmatan digital berasaskan teknologi, bermula dari pembinaan laman web daripada idea pelanggan, permintaan pembangunan permainan yang ringkas, reka bentuk grafik yang menarik, serta penyediaan penjenamaan.",
+
+    "tentang.visimisi.title": "Visi & Misi",
+    "tentang.visi.title": "Visi",
+    "tentang.visi.desc": "\"Menjadi agensi penyelesaian digital terkehadapan yang inovatif, dipercayai, dan mampu membantu sesiapa sahaja mencipta produk digital bertaraf global, sama ada laman web, permainan, mahupun reka bentuk kreatif.\"",
+    "tentang.misi.title": "Misi",
+    "tentang.misi.l1": "Menyediakan perkhidmatan pembinaan laman web yang responsif, pantas, selamat, dan mesra pengguna.",
+    "tentang.misi.l2": "Membangunkan permainan interaktif yang seronok dan berfungsi mengikut keperluan pelanggan.",
+    "tentang.misi.l3": "Menghadirkan reka bentuk grafik serta strategi penjenamaan visual yang menarik untuk meningkatkan nilai jualan perniagaan pelanggan.",
+
+    "tentang.latar.title": "Latar Belakang",
+    "tentang.latar.p1": "Platform ini pada asalnya dimulakan bersama sebagai langkah kreatif untuk memanfaatkan masa lapang kami dengan aktiviti yang jauh lebih produktif dan berfaedah. Bermula daripada perbincangan ringkas di sela-sela kesibukan, kami melihat peluang besar untuk menyalurkan minat dan kepakaran bersama dalam bidang teknologi ke dalam sebuah projek sebenar yang tersusun.",
+    "tentang.latar.p2": "Daripada yang asalnya hanya sekadar mengisi masa lapang, idea tersebut perlahan-lahan berubah menjadi komitmen serius dan fokus jangka panjang. Kini, kami mendedikasikan platform agensi digital ini untuk menghadirkan pelbagai penyelesaian pembangunan web yang kukuh, integrasi sistem yang optimum, serta reka bentuk visual kreatif yang membantu pendigitalan dan meningkatkan nilai jualan setiap projek mahupun perniagaan pelanggan kami.",
+
+    "tentang.layananditawarkan.title": "Perkhidmatan Yang Ditawarkan",
+    "tentang.layanan.l1.title": "E-Katalog Lengkap:",
+    "tentang.layanan.l1.desc": "Paparan portfolio digital yang memaparkan templat laman web sedia guna, demo permainan interaktif, dan aset reka bentuk grafik terbaik hasil kerja pasukan kami untuk memudahkan anda memilih keperluan perniagaan.",
+    "tentang.layanan.l2.title": "Keahlian Digital:",
+    "tentang.layanan.l2.desc": "Sistem pendaftaran akaun pelanggan yang memudahkan pemantauan kemajuan projek, akses semakan, serta mendapatkan promosi khas perkhidmatan digital kami.",
+    "tentang.layanan.l3.title": "Pengurusan Perkhidmatan:",
+    "tentang.layanan.l3.m1": "1) Perkhidmatan Pembinaan Web Profesional",
+    "tentang.layanan.l3.m2": "2) Perkhidmatan Pembangunan Permainan",
+    "tentang.layanan.l3.m3": "3) Perkhidmatan Reka Bentuk Grafik Dan Penjenamaan",
+
+    "tentang.tech.title": "Teknologi Yang Kami Gunakan",
+    "tentang.tech.desc": "Kami memanfaatkan ekosistem perisian dan bahasa pengaturcaraan moden untuk memastikan kualiti produk terbaik:",
+    "tentang.tech1.title": "Pembangunan Web",
+    "tentang.tech1.desc": "HTML, CSS, JavaScript, PHP, & MySQL",
+    "tentang.tech2.title": "Pembangunan Permainan",
+    "tentang.tech2.desc": "Construct, Unity, & Enjin Permainan Moden",
+    "tentang.tech3.title": "UI/UX & Penjenamaan",
+    "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
+
+    "tentang.portfolio.title": "Portfolio Kami",
+    "tentang.portfolio.desc": "Beberapa hasil kerja terbaik yang telah dibina oleh pasukan pembangun kami:",
+    "tentang.portfolio1.title": "Platform E-Commerce",
+    "tentang.portfolio1.desc": "Laman web kedai dalam talian responsif yang dilengkapi sistem troli beli-belah automatik.",
+    "tentang.portfolio2.title": "Sistem Perpustakaan Digital",
+    "tentang.portfolio2.desc": "Aplikasi pengurusan buku berasaskan web lengkap dengan sistem pangkalan data pendaftaran ahli.",
+    "tentang.portfolio3.title": "Mini-Game Arcade 2D",
+    "tentang.portfolio3.desc": "Permainan kasual interaktif berasaskan HTML5/Construct yang ringan, responsif, dan ketagihan.",
+
+    "tentang.prinsip.title": "Prinsip & Nilai Kami",
+    "tentang.prinsip.desc": "Asas utama yang kami pegang teguh dalam menyelesaikan setiap projek pelanggan:",
+    "tentang.prinsip1.title": "Inovatif & Kreatif",
+    "tentang.prinsip1.desc": "Sentiasa menghadirkan idea segar dan reka bentuk unik supaya produk digital anda tampil berbeza daripada pesaing.",
+    "tentang.prinsip2.title": "Integriti & Kepercayaan",
+    "tentang.prinsip2.desc": "Membina ketelusan kerja, menjaga keselamatan data, serta komited penuh menyelesaikan projek tepat pada masanya.",
+    "tentang.prinsip3.title": "Kualiti Optimum",
+    "tentang.prinsip3.desc": "Memastikan setiap baris kod pengaturcaraan bersih, responsif pada telefon, serta mempunyai kelajuan akses yang tinggi.",
+
+    "tentang.tim.title": "Pasukan Pembangun",
+    "tentang.tim.desc": "Aplikasi ini dibina dan dibangunkan dengan dedikasi penuh oleh bakat muda berbakat:",
+    "tentang.tim1.role": "Ketua Pembangun Web",
+    "tentang.tim2.role": "Penyedia, Pembantu, Perkhidmatan Web",
+    "tentang.tim3.role": "Pengurusan Hubungan Keahlian",
+    "tentang.tim4.role": "Pereka UI/UX",
+
+    "tentang.timeline.title": "Perkara Yang Akan Kami Lakukan",
+    "tentang.timeline1.title": "Awal",
+    "tentang.timeline1.desc": "Permulaan pembinaan laman web Jasaweb_Store.",
+    "tentang.timeline2.title": "Aktiviti",
+    "tentang.timeline2.desc": "Membangunkan asas aplikasi, pangkalan data tersuai, dan aset UI/UX.",
+    "tentang.timeline3.title": "2026",
+    "tentang.timeline3.desc": "Melancarkan secara rasmi platform web \"Jasaweb_Store\" dengan ciri E-Katalog.",
+    "tentang.timeline4.title": "Akhir 2026",
+    "tentang.timeline4.desc": "Sasaran menyiapkan 10+ projek web dan reka bentuk penjenamaan untuk PKS tempatan.",
+    "tentang.timeline5.title": "Matlamat",
+    "tentang.timeline5.desc": "Menawarkan konsultasi percuma sebelum membeli perkhidmatan kami.",
+    "tentang.timeline6.title": "Sasaran Masa Depan",
+    "tentang.timeline6.desc": "Menjadi agensi digital berbadan hukum yang dipercayai oleh syarikat berskala nasional.",
+
+    "tentang.hubungi.title": "Hubungi Kami"
+  }
+};
+
+const langMeta = {
+  id: { flag: "🇮🇩", label: "Indonesia" },
+  en: { flag: "🇬🇧", label: "English" },
+  ms: { flag: "🇲🇾", label: "Malaysia" }
+};
+
+/* ---------- 2. LOGIC BAHASA ---------- */
+function applyLanguage(lang) {
+  const dict = translations[lang] || translations.id;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] === undefined) return;
+    if (el.hasAttribute('data-i18n-html')) {
+      el.innerHTML = dict[key];
+    } else {
+      el.textContent = dict[key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+  });
+
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.getAttribute('data-i18n-title');
+    if (dict[key] !== undefined) el.setAttribute('title', dict[key]);
+  });
+
+  const pageTitleKey = document.documentElement.getAttribute('data-i18n-page-title');
+  if (pageTitleKey && dict[pageTitleKey]) {
+    document.title = dict[pageTitleKey];
+  }
+
+  document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : (lang === 'ms' ? 'ms' : 'id'));
+  localStorage.setItem('jw-lang', lang);
+
+  const flagEl = document.getElementById('lang-current-flag');
+  const labelEl = document.getElementById('lang-current-label');
+  if (flagEl) flagEl.textContent = langMeta[lang].flag;
+  if (labelEl) labelEl.textContent = langMeta[lang].label;
+
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+
+(function initLangSwitcher() {
+  const switcher = document.getElementById('lang-switcher');
+  const currentBtn = document.getElementById('lang-current-btn');
+  if (!switcher || !currentBtn) return;
+
+  currentBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    switcher.classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => switcher.classList.remove('open'));
+
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      applyLanguage(lang);
+      switcher.classList.remove('open');
+    });
+  });
+
+  const savedLang = localStorage.getItem('jw-lang') || 'id';
+  applyLanguage(savedLang);
+})();
