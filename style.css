@@ -259,6 +259,7 @@
 body {
   background-color: #F4EEFF; 
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar {
