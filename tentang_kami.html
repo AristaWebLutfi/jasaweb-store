@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - Jasaweb_Store</title>
-
+ 
     <!-- SEO -->
     <meta name="description" content="Kenali tim di balik Jasaweb_Store, agensi digital rintisan dari SMKN 1 Panji, Situbondo.">
-
+ 
     <!-- Open Graph / Facebook, WhatsApp, dll -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Jasaweb_Store">
@@ -19,7 +19,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://aristaweblutfi.github.io/jasaweb-store/tentang_kami.html">
     <meta property="og:locale" content="id_ID">
-
+ 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tentang Kami - Jasaweb_Store">
@@ -37,7 +37,7 @@
     </script>
 </head>
 <body>
-
+ 
     <!-- Loading Animation -->
     <div id="page-loader">
         <div class="loader-logo-wrap">
@@ -68,7 +68,7 @@
             <img src="img/logo_jasaweb.svg" alt="Logo" class="brand-img">
             <span class="brand-title">Jasaweb_Store</span>
         </div>
-
+ 
         <!-- Baris Bawah: Menu Navigasi yang Bisa Dipencet -->
         <div class="nav-menu">
             <div class="nav-menu-container">
@@ -77,12 +77,16 @@
                     <div class="house-roof"></div>
                     <div class="house-body"></div>
                 </a>
-                
+                <button class="nav-toggle-btn" id="nav-toggle-btn" type="button" aria-label="Buka menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-links-wrap" id="nav-links-wrap">
+
                 <!-- Link Menu Navigasi -->
                 <a href="layanan.html" class="nav-link" data-i18n="nav.layanan">Layanan</a>
                 <a href="kontak.html" class="nav-link" data-i18n="nav.kontak">Kontak</a>
                 <a href="#" class="nav-link" data-i18n="nav.tentang">Tentang Kami</a>
-
+ 
                 <!-- Dark Mode Toggle + Pilihan Bahasa -->
                 <div class="nav-tools">
                     <button id="theme-toggle-btn" class="theme-toggle" type="button" aria-label="Ganti mode gelap/terang" title="Dark / Light Mode">
@@ -103,11 +107,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </nav>
-
-
+ 
+ 
     <!-- Hero Tentang Kami -->
     <section class="hero hero-tentang">
         <div class="hero-content">
@@ -115,14 +120,14 @@
             <p data-i18n="tentang.hero.desc">Kenali lebih dekat siapa kami, visi kami, dan perjalanan Jasaweb_Store dari awal dirintis.</p>
         </div>
     </section>
-
+ 
     <main class="container-tentang">
         
         <h2 class="judul-tengah" data-i18n="tentang.judul">INFORMASI TENTANG SITUS SAYA</h2>
         <p class="sub-intro" data-i18n="tentang.subintro">Selamat datang di Jasaweb_Store. Kami siap membantu mentransformasikan ide-ide kreatif Anda menjadi produk nyata bernilai tinggi melalui keahlian kami di bidang teknologi, game, dan desain visual.</p>
         
         <hr class="pembatas">
-
+ 
         <!-- 1. Profil Singkat -->
         <section class="seksi-tentang">
             <h2 data-i18n="tentang.profil.title">Profil Website Kami</h2>
@@ -132,7 +137,7 @@
                
             </p>
         </section>
-
+ 
         <!-- 2. Visi & Misi -->
         <section class="seksi-tentang">
             <h2 data-i18n="tentang.visimisi.title">Visi & Misi</h2>
@@ -146,19 +151,19 @@
                 <li data-i18n="tentang.misi.l3">Menghadirkan desain grafis serta strategi branding visual yang memukau untuk menaikkan nilai jual bisnis klien.</li>
             </ul>
         </section>
-
+ 
         <!-- 3. Latar Belakang -->
         <section class="seksi-tentang">
             <h2 data-i18n="tentang.latar.title">Latar Belakang</h2>
            <p class="teks-latar" data-i18n="tentang.latar.p1">
                 Platform ini awalnya dirintis bersama sebagai sebuah langkah kreatif untuk memanfaatkan waktu luang kami dengan kegiatan yang jauh lebih produktif dan bermanfaat. Berawal dari diskusi ringan di sela-sela kesibukan, kami melihat adanya peluang besar untuk menyalurkan minat dan keahlian bersama di bidang teknologi ke dalam sebuah proyek nyata yang terstruktur.
            </p>
-
+ 
             <p class="teks-latar" data-i18n="tentang.latar.p2">
                 Dari yang semula hanya sekadar mengisi waktu kosong, ide tersebut perlahan bertransformasi menjadi sebuah komitmen serius dan fokus jangka panjang. Kini, kami mendedikasikan platform agensi digital ini untuk menghadirkan berbagai solusi pengembangan web yang kokoh, integrasi sistem yang optimal, serta desain visual kreatif yang mampu membantu digitalisasi dan meningkatkan nilai jual dari setiap proyek maupun bisnis klien kami.
             </p>
         </section>
-
+ 
         <!-- 4. Layanan -->
         <section class="seksi-tentang">
             <h2 data-i18n="tentang.layananditawarkan.title">Layanan Yang Ditawarkan</h2>
@@ -171,7 +176,7 @@
                 </strong> <p data-i18n="tentang.layanan.l3.m3"> 3) Jasa Desain Grafis Dan Branding</p></li>
             </ul>
         </section>
-
+ 
                 <!-- 4.5 Teknologi Yang Digunakan -->
                 <section class="seksi-tentang">
                     <h2 data-i18n="tentang.tech.title">Teknologi Yang Kami Gunakan</h2>
@@ -184,14 +189,14 @@
                             <h3 data-i18n="tentang.tech1.title">Web Development</h3>
                             <p data-i18n="tentang.tech1.desc">HTML, CSS, JavaScript, PHP, & MySQL</p>
                         </div>
-
+ 
                         <!-- Kolom Game -->
                         <div class="kartu-tech">
                             <div class="ikon-tech"><i class="fa-solid fa-gamepad"></i></div>
                             <h3 data-i18n="tentang.tech2.title">Game Development</h3>
                             <p data-i18n="tentang.tech2.desc">Construct, Unity, & Game Engine Modern</p>
                         </div>
-
+ 
                         <!-- Kolom Design -->
                         <div class="kartu-tech">
                             <div class="ikon-tech"><i class="fa-solid fa-bezier-curve"></i></div>
@@ -200,9 +205,9 @@
                         </div>
                     </div>
                 </section>
-
-
-
+ 
+ 
+ 
                     <section class="seksi-tentang">
                             <h2 data-i18n="tentang.portfolio.title">Portofolio Kami</h2>
                             <p class="sub-intro" style="text-align: left; padding: 0; margin-bottom: 20px;" data-i18n="tentang.portfolio.desc">
@@ -215,13 +220,13 @@
                                     <h3 data-i18n="tentang.portfolio1.title">E-Commerce Platform</h3>
                                     <p data-i18n="tentang.portfolio1.desc">Website toko online responsif yang dilengkapi sistem keranjang belanja otomatis.</p>
                                 </div>
-
+ 
                                     <div class="kartu-tech">
                                         <div class="ikon-tech"><i class="fa-solid fa-book-bookmark"></i></div>
                                         <h3 data-i18n="tentang.portfolio2.title">Sistem Perpustakaan Digital</h3>
                                         <p data-i18n="tentang.portfolio2.desc">Aplikasi manajemen buku berbasis web lengkap dengan sistem database pendaftaran anggota.</p>
                                     </div>
-
+ 
                                 <div class="kartu-tech">
                                     <div class="ikon-tech"><i class="fa-solid fa-gamepad"></i></div>
                                     <h3 data-i18n="tentang.portfolio3.title">Mini-Game Arcade 2D</h3>
@@ -229,54 +234,150 @@
                                 </div>
                             </div>
                     </section>
-
+ 
                      <section class="seksi-tentang">
                         <h2 data-i18n="tentang.prinsip.title">Prinsip & Nilai Kami</h2>
                         <p class="sub-teknologi" data-i18n="tentang.prinsip.desc">Pondasi utama yang kami pegang teguh dalam menyelesaikan setiap proyek konsumen:</p> 
                             <div class="kontainer-tech">
                                     <div class="kartu-tech">
-                                        <div class="ikon-tech" style="color: #424874;"><i class="fa-solid fa-lightbulb"></i></div>
+                                        <div class="ikon-tech"><i class="fa-solid fa-lightbulb"></i></div>
                                         <h3 data-i18n="tentang.prinsip1.title">Inovatif & Kreatif</h3>
                                         <p data-i18n="tentang.prinsip1.desc">Selalu menghadirkan ide-ide segar dan desain unik agar produk digital Anda tampil beda dari kompetitor.</p>
                                     </div>
-
+ 
                                         <div class="kartu-tech">
-                                            <div class="ikon-tech" style="color: #424874;"><i class="fa-solid fa-shield-halved"></i></div>
+                                            <div class="ikon-tech"><i class="fa-solid fa-shield-halved"></i></div>
                                             <h3 data-i18n="tentang.prinsip2.title">Integritas & Kepercayaan</h3>
                                             <p data-i18n="tentang.prinsip2.desc">Membangun transparansi kerja, menjaga keamanan data, serta berkomitmen penuh menyelesaikan proyek tepat waktu.</p>
                                         </div>
-
+ 
                                     <div class="kartu-tech">
-                                        <div class="ikon-tech" style="color: #424874;"><i class="fa-solid fa-bolt"></i></div>
+                                        <div class="ikon-tech"><i class="fa-solid fa-bolt"></i></div>
                                         <h3 data-i18n="tentang.prinsip3.title">Kualitas Optimal</h3>
                                         <p data-i18n="tentang.prinsip3.desc">Memastikan setiap baris kode pemrograman bersih, responsif di HP, serta memiliki kecepatan akses yang tinggi.</p>
                                     </div>
                             </div>
                      </section>
-
-
-
+ 
+ 
+ 
         <!-- 5. Tim Pengembang -->
         <section class="seksi-tentang">
             <h2 data-i18n="tentang.tim.title">Tim Pengembang</h2>
             <p data-i18n="tentang.tim.desc">Aplikasi ini dibangun dan dikembangkan dengan dedikasi penuh oleh talenta muda berbakat:</p> 
-            <div class="kartu-developer">
-
-                   <h3>Arista Maulana Lutfi</h3>
-                   <p data-i18n="tentang.tim1.role">Lead Web Developer</p>
-
-                   <h3>Ahmad Fahri Sadid</h3>
-                   <p data-i18n="tentang.tim2.role">Penyedia, Pembantu, Jasa Web</p>
-
-                   <h3>Gatra Fandy Prastama</h3>
-                   <p data-i18n="tentang.tim3.role">Manajemen Kontak Keanggotaan</p>
-                   
-                   <h3>Muhammad Rizky Ramadhan</h3>
-                   <p data-i18n="tentang.tim4.role">UI/UX Designer</p>
-
+            <div class="tim-grid">
+ 
+                <button type="button" class="tim-member"
+                    data-name="Arista Maulana Lutfi"
+                    data-role="Lead Web Developer"
+                    data-org="Founder & Tim Inti Jasaweb_Store"
+                    data-motto="Website yang baik itu sederhana untuk dipakai, tapi kuat di baliknya.">
+                    <div class="tim-avatar"><span>AM</span></div>
+                    <h3>Arista Maulana Lutfi</h3>
+                    <p data-i18n="tentang.tim1.role">Lead Web Developer</p>
+                    <span class="tim-lihat">Lihat Profil <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+ 
+                <button type="button" class="tim-member"
+                    data-name="Ahmad Fahri Sadid"
+                    data-role="Penyedia, Pembantu, Jasa Web"
+                    data-org="Tim Operasional Jasaweb_Store"
+                    data-motto="Melayani dengan cepat dan tulus adalah bentuk hormat kepada waktu klien.">
+                    <div class="tim-avatar"><span>AF</span></div>
+                    <h3>Ahmad Fahri Sadid</h3>
+                    <p data-i18n="tentang.tim2.role">Penyedia, Pembantu, Jasa Web</p>
+                    <span class="tim-lihat">Lihat Profil <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+ 
+                <button type="button" class="tim-member"
+                    data-name="Gatra Fandy Prastama"
+                    data-role="Manajemen Kontak Keanggotaan"
+                    data-org="Tim Hubungan Klien Jasaweb_Store"
+                    data-motto="Komunikasi yang jelas adalah kunci utama kepercayaan klien.">
+                    <div class="tim-avatar"><span>GF</span></div>
+                    <h3>Gatra Fandy Prastama</h3>
+                    <p data-i18n="tentang.tim3.role">Manajemen Kontak Keanggotaan</p>
+                    <span class="tim-lihat">Lihat Profil <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+ 
+                <button type="button" class="tim-member"
+                    data-name="Muhammad Rizky Ramadhan"
+                    data-role="UI/UX Designer"
+                    data-org="Tim Kreatif & Desain Jasaweb_Store"
+                    data-motto="Desain terbaik adalah desain yang terasa alami saat digunakan.">
+                    <div class="tim-avatar"><span>MR</span></div>
+                    <h3>Muhammad Rizky Ramadhan</h3>
+                    <p data-i18n="tentang.tim4.role">UI/UX Designer</p>
+                    <span class="tim-lihat">Lihat Profil <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+ 
             </div>
        </section>
-
+ 
+        <!-- Modal Popup Profil Anggota Tim -->
+        <div class="tim-modal-overlay" id="tim-modal-overlay">
+            <div class="tim-modal-card">
+                <button type="button" class="tim-modal-close" id="tim-modal-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="tim-modal-avatar" id="tim-modal-avatar"><span id="tim-modal-avatar-text"></span></div>
+                <h3 class="tim-modal-name" id="tim-modal-name"></h3>
+                <p class="tim-modal-role" id="tim-modal-role"></p>
+                <span class="tim-modal-status" id="tim-modal-status"></span>
+                <div class="tim-modal-motto">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p id="tim-modal-motto"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+        (function () {
+            var overlay = document.getElementById('tim-modal-overlay');
+            var closeBtn = document.getElementById('tim-modal-close');
+            var elAvatar = document.getElementById('tim-modal-avatar-text');
+            var elName = document.getElementById('tim-modal-name');
+            var elRole = document.getElementById('tim-modal-role');
+            var elOrg = document.getElementById('tim-modal-status');
+            var elMotto = document.getElementById('tim-modal-motto');
+ 
+            function getInisial(nama) {
+                var kata = nama.trim().split(/\s+/);
+                var a = kata[0] ? kata[0][0] : '';
+                var b = kata[1] ? kata[1][0] : '';
+                return (a + b).toUpperCase();
+            }
+ 
+            function bukaModal(data) {
+                elAvatar.textContent = getInisial(data.name || '');
+                elName.textContent = data.name || '';
+                elRole.textContent = data.role || '';
+                elOrg.textContent = data.org || '';
+                elMotto.textContent = data.motto || '';
+                overlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+ 
+            function tutupModal() {
+                overlay.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+ 
+            document.querySelectorAll('.tim-member').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    bukaModal(btn.dataset);
+                });
+            });
+ 
+            closeBtn.addEventListener('click', tutupModal);
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) tutupModal();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') tutupModal();
+            });
+        })();
+        </script>
+ 
 <!-- Seksi Slider Perjalanan Perusahaan (Continuous Mulus) -->
 <section class="seksi-tentang">
     <h2 data-i18n="tentang.timeline.title">Hal Hal Yang Akan Kami Lakukan</h2>
@@ -325,12 +426,12 @@
            <div class="kartu-slide-mulus" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('img/RECTmedia.png');">
                 <div class="isi-slide"><h3 data-i18n="tentang.timeline6.title">Future Target</h3><p data-i18n="tentang.timeline6.desc">Akan menjadi agensi digital berbadan hukum yang dipercaya perusahaan nasional.</p></div>
              </div>
-
+ 
         </div>
     </div>
 </section>
-
-
+ 
+ 
                 <section class="seksi-tentang">
                     <h2 data-i18n="tentang.hubungi.title">Hubungi Kami</h2>
                     <p><img src="img/whatsaap.png" alt="Icon" class="icon-whatsaap"> Arista = +62 859-3654-6553 </p>
@@ -338,9 +439,9 @@
                     <p><img src="img/whatsaap.png" alt="Icon" class="icon-whatsaap"> Gatra = +62 838-3171-3537 </p>
                     <p><img src="img/whatsaap.png" alt="Icon" class="icon-whatsaap"> Rizky = +62 813-3616-0708</p>
                 </section>
-
+ 
     </main>
-
+ 
   <footer id="kontak">
             <div class="footer-container">
                 <div class="footer-box">
@@ -349,7 +450,7 @@
                         Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.
                     </p>
                 </div>
-
+ 
                 <div class="footer-box">
                     <h3 data-i18n="common.footer.bantuan">Bantuan</h3>
                     <ul class="footer-links">
@@ -357,7 +458,7 @@
                         <li><a href="https://wa.me/6285936546553" data-i18n="common.footer.cs">Customer Service: +62 859-3654-6553</a></li>
                     </ul>
                 </div>
-
+ 
                 <div class="footer-box">
                     <h3 data-i18n="common.footer.ikuti">Ikuti Kami</h3>
                     <div class="footer-socials">
@@ -367,12 +468,12 @@
                     </div>
                 </div>
             </div>
-
+ 
             <div class="disclaimer-box">
                 <i class="fa-solid fa-triangle-exclamation"></i>
                 <p><strong data-i18n="common.disclaimer">Peringatan Penting:</strong> <span data-i18n="common.disclaimer.text">Ini hanya semata website buatan anak pelajar, jadi jika ada kesalahan ini bukan website serius. Ini hanya website kami yang mau merintis ke dunia perbisnisan, jadi ini hanya semata-mata website biasa. Jika Anda minat, kemungkinan kami akan mengerjakan juga, namun yang jelas bahwa ini adalah TEMPLATE buat kami kedepannya. Terima kasih.</span></p>
             </div>
-
+ 
             <div class="footer-bottom">
                 <p data-i18n="common.copyright">&copy; 2026 Jasaweb_Store. Hak Cipta Dilindungi Undang-Undang.</p>
             </div>
@@ -396,19 +497,108 @@
                 <span data-i18n="chat.cta">Mulai Chat di WhatsApp</span>
             </a>
         </div>
-
+ 
         <button class="chat-bubble-btn" id="chat-bubble-btn" data-i18n-title="chat.bubble.tooltip" title="Butuh bantuan?">
             <i class="fa-solid fa-comment-dots chat-icon-open"></i>
             <i class="fa-solid fa-xmark chat-icon-close"></i>
             <span class="chat-ping"></span>
         </button>
     </div>
-
-    <script src="js/chat-widget.js"></script>
-
-
+ 
     <script>
+/* =========================================================
+   Jasaweb_Store — Live Chat Widget (sederhana)
+   Bubble mengambang -> klik -> panel popup -> tombol lanjut ke WhatsApp
+   ========================================================= */
 
+document.addEventListener('DOMContentLoaded', function () {
+    const widget = document.getElementById('chat-widget');
+    const bubbleBtn = document.getElementById('chat-bubble-btn');
+    const closeBtn = document.getElementById('chat-panel-close');
+
+    if (!widget || !bubbleBtn) return;
+
+    function openWidget() {
+        widget.classList.add('open');
+    }
+
+    function closeWidget() {
+        widget.classList.remove('open');
+    }
+
+    bubbleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        widget.classList.contains('open') ? closeWidget() : openWidget();
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeWidget();
+        });
+    }
+
+    // Klik di luar widget otomatis nutup panel
+    document.addEventListener('click', function (e) {
+        if (!widget.contains(e.target)) closeWidget();
+    });
+
+    // Cegah klik di dalam panel ikut nutup panel
+    const panel = document.getElementById('chat-panel');
+    if (panel) {
+        panel.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Kasih perhatian dikit ke pengunjung baru: bubble "mikir" pelan 4 detik setelah halaman kebuka
+    setTimeout(function () {
+        if (!widget.classList.contains('open')) {
+            bubbleBtn.classList.add('chat-attention');
+            setTimeout(function () {
+                bubbleBtn.classList.remove('chat-attention');
+            }, 1600);
+        }
+    }, 4000);
+});
+
+</script>
+
+<script>
+/* =========================================================
+   Jasaweb_Store — Hamburger Menu (mobile)
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const linksWrap = document.getElementById('nav-links-wrap');
+
+    if (!toggleBtn || !linksWrap) return;
+
+    toggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        linksWrap.classList.toggle('open');
+    });
+
+    // Otomatis nutup menu kalau salah satu link navigasi diklik
+    linksWrap.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            linksWrap.classList.remove('open');
+        });
+    });
+
+    // Klik di luar navbar otomatis nutup menu
+    document.addEventListener('click', function (e) {
+        if (!linksWrap.contains(e.target) && e.target !== toggleBtn && !toggleBtn.contains(e.target)) {
+            linksWrap.classList.remove('open');
+        }
+    });
+});
+</script>
+ 
+ 
+    <script>
+ 
 (function initThemeToggle() {
   var toggleBtn = document.getElementById('theme-toggle-btn');
   if (!toggleBtn) return;
@@ -423,7 +613,7 @@
    Jasaweb_Store — Fitur Multi Bahasa (Indonesia / English / Malaysia)
    File ini berdiri sendiri, khusus untuk urusan terjemahan.
    ========================================================= */
-
+ 
 /* ---------- 1. KAMUS TERJEMAHAN ---------- */
 const translations = {
   id: {
@@ -431,7 +621,7 @@ const translations = {
     "nav.layanan": "Layanan",
     "nav.kontak": "Kontak",
     "nav.tentang": "Tentang Kami",
-
+ 
     "common.footer.brand": "Jasaweb_Store",
     "common.footer.desc": "Kami menyediakan layanan profesional terbaik untuk membantu menyediakan platform digital dan website bisnis berkualitas tinggi, cepat, aman, serta konversif.",
     "common.footer.bantuan": "Bantuan",
@@ -446,7 +636,7 @@ const translations = {
     "chat.status": "🟢 Online sekarang",
     "chat.greeting": "Halo! 👋 Ada yang bisa kami bantu seputar layanan atau harga?",
     "chat.cta": "Mulai Chat di WhatsApp",
-
+ 
     "index.title": "Jasaweb_Store - Solusi Digital Terdepan",
     "index.slide1.title": "Website Profesional & Kredibel",
     "index.slide1.desc": "Dibangun dengan HTML, CSS, JavaScript, PHP, dan MySQL — cepat, aman, dan siap bersaing.",
@@ -455,10 +645,10 @@ const translations = {
     "index.slide3.title": "Optimasi SEO & Tracking Pengunjung",
     "index.slide3.desc": "Website Anda lebih mudah ditemukan di Google, sekaligus terpantau lewat Google Analytics.",
     "index.hero.cta": "Mulai Proyek Anda",
-
+ 
     "index.profile.title": "Profil Website Kami",
     "index.profile.desc": "\"Menjadi agensi solusi digital terdepan yang inovatif, tepercaya, dan mampu membantu siapa saja menciptakan produk digital berkualitas global, baik berupa website, game, maupun desain kreatif.\"",
-
+ 
     "index.services.title": "Layanan Yang Kami Ditawarkan",
     "index.services.web.title": "Web Development",
     "index.services.web.desc": "Pembuatan website profesional yang responsif, cepat, aman, dan ramah pengguna (user-friendly) menggunakan teknologi HTML, CSS, JS, PHP, & MySQL.",
@@ -466,45 +656,45 @@ const translations = {
     "index.services.game.desc": "Pengembangan game interaktif yang seru, fungsional, dan kustom sesuai kebutuhan konsumen berbasis Construct, Unity, & Game Engine Modern.",
     "index.services.design.title": "UI/UX & Branding",
     "index.services.design.desc": "Menghadirkan desain grafis memukau serta strategi branding visual lewat Figma, Photoshop, dan CorelDraw untuk menaikkan nilai jual bisnis Anda.",
-
+ 
     "index.harga.title": "Paket Harga",
     "index.harga.subtitle": "Semua paket sudah termasuk hosting, domain, dan maintenance dasar 1 tahun.",
     "index.harga.sekali": "Sekali bayar",
     "index.harga.btn": "Pilih Paket",
     "index.harga.badge": "Paling Diminati",
-
+ 
     "index.harga.landing.title": "Landing Page",
     "index.harga.landing.f1": "1 halaman utama",
     "index.harga.landing.f2": "Domain .com + hosting 1 tahun",
     "index.harga.landing.f3": "Desain responsif (mobile-friendly)",
     "index.harga.landing.f4": "Integrasi tombol WhatsApp",
     "index.harga.landing.f5": "Pengerjaan ±4 hari kerja",
-
+ 
     "index.harga.company.title": "Company Profile",
     "index.harga.company.f1": "Hingga 5 halaman (Beranda, Tentang, Layanan, dll)",
     "index.harga.company.f2": "Domain .com + hosting 1 tahun",
     "index.harga.company.f3": "SEO On-Page dasar",
     "index.harga.company.f4": "Google Analytics & Search Console",
     "index.harga.company.f5": "Pengerjaan ±7 hari kerja",
-
+ 
     "index.harga.toko.title": "Toko Online",
     "index.harga.toko.f1": "Semua fitur paket Company Profile",
     "index.harga.toko.f2": "Katalog produk & keranjang belanja",
     "index.harga.toko.f3": "Integrasi pembayaran & checkout WhatsApp",
     "index.harga.toko.f4": "Panel kelola produk sendiri",
     "index.harga.toko.f5": "Pengerjaan ±10 hari kerja",
-
+ 
     "index.harga.custom.title": "Custom Badan Usaha",
     "index.harga.custom.f1": "Semua fitur paket Toko Online",
     "index.harga.custom.f2": "Domain resmi .co.id",
     "index.harga.custom.f3": "Desain & fitur 100% custom",
     "index.harga.custom.f4": "Garansi keamanan anti-hack",
     "index.harga.custom.f5": "Konsultasi prioritas",
-
+ 
     "index.cta.title": "Punya Proyek Seru Yang Ingin Diwujudkan?",
     "index.cta.desc": "Tim talenta muda berbakat kami dari SMKN 1 Panji siap merealisasikannya bersama Anda.",
     "index.cta.btn": "Kenali Tim Kami",
-
+ 
     "kontak.title": "Kontak Kami - Jasaweb_Store",
     "kontak.hero.title": "Hubungi Kami",
     "kontak.hero.desc": "Ada pertanyaan atau mau mulai proyek? Kirim pesan atau datang langsung ke kantor kami.",
@@ -526,11 +716,11 @@ const translations = {
     "kontak.form.sending": "Mengirim...",
     "kontak.form.success": "✅ Pesan berhasil terkirim! Kami akan segera menghubungi Anda.",
     "kontak.form.fail": "❌ Gagal mengirim pesan. Silakan coba lagi atau hubungi kami via WhatsApp.",
-
+ 
     "layanan.title": "Layanan Kami - Jasaweb_Store",
     "layanan.hero.title": "Layanan Kami",
     "layanan.hero.desc": "Tiga bidang keahlian, satu tujuan: mengubah ide Anda menjadi produk digital yang siap pakai.",
-
+ 
     "layanan.web.eyebrow": "Web Development",
     "layanan.web.title": "Pembuatan Website Profesional",
     "layanan.web.desc": "Website yang responsif, cepat diakses, dan aman untuk berbagai kebutuhan bisnis maupun personal, dibangun dengan HTML, CSS, JavaScript, PHP, dan MySQL.",
@@ -538,7 +728,7 @@ const translations = {
     "layanan.web.l2": "Toko online (E-Commerce)",
     "layanan.web.l3": "Sistem manajemen konten (CMS)",
     "layanan.web.l4": "Optimasi kecepatan & SEO dasar",
-
+ 
     "layanan.game.eyebrow": "Game Development",
     "layanan.game.title": "Pengembangan Game Interaktif",
     "layanan.game.desc": "Game kasual hingga edukatif yang dirancang seru dan fungsional, dikembangkan menggunakan Construct dan Unity sesuai kebutuhan konsumen.",
@@ -546,7 +736,7 @@ const translations = {
     "layanan.game.l2": "Prototipe & mekanisme gameplay",
     "layanan.game.l3": "Desain karakter & aset visual",
     "layanan.game.l4": "Rilis ke Play Store / Web",
-
+ 
     "layanan.design.eyebrow": "UI/UX & Branding",
     "layanan.design.title": "Desain Grafis dan Branding",
     "layanan.design.desc": "Identitas visual yang memukau dan konsisten untuk menaikkan nilai jual bisnis Anda, dikerjakan lewat Figma, Adobe Photoshop, dan CorelDraw.",
@@ -554,7 +744,7 @@ const translations = {
     "layanan.design.l2": "Desain antarmuka (UI) aplikasi/website",
     "layanan.design.l3": "Materi promosi (poster, feed sosial media)",
     "layanan.design.l4": "Panduan penggunaan merek (brand guideline)",
-
+ 
     "layanan.alur.title": "Bagaimana Kami Bekerja",
     "layanan.alur1.title": "Konsultasi",
     "layanan.alur1.desc": "Diskusi kebutuhan, target, dan anggaran proyek Anda.",
@@ -564,11 +754,11 @@ const translations = {
     "layanan.alur3.desc": "Proses pembuatan produk sesuai rencana yang disepakati.",
     "layanan.alur4.title": "Revisi & Rilis",
     "layanan.alur4.desc": "Penyesuaian akhir lalu produk siap digunakan.",
-
+ 
     "layanan.cta.title": "Siap Wujudkan Proyek Anda?",
     "layanan.cta.desc": "Hubungi tim kami dan ceritakan kebutuhan digital Anda.",
     "layanan.cta.btn": "Hubungi Kami",
-
+ 
     "faq.title": "Pertanyaan yang Sering Ditanya - Jasaweb_Store",
     "faq.heading": "Pertanyaan yang sering ditanya",
     "faq.subtitle": "Seputar jasa pembuatan website company profile di Jasaweb_Store.",
@@ -588,16 +778,16 @@ const translations = {
     "faq.a7": "Jangan khawatir. Jika Anda belum memiliki materi tertulis, tim copywriting kami akan membantu merancang teks penawaran yang menarik berdasarkan profil bisnis Anda. Untuk kebutuhan foto, kami juga menyediakan aset gambar ilustrasi premium bebas hak cipta yang relevan dengan bidang industri Anda.",
     "faq.q8": "Bagaimana cara kerja garansi anti-hack-nya?",
     "faq.a8": "Kami menerapkan sistem keamanan berlapis meliputi pemasangan SSL bersertifikasi, pembatasan hak akses login, serta backup data berkala secara otomatis. Jika terjadi kendala sistem atau serangan siber dalam masa aktif maintenance, tim teknis kami akan memulihkan dan membersihkan website Anda tanpa biaya tambahan.",
-
+ 
     "tentang.title": "Arista Maulana Lutfi",
     "tentang.hero.title": "Tentang Kami",
     "tentang.hero.desc": "Kenali lebih dekat siapa kami, visi kami, dan perjalanan Jasaweb_Store dari awal dirintis.",
     "tentang.judul": "INFORMASI TENTANG SITUS SAYA",
     "tentang.subintro": "Selamat datang di Jasaweb_Store. Kami siap membantu mentransformasikan ide-ide kreatif Anda menjadi produk nyata bernilai tinggi melalui keahlian kami di bidang teknologi, game, dan desain visual.",
-
+ 
     "tentang.profil.title": "Profil Website Kami",
     "tentang.profil.desc": "Kami menyediakan semua layanan digital yang berbasis teknologi. dimulai dari pembuatan Website dari ide konsumen, Permintaan pembuatan game dengan simple, Desain Grafis yang sangat memukau untuk dilihat dan penyediaan Branding.",
-
+ 
     "tentang.visimisi.title": "Visi & Misi",
     "tentang.visi.title": "Visi",
     "tentang.visi.desc": "\"Menjadi agensi solusi digital terdepan yang inovatif, tepercaya, dan mampu membantu siapa saja menciptakan produk digital berkualitas global, baik berupa website, game, maupun desain kreatif.\"",
@@ -605,11 +795,11 @@ const translations = {
     "tentang.misi.l1": "Menyediakan layanan pembuatan website yang responsif, cepat, aman, dan ramah pengguna (user-friendly).",
     "tentang.misi.l2": "Mengembangkan game interaktif yang seru dan fungsional sesuai dengan kebutuhan konsumen.",
     "tentang.misi.l3": "Menghadirkan desain grafis serta strategi branding visual yang memukau untuk menaikkan nilai jual bisnis klien.",
-
+ 
     "tentang.latar.title": "Latar Belakang",
     "tentang.latar.p1": "Platform ini awalnya dirintis bersama sebagai sebuah langkah kreatif untuk memanfaatkan waktu luang kami dengan kegiatan yang jauh lebih produktif dan bermanfaat. Berawal dari diskusi ringan di sela-sela kesibukan, kami melihat adanya peluang besar untuk menyalurkan minat dan keahlian bersama di bidang teknologi ke dalam sebuah proyek nyata yang terstruktur.",
     "tentang.latar.p2": "Dari yang semula hanya sekadar mengisi waktu kosong, ide tersebut perlahan bertransformasi menjadi sebuah komitmen serius dan fokus jangka panjang. Kini, kami mendedikasikan platform agensi digital ini untuk menghadirkan berbagai solusi pengembangan web yang kokoh, integrasi sistem yang optimal, serta desain visual kreatif yang mampu membantu digitalisasi dan meningkatkan nilai jual dari setiap proyek maupun bisnis klien kami.",
-
+ 
     "tentang.layananditawarkan.title": "Layanan Yang Ditawarkan",
     "tentang.layanan.l1.title": "E-Katalog Lengkap:",
     "tentang.layanan.l1.desc": "Showcase portofolio digital yang memajang template website siap pakai, demo game interaktif, dan aset desain grafis terbaik karya tim kami untuk memudahkan Anda memilih kebutuhan bisnis.",
@@ -619,7 +809,7 @@ const translations = {
     "tentang.layanan.l3.m1": "1) Jasa Pembuatan Web Profesional",
     "tentang.layanan.l3.m2": "2) Jasa Pembuatan Game",
     "tentang.layanan.l3.m3": "3) Jasa Desain Grafis Dan Branding",
-
+ 
     "tentang.tech.title": "Teknologi Yang Kami Gunakan",
     "tentang.tech.desc": "Kami memanfaatkan ekosistem perangkat lunak dan bahasa pemrograman modern untuk memastikan kualitas produk terbaik:",
     "tentang.tech1.title": "Web Development",
@@ -628,7 +818,7 @@ const translations = {
     "tentang.tech2.desc": "Construct, Unity, & Game Engine Modern",
     "tentang.tech3.title": "UI/UX & Branding",
     "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
-
+ 
     "tentang.portfolio.title": "Portofolio Kami",
     "tentang.portfolio.desc": "Beberapa hasil karya terbaik yang telah dibangun oleh tim pengembang kami:",
     "tentang.portfolio1.title": "E-Commerce Platform",
@@ -637,7 +827,7 @@ const translations = {
     "tentang.portfolio2.desc": "Aplikasi manajemen buku berbasis web lengkap dengan sistem database pendaftaran anggota.",
     "tentang.portfolio3.title": "Mini-Game Arcade 2D",
     "tentang.portfolio3.desc": "Game kasual interaktif berbasis HTML5/Construct yang ringan, responsif, dan adiktif.",
-
+ 
     "tentang.prinsip.title": "Prinsip & Nilai Kami",
     "tentang.prinsip.desc": "Pondasi utama yang kami pegang teguh dalam menyelesaikan setiap proyek konsumen:",
     "tentang.prinsip1.title": "Inovatif & Kreatif",
@@ -646,14 +836,14 @@ const translations = {
     "tentang.prinsip2.desc": "Membangun transparansi kerja, menjaga keamanan data, serta berkomitmen penuh menyelesaikan proyek tepat waktu.",
     "tentang.prinsip3.title": "Kualitas Optimal",
     "tentang.prinsip3.desc": "Memastikan setiap baris kode pemrograman bersih, responsif di HP, serta memiliki kecepatan akses yang tinggi.",
-
+ 
     "tentang.tim.title": "Tim Pengembang",
     "tentang.tim.desc": "Aplikasi ini dibangun dan dikembangkan dengan dedikasi penuh oleh talenta muda berbakat:",
     "tentang.tim1.role": "Lead Web Developer",
     "tentang.tim2.role": "Penyedia, Pembantu, Jasa Web",
     "tentang.tim3.role": "Manajemen Kontak Keanggotaan",
     "tentang.tim4.role": "UI/UX Designer",
-
+ 
     "tentang.timeline.title": "Hal Hal Yang Akan Kami Lakukan",
     "tentang.timeline1.title": "Early",
     "tentang.timeline1.desc": "Awal pembuatan website Jasaweb_Store.",
@@ -667,16 +857,16 @@ const translations = {
     "tentang.timeline5.desc": "Memberikan konsultasi gratis sebelum membeli jasa kami.",
     "tentang.timeline6.title": "Future Target",
     "tentang.timeline6.desc": "Akan menjadi agensi digital berbadan hukum yang dipercaya perusahaan nasional.",
-
+ 
     "tentang.hubungi.title": "Hubungi Kami"
   },
-
+ 
   en: {
     "nav.beranda": "Home",
     "nav.layanan": "Services",
     "nav.kontak": "Contact",
     "nav.tentang": "About Us",
-
+ 
     "common.footer.brand": "Jasaweb_Store",
     "common.footer.desc": "We provide the best professional services to help deliver high-quality, fast, secure, and conversion-ready digital platforms and business websites.",
     "common.footer.bantuan": "Help",
@@ -691,7 +881,7 @@ const translations = {
     "chat.status": "🟢 Online now",
     "chat.greeting": "Hi! 👋 Need help with our services or pricing?",
     "chat.cta": "Start Chat on WhatsApp",
-
+ 
     "index.title": "Jasaweb_Store - Leading Digital Solutions",
     "index.slide1.title": "Professional & Credible Websites",
     "index.slide1.desc": "Built with HTML, CSS, JavaScript, PHP, and MySQL — fast, secure, and ready to compete.",
@@ -700,10 +890,10 @@ const translations = {
     "index.slide3.title": "SEO Optimization & Visitor Tracking",
     "index.slide3.desc": "Your website becomes easier to find on Google, while being monitored via Google Analytics.",
     "index.hero.cta": "Start Your Project",
-
+ 
     "index.profile.title": "Our Website Profile",
     "index.profile.desc": "\"To become a leading digital solutions agency that is innovative, trusted, and able to help anyone create globally-competitive digital products, whether websites, games, or creative design.\"",
-
+ 
     "index.services.title": "Services We Offer",
     "index.services.web.title": "Web Development",
     "index.services.web.desc": "Building professional websites that are responsive, fast, secure, and user-friendly using HTML, CSS, JS, PHP, & MySQL technology.",
@@ -711,45 +901,45 @@ const translations = {
     "index.services.game.desc": "Development of fun, functional, and custom interactive games tailored to client needs using Construct, Unity, & modern game engines.",
     "index.services.design.title": "UI/UX & Branding",
     "index.services.design.desc": "Delivering stunning graphic design and visual branding strategy through Figma, Photoshop, and CorelDraw to boost your business's market value.",
-
+ 
     "index.harga.title": "Pricing Packages",
     "index.harga.subtitle": "All packages already include hosting, domain, and 1 year of basic maintenance.",
     "index.harga.sekali": "One-time payment",
     "index.harga.btn": "Choose Package",
     "index.harga.badge": "Most Popular",
-
+ 
     "index.harga.landing.title": "Landing Page",
     "index.harga.landing.f1": "1 main page",
     "index.harga.landing.f2": ".com domain + 1 year hosting",
     "index.harga.landing.f3": "Responsive (mobile-friendly) design",
     "index.harga.landing.f4": "WhatsApp button integration",
     "index.harga.landing.f5": "±4 business days delivery",
-
+ 
     "index.harga.company.title": "Company Profile",
     "index.harga.company.f1": "Up to 5 pages (Home, About, Services, etc.)",
     "index.harga.company.f2": ".com domain + 1 year hosting",
     "index.harga.company.f3": "Basic On-Page SEO",
     "index.harga.company.f4": "Google Analytics & Search Console",
     "index.harga.company.f5": "±7 business days delivery",
-
+ 
     "index.harga.toko.title": "Online Store",
     "index.harga.toko.f1": "All Company Profile package features",
     "index.harga.toko.f2": "Product catalog & shopping cart",
     "index.harga.toko.f3": "Payment integration & WhatsApp checkout",
     "index.harga.toko.f4": "Self-managed product panel",
     "index.harga.toko.f5": "±10 business days delivery",
-
+ 
     "index.harga.custom.title": "Custom Business Entity",
     "index.harga.custom.f1": "All Online Store package features",
     "index.harga.custom.f2": "Official .co.id domain",
     "index.harga.custom.f3": "100% custom design & features",
     "index.harga.custom.f4": "Anti-hack security guarantee",
     "index.harga.custom.f5": "Priority consultation",
-
+ 
     "index.cta.title": "Have An Exciting Project To Bring To Life?",
     "index.cta.desc": "Our talented young team from SMKN 1 Panji is ready to make it happen with you.",
     "index.cta.btn": "Meet Our Team",
-
+ 
     "kontak.title": "Contact Us - Jasaweb_Store",
     "kontak.hero.title": "Contact Us",
     "kontak.hero.desc": "Have a question or want to start a project? Send a message or visit our office directly.",
@@ -771,11 +961,11 @@ const translations = {
     "kontak.form.sending": "Sending...",
     "kontak.form.success": "✅ Message sent successfully! We'll get back to you soon.",
     "kontak.form.fail": "❌ Failed to send message. Please try again or contact us via WhatsApp.",
-
+ 
     "layanan.title": "Our Services - Jasaweb_Store",
     "layanan.hero.title": "Our Services",
     "layanan.hero.desc": "Three areas of expertise, one goal: turning your ideas into a ready-to-use digital product.",
-
+ 
     "layanan.web.eyebrow": "Web Development",
     "layanan.web.title": "Professional Website Development",
     "layanan.web.desc": "Responsive, fast, and secure websites for a variety of business and personal needs, built with HTML, CSS, JavaScript, PHP, and MySQL.",
@@ -783,7 +973,7 @@ const translations = {
     "layanan.web.l2": "Online store (E-Commerce)",
     "layanan.web.l3": "Content management system (CMS)",
     "layanan.web.l4": "Speed optimization & basic SEO",
-
+ 
     "layanan.game.eyebrow": "Game Development",
     "layanan.game.title": "Interactive Game Development",
     "layanan.game.desc": "Casual to educational games designed to be fun and functional, built using Construct and Unity based on client needs.",
@@ -791,7 +981,7 @@ const translations = {
     "layanan.game.l2": "Prototypes & gameplay mechanics",
     "layanan.game.l3": "Character design & visual assets",
     "layanan.game.l4": "Release to Play Store / Web",
-
+ 
     "layanan.design.eyebrow": "UI/UX & Branding",
     "layanan.design.title": "Graphic Design and Branding",
     "layanan.design.desc": "Stunning, consistent visual identity to boost your business's market value, crafted with Figma, Adobe Photoshop, and CorelDraw.",
@@ -799,7 +989,7 @@ const translations = {
     "layanan.design.l2": "App/website interface (UI) design",
     "layanan.design.l3": "Promotional materials (posters, social media feeds)",
     "layanan.design.l4": "Brand usage guidelines",
-
+ 
     "layanan.alur.title": "How We Work",
     "layanan.alur1.title": "Consultation",
     "layanan.alur1.desc": "Discussing your project's needs, goals, and budget.",
@@ -809,11 +999,11 @@ const translations = {
     "layanan.alur3.desc": "Building the product according to the agreed plan.",
     "layanan.alur4.title": "Revision & Launch",
     "layanan.alur4.desc": "Final adjustments, then the product is ready to use.",
-
+ 
     "layanan.cta.title": "Ready To Bring Your Project To Life?",
     "layanan.cta.desc": "Contact our team and tell us about your digital needs.",
     "layanan.cta.btn": "Contact Us",
-
+ 
     "faq.title": "Frequently Asked Questions - Jasaweb_Store",
     "faq.heading": "Frequently Asked Questions",
     "faq.subtitle": "About our company profile website development service at Jasaweb_Store.",
@@ -833,16 +1023,16 @@ const translations = {
     "faq.a7": "No worries. If you don't have written material yet, our copywriting team will help craft engaging copy based on your business profile. For photo needs, we also provide premium, royalty-free illustration assets relevant to your industry.",
     "faq.q8": "How does the anti-hack guarantee work?",
     "faq.a8": "We apply a layered security system including certified SSL installation, restricted login access, and automatic periodic data backups. If a system issue or cyberattack occurs during the active maintenance period, our technical team will restore and clean up your website at no extra cost.",
-
+ 
     "tentang.title": "Arista Maulana Lutfi",
     "tentang.hero.title": "About Us",
     "tentang.hero.desc": "Get to know who we are, our vision, and Jasaweb_Store's journey from the very start.",
     "tentang.judul": "INFORMATION ABOUT OUR SITE",
     "tentang.subintro": "Welcome to Jasaweb_Store. We're ready to help transform your creative ideas into high-value real products through our expertise in technology, games, and visual design.",
-
+ 
     "tentang.profil.title": "Our Website Profile",
     "tentang.profil.desc": "We provide all technology-based digital services, starting from building websites from client ideas, simple game development requests, stunning graphic design, and branding services.",
-
+ 
     "tentang.visimisi.title": "Vision & Mission",
     "tentang.visi.title": "Vision",
     "tentang.visi.desc": "\"To become a leading digital solutions agency that is innovative, trusted, and able to help anyone create globally-competitive digital products, whether websites, games, or creative design.\"",
@@ -850,11 +1040,11 @@ const translations = {
     "tentang.misi.l1": "Providing responsive, fast, secure, and user-friendly website development services.",
     "tentang.misi.l2": "Developing fun and functional interactive games according to client needs.",
     "tentang.misi.l3": "Delivering stunning graphic design and visual branding strategy to boost clients' business value.",
-
+ 
     "tentang.latar.title": "Background",
     "tentang.latar.p1": "This platform was originally started together as a creative way to use our free time on something far more productive and worthwhile. Beginning with a casual discussion between our busy schedules, we saw a great opportunity to channel our shared interest and skills in technology into a real, structured project.",
     "tentang.latar.p2": "What started as simply a way to fill spare time gradually turned into a serious commitment and long-term focus. Today, we dedicate this digital agency platform to delivering solid web development solutions, optimal system integration, and creative visual design that helps digitalize and boost the market value of every client project and business.",
-
+ 
     "tentang.layananditawarkan.title": "Services We Offer",
     "tentang.layanan.l1.title": "Complete E-Catalog:",
     "tentang.layanan.l1.desc": "A digital portfolio showcase featuring ready-to-use website templates, interactive game demos, and our team's best graphic design assets to make choosing your business needs easier.",
@@ -864,7 +1054,7 @@ const translations = {
     "tentang.layanan.l3.m1": "1) Professional Web Development Service",
     "tentang.layanan.l3.m2": "2) Game Development Service",
     "tentang.layanan.l3.m3": "3) Graphic Design and Branding Service",
-
+ 
     "tentang.tech.title": "Technologies We Use",
     "tentang.tech.desc": "We leverage a modern software and programming language ecosystem to ensure the best product quality:",
     "tentang.tech1.title": "Web Development",
@@ -873,7 +1063,7 @@ const translations = {
     "tentang.tech2.desc": "Construct, Unity, & Modern Game Engines",
     "tentang.tech3.title": "UI/UX & Branding",
     "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
-
+ 
     "tentang.portfolio.title": "Our Portfolio",
     "tentang.portfolio.desc": "Some of the best work built by our development team:",
     "tentang.portfolio1.title": "E-Commerce Platform",
@@ -882,7 +1072,7 @@ const translations = {
     "tentang.portfolio2.desc": "A web-based book management application complete with a member registration database system.",
     "tentang.portfolio3.title": "2D Mini-Game Arcade",
     "tentang.portfolio3.desc": "A lightweight, responsive, and addictive HTML5/Construct-based casual game.",
-
+ 
     "tentang.prinsip.title": "Our Principles & Values",
     "tentang.prinsip.desc": "The core foundations we firmly hold to in completing every client project:",
     "tentang.prinsip1.title": "Innovative & Creative",
@@ -891,14 +1081,14 @@ const translations = {
     "tentang.prinsip2.desc": "Building transparent workflows, safeguarding data security, and fully committing to completing projects on time.",
     "tentang.prinsip3.title": "Optimal Quality",
     "tentang.prinsip3.desc": "Ensuring every line of code is clean, mobile-responsive, and has high access speed.",
-
+ 
     "tentang.tim.title": "Development Team",
     "tentang.tim.desc": "This application was built and developed with full dedication by talented young talents:",
     "tentang.tim1.role": "Lead Web Developer",
     "tentang.tim2.role": "Web Service Provider & Support",
     "tentang.tim3.role": "Membership Contact Management",
     "tentang.tim4.role": "UI/UX Designer",
-
+ 
     "tentang.timeline.title": "What We Plan To Do",
     "tentang.timeline1.title": "Early",
     "tentang.timeline1.desc": "The beginning of Jasaweb_Store's website development.",
@@ -912,16 +1102,16 @@ const translations = {
     "tentang.timeline5.desc": "Offering a free consultation before purchasing our services.",
     "tentang.timeline6.title": "Future Target",
     "tentang.timeline6.desc": "Becoming a legally-registered digital agency trusted by national companies.",
-
+ 
     "tentang.hubungi.title": "Contact Us"
   },
-
+ 
   ms: {
     "nav.beranda": "Laman Utama",
     "nav.layanan": "Perkhidmatan",
     "nav.kontak": "Hubungi",
     "nav.tentang": "Tentang Kami",
-
+ 
     "common.footer.brand": "Jasaweb_Store",
     "common.footer.desc": "Kami menyediakan perkhidmatan profesional terbaik untuk membantu menyediakan platform digital dan laman web perniagaan berkualiti tinggi, pantas, selamat, serta berkesan.",
     "common.footer.bantuan": "Bantuan",
@@ -936,7 +1126,7 @@ const translations = {
     "chat.status": "🟢 Dalam talian sekarang",
     "chat.greeting": "Hai! 👋 Ada yang boleh kami bantu berkaitan perkhidmatan atau harga?",
     "chat.cta": "Mula Berbual di WhatsApp",
-
+ 
     "index.title": "Jasaweb_Store - Penyelesaian Digital Terkehadapan",
     "index.slide1.title": "Laman Web Profesional & Dipercayai",
     "index.slide1.desc": "Dibina menggunakan HTML, CSS, JavaScript, PHP, dan MySQL — pantas, selamat, dan bersedia untuk bersaing.",
@@ -945,10 +1135,10 @@ const translations = {
     "index.slide3.title": "Pengoptimuman SEO & Penjejakan Pelawat",
     "index.slide3.desc": "Laman web anda lebih mudah ditemui di Google, sambil dipantau melalui Google Analytics.",
     "index.hero.cta": "Mulakan Projek Anda",
-
+ 
     "index.profile.title": "Profil Laman Web Kami",
     "index.profile.desc": "\"Menjadi agensi penyelesaian digital terkehadapan yang inovatif, dipercayai, dan mampu membantu sesiapa sahaja mencipta produk digital bertaraf global, sama ada laman web, permainan, mahupun reka bentuk kreatif.\"",
-
+ 
     "index.services.title": "Perkhidmatan Yang Kami Tawarkan",
     "index.services.web.title": "Pembangunan Web",
     "index.services.web.desc": "Pembinaan laman web profesional yang responsif, pantas, selamat, dan mesra pengguna menggunakan teknologi HTML, CSS, JS, PHP, & MySQL.",
@@ -956,45 +1146,45 @@ const translations = {
     "index.services.game.desc": "Pembangunan permainan interaktif yang seronok, berfungsi, dan disesuaikan mengikut keperluan pelanggan berasaskan Construct, Unity, & Enjin Permainan Moden.",
     "index.services.design.title": "UI/UX & Penjenamaan",
     "index.services.design.desc": "Menghadirkan reka bentuk grafik yang menarik serta strategi penjenamaan visual melalui Figma, Photoshop, dan CorelDraw untuk meningkatkan nilai jualan perniagaan anda.",
-
+ 
     "index.harga.title": "Pakej Harga",
     "index.harga.subtitle": "Semua pakej sudah termasuk hosting, domain, dan penyelenggaraan asas selama 1 tahun.",
     "index.harga.sekali": "Bayaran sekali sahaja",
     "index.harga.btn": "Pilih Pakej",
     "index.harga.badge": "Paling Popular",
-
+ 
     "index.harga.landing.title": "Landing Page",
     "index.harga.landing.f1": "1 halaman utama",
     "index.harga.landing.f2": "Domain .com + hosting 1 tahun",
     "index.harga.landing.f3": "Reka bentuk responsif (mesra mudah alih)",
     "index.harga.landing.f4": "Integrasi butang WhatsApp",
     "index.harga.landing.f5": "Siap dalam ±4 hari bekerja",
-
+ 
     "index.harga.company.title": "Profil Syarikat",
     "index.harga.company.f1": "Sehingga 5 halaman (Utama, Tentang, Perkhidmatan, dll)",
     "index.harga.company.f2": "Domain .com + hosting 1 tahun",
     "index.harga.company.f3": "SEO On-Page asas",
     "index.harga.company.f4": "Google Analytics & Search Console",
     "index.harga.company.f5": "Siap dalam ±7 hari bekerja",
-
+ 
     "index.harga.toko.title": "Kedai Dalam Talian",
     "index.harga.toko.f1": "Semua ciri pakej Profil Syarikat",
     "index.harga.toko.f2": "Katalog produk & troli beli-belah",
     "index.harga.toko.f3": "Integrasi pembayaran & checkout WhatsApp",
     "index.harga.toko.f4": "Panel pengurusan produk sendiri",
     "index.harga.toko.f5": "Siap dalam ±10 hari bekerja",
-
+ 
     "index.harga.custom.title": "Tersuai Badan Perniagaan",
     "index.harga.custom.f1": "Semua ciri pakej Kedai Dalam Talian",
     "index.harga.custom.f2": "Domain rasmi .co.id",
     "index.harga.custom.f3": "Reka bentuk & ciri 100% tersuai",
     "index.harga.custom.f4": "Jaminan keselamatan anti-hack",
     "index.harga.custom.f5": "Konsultasi keutamaan",
-
+ 
     "index.cta.title": "Ada Projek Menarik Yang Ingin Direalisasikan?",
     "index.cta.desc": "Pasukan bertalenta muda kami dari SMKN 1 Panji sedia merealisasikannya bersama anda.",
     "index.cta.btn": "Kenali Pasukan Kami",
-
+ 
     "kontak.title": "Hubungi Kami - Jasaweb_Store",
     "kontak.hero.title": "Hubungi Kami",
     "kontak.hero.desc": "Ada pertanyaan atau mahu memulakan projek? Hantar mesej atau datang terus ke pejabat kami.",
@@ -1016,11 +1206,11 @@ const translations = {
     "kontak.form.sending": "Menghantar...",
     "kontak.form.success": "✅ Mesej berjaya dihantar! Kami akan segera menghubungi anda.",
     "kontak.form.fail": "❌ Gagal menghantar mesej. Sila cuba lagi atau hubungi kami melalui WhatsApp.",
-
+ 
     "layanan.title": "Perkhidmatan Kami - Jasaweb_Store",
     "layanan.hero.title": "Perkhidmatan Kami",
     "layanan.hero.desc": "Tiga bidang kepakaran, satu matlamat: mengubah idea anda menjadi produk digital yang sedia digunakan.",
-
+ 
     "layanan.web.eyebrow": "Pembangunan Web",
     "layanan.web.title": "Pembinaan Laman Web Profesional",
     "layanan.web.desc": "Laman web yang responsif, pantas diakses, dan selamat untuk pelbagai keperluan perniagaan mahupun peribadi, dibina menggunakan HTML, CSS, JavaScript, PHP, dan MySQL.",
@@ -1028,7 +1218,7 @@ const translations = {
     "layanan.web.l2": "Kedai dalam talian (E-Commerce)",
     "layanan.web.l3": "Sistem pengurusan kandungan (CMS)",
     "layanan.web.l4": "Pengoptimuman kelajuan & SEO asas",
-
+ 
     "layanan.game.eyebrow": "Pembangunan Permainan",
     "layanan.game.title": "Pembangunan Permainan Interaktif",
     "layanan.game.desc": "Permainan kasual hingga edukatif yang direka seronok dan berfungsi, dibangunkan menggunakan Construct dan Unity mengikut keperluan pelanggan.",
@@ -1036,7 +1226,7 @@ const translations = {
     "layanan.game.l2": "Prototaip & mekanisme permainan",
     "layanan.game.l3": "Reka bentuk watak & aset visual",
     "layanan.game.l4": "Pelancaran ke Play Store / Web",
-
+ 
     "layanan.design.eyebrow": "UI/UX & Penjenamaan",
     "layanan.design.title": "Reka Bentuk Grafik dan Penjenamaan",
     "layanan.design.desc": "Identiti visual yang menarik dan konsisten untuk meningkatkan nilai jualan perniagaan anda, dihasilkan melalui Figma, Adobe Photoshop, dan CorelDraw.",
@@ -1044,7 +1234,7 @@ const translations = {
     "layanan.design.l2": "Reka bentuk antara muka (UI) aplikasi/laman web",
     "layanan.design.l3": "Bahan promosi (poster, feed media sosial)",
     "layanan.design.l4": "Panduan penggunaan jenama",
-
+ 
     "layanan.alur.title": "Cara Kami Bekerja",
     "layanan.alur1.title": "Konsultasi",
     "layanan.alur1.desc": "Perbincangan keperluan, sasaran, dan bajet projek anda.",
@@ -1054,11 +1244,11 @@ const translations = {
     "layanan.alur3.desc": "Proses pembinaan produk mengikut pelan yang dipersetujui.",
     "layanan.alur4.title": "Semakan & Pelancaran",
     "layanan.alur4.desc": "Penyesuaian akhir sebelum produk sedia digunakan.",
-
+ 
     "layanan.cta.title": "Bersedia Merealisasikan Projek Anda?",
     "layanan.cta.desc": "Hubungi pasukan kami dan ceritakan keperluan digital anda.",
     "layanan.cta.btn": "Hubungi Kami",
-
+ 
     "faq.title": "Soalan Lazim - Jasaweb_Store",
     "faq.heading": "Soalan yang kerap ditanya",
     "faq.subtitle": "Berkaitan perkhidmatan pembinaan laman web profil syarikat di Jasaweb_Store.",
@@ -1078,16 +1268,16 @@ const translations = {
     "faq.a7": "Jangan risau. Jika anda belum mempunyai bahan bertulis, pasukan penulisan kandungan kami akan membantu mereka bentuk teks tawaran yang menarik berdasarkan profil perniagaan anda. Untuk keperluan foto, kami turut menyediakan aset ilustrasi premium bebas royalti yang relevan dengan bidang industri anda.",
     "faq.q8": "Bagaimana cara jaminan anti-hack berfungsi?",
     "faq.a8": "Kami menerapkan sistem keselamatan berlapis termasuk pemasangan SSL bertauliah, sekatan akses log masuk, serta sandaran data berkala secara automatik. Jika berlaku masalah sistem atau serangan siber dalam tempoh penyelenggaraan aktif, pasukan teknikal kami akan memulihkan dan membersihkan laman web anda tanpa kos tambahan.",
-
+ 
     "tentang.title": "Arista Maulana Lutfi",
     "tentang.hero.title": "Tentang Kami",
     "tentang.hero.desc": "Kenali dengan lebih dekat siapa kami, visi kami, dan perjalanan Jasaweb_Store sejak awal ditubuhkan.",
     "tentang.judul": "MAKLUMAT MENGENAI LAMAN KAMI",
     "tentang.subintro": "Selamat datang ke Jasaweb_Store. Kami sedia membantu mengubah idea kreatif anda menjadi produk sebenar bernilai tinggi melalui kepakaran kami dalam bidang teknologi, permainan, dan reka bentuk visual.",
-
+ 
     "tentang.profil.title": "Profil Laman Web Kami",
     "tentang.profil.desc": "Kami menyediakan semua perkhidmatan digital berasaskan teknologi, bermula dari pembinaan laman web daripada idea pelanggan, permintaan pembangunan permainan yang ringkas, reka bentuk grafik yang menarik, serta penyediaan penjenamaan.",
-
+ 
     "tentang.visimisi.title": "Visi & Misi",
     "tentang.visi.title": "Visi",
     "tentang.visi.desc": "\"Menjadi agensi penyelesaian digital terkehadapan yang inovatif, dipercayai, dan mampu membantu sesiapa sahaja mencipta produk digital bertaraf global, sama ada laman web, permainan, mahupun reka bentuk kreatif.\"",
@@ -1095,11 +1285,11 @@ const translations = {
     "tentang.misi.l1": "Menyediakan perkhidmatan pembinaan laman web yang responsif, pantas, selamat, dan mesra pengguna.",
     "tentang.misi.l2": "Membangunkan permainan interaktif yang seronok dan berfungsi mengikut keperluan pelanggan.",
     "tentang.misi.l3": "Menghadirkan reka bentuk grafik serta strategi penjenamaan visual yang menarik untuk meningkatkan nilai jualan perniagaan pelanggan.",
-
+ 
     "tentang.latar.title": "Latar Belakang",
     "tentang.latar.p1": "Platform ini pada asalnya dimulakan bersama sebagai langkah kreatif untuk memanfaatkan masa lapang kami dengan aktiviti yang jauh lebih produktif dan berfaedah. Bermula daripada perbincangan ringkas di sela-sela kesibukan, kami melihat peluang besar untuk menyalurkan minat dan kepakaran bersama dalam bidang teknologi ke dalam sebuah projek sebenar yang tersusun.",
     "tentang.latar.p2": "Daripada yang asalnya hanya sekadar mengisi masa lapang, idea tersebut perlahan-lahan berubah menjadi komitmen serius dan fokus jangka panjang. Kini, kami mendedikasikan platform agensi digital ini untuk menghadirkan pelbagai penyelesaian pembangunan web yang kukuh, integrasi sistem yang optimum, serta reka bentuk visual kreatif yang membantu pendigitalan dan meningkatkan nilai jualan setiap projek mahupun perniagaan pelanggan kami.",
-
+ 
     "tentang.layananditawarkan.title": "Perkhidmatan Yang Ditawarkan",
     "tentang.layanan.l1.title": "E-Katalog Lengkap:",
     "tentang.layanan.l1.desc": "Paparan portfolio digital yang memaparkan templat laman web sedia guna, demo permainan interaktif, dan aset reka bentuk grafik terbaik hasil kerja pasukan kami untuk memudahkan anda memilih keperluan perniagaan.",
@@ -1109,7 +1299,7 @@ const translations = {
     "tentang.layanan.l3.m1": "1) Perkhidmatan Pembinaan Web Profesional",
     "tentang.layanan.l3.m2": "2) Perkhidmatan Pembangunan Permainan",
     "tentang.layanan.l3.m3": "3) Perkhidmatan Reka Bentuk Grafik Dan Penjenamaan",
-
+ 
     "tentang.tech.title": "Teknologi Yang Kami Gunakan",
     "tentang.tech.desc": "Kami memanfaatkan ekosistem perisian dan bahasa pengaturcaraan moden untuk memastikan kualiti produk terbaik:",
     "tentang.tech1.title": "Pembangunan Web",
@@ -1118,7 +1308,7 @@ const translations = {
     "tentang.tech2.desc": "Construct, Unity, & Enjin Permainan Moden",
     "tentang.tech3.title": "UI/UX & Penjenamaan",
     "tentang.tech3.desc": "Figma, Adobe Photoshop, & CorelDraw",
-
+ 
     "tentang.portfolio.title": "Portfolio Kami",
     "tentang.portfolio.desc": "Beberapa hasil kerja terbaik yang telah dibina oleh pasukan pembangun kami:",
     "tentang.portfolio1.title": "Platform E-Commerce",
@@ -1127,7 +1317,7 @@ const translations = {
     "tentang.portfolio2.desc": "Aplikasi pengurusan buku berasaskan web lengkap dengan sistem pangkalan data pendaftaran ahli.",
     "tentang.portfolio3.title": "Mini-Game Arcade 2D",
     "tentang.portfolio3.desc": "Permainan kasual interaktif berasaskan HTML5/Construct yang ringan, responsif, dan ketagihan.",
-
+ 
     "tentang.prinsip.title": "Prinsip & Nilai Kami",
     "tentang.prinsip.desc": "Asas utama yang kami pegang teguh dalam menyelesaikan setiap projek pelanggan:",
     "tentang.prinsip1.title": "Inovatif & Kreatif",
@@ -1136,14 +1326,14 @@ const translations = {
     "tentang.prinsip2.desc": "Membina ketelusan kerja, menjaga keselamatan data, serta komited penuh menyelesaikan projek tepat pada masanya.",
     "tentang.prinsip3.title": "Kualiti Optimum",
     "tentang.prinsip3.desc": "Memastikan setiap baris kod pengaturcaraan bersih, responsif pada telefon, serta mempunyai kelajuan akses yang tinggi.",
-
+ 
     "tentang.tim.title": "Pasukan Pembangun",
     "tentang.tim.desc": "Aplikasi ini dibina dan dibangunkan dengan dedikasi penuh oleh bakat muda berbakat:",
     "tentang.tim1.role": "Ketua Pembangun Web",
     "tentang.tim2.role": "Penyedia, Pembantu, Perkhidmatan Web",
     "tentang.tim3.role": "Pengurusan Hubungan Keahlian",
     "tentang.tim4.role": "Pereka UI/UX",
-
+ 
     "tentang.timeline.title": "Perkara Yang Akan Kami Lakukan",
     "tentang.timeline1.title": "Awal",
     "tentang.timeline1.desc": "Permulaan pembinaan laman web Jasaweb_Store.",
@@ -1157,21 +1347,21 @@ const translations = {
     "tentang.timeline5.desc": "Menawarkan konsultasi percuma sebelum membeli perkhidmatan kami.",
     "tentang.timeline6.title": "Sasaran Masa Depan",
     "tentang.timeline6.desc": "Menjadi agensi digital berbadan hukum yang dipercayai oleh syarikat berskala nasional.",
-
+ 
     "tentang.hubungi.title": "Hubungi Kami"
   }
 };
-
+ 
 const langMeta = {
   id: { flag: "🇮🇩", label: "Indonesia" },
   en: { flag: "🇬🇧", label: "English" },
   ms: { flag: "🇲🇾", label: "Malaysia" }
 };
-
+ 
 /* ---------- 2. LOGIC BAHASA ---------- */
 function applyLanguage(lang) {
   const dict = translations[lang] || translations.id;
-
+ 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key] === undefined) return;
@@ -1181,47 +1371,47 @@ function applyLanguage(lang) {
       el.textContent = dict[key];
     }
   });
-
+ 
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
   });
-
+ 
   document.querySelectorAll('[data-i18n-title]').forEach(el => {
     const key = el.getAttribute('data-i18n-title');
     if (dict[key] !== undefined) el.setAttribute('title', dict[key]);
   });
-
+ 
   const pageTitleKey = document.documentElement.getAttribute('data-i18n-page-title');
   if (pageTitleKey && dict[pageTitleKey]) {
     document.title = dict[pageTitleKey];
   }
-
+ 
   document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : (lang === 'ms' ? 'ms' : 'id'));
   localStorage.setItem('jw-lang', lang);
-
+ 
   const flagEl = document.getElementById('lang-current-flag');
   const labelEl = document.getElementById('lang-current-label');
   if (flagEl) flagEl.textContent = langMeta[lang].flag;
   if (labelEl) labelEl.textContent = langMeta[lang].label;
-
+ 
   document.querySelectorAll('.lang-option').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
 }
-
+ 
 (function initLangSwitcher() {
   const switcher = document.getElementById('lang-switcher');
   const currentBtn = document.getElementById('lang-current-btn');
   if (!switcher || !currentBtn) return;
-
+ 
   currentBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     switcher.classList.toggle('open');
   });
-
+ 
   document.addEventListener('click', () => switcher.classList.remove('open'));
-
+ 
   document.querySelectorAll('.lang-option').forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang');
@@ -1229,39 +1419,39 @@ function applyLanguage(lang) {
       switcher.classList.remove('open');
     });
   });
-
+ 
   const savedLang = localStorage.getItem('jw-lang') || 'id';
   applyLanguage(savedLang);
 })();
-
+ 
 </script>
     <script>
         document.getElementById("tahun-footer") && (document.getElementById("tahun-footer").textContent = new Date().getFullYear());
     </script>
-
+ 
         <script>
         const track = document.querySelector('.track-slider-mulus');
         let isDown = false;
         let startX;
         let scrollLeft;
-
+ 
         // Pas mouse ditekan (Klik dan Tahan)
         track.addEventListener('mousedown', (e) => {
             isDown = true;
             startX = e.pageX - track.offsetLeft;
             scrollLeft = track.scrollLeft;
         });
-
+ 
         // Pas mouse keluar dari area gambar
         track.addEventListener('mouseleave', () => {
             isDown = false;
         });
-
+ 
         // Pas klik mouse dilepas
         track.addEventListener('mouseup', () => {
             isDown = false;
         });
-
+ 
         // Pas mouse digerakkan (Proses geser ke kiri/kanan)
         track.addEventListener('mousemove', (e) => {
             if(!isDown) return; // Stop fungsi kalau mouse gak ditekan
@@ -1272,8 +1462,53 @@ function applyLanguage(lang) {
             track.scrollLeft = scrollLeft - walk;
         });
     </script>
+ 
+    <script>
+/* =========================================================
+   Jasaweb_Store — Scroll Reveal (fade-in saat discroll)
+   Aman dipakai tanpa JS: default elemen tetap kelihatan normal,
+   animasi cuma nyala kalau browser dukung IntersectionObserver.
+   ========================================================= */
 
-    <script src="js/scroll-reveal.js"></script>
+document.addEventListener('DOMContentLoaded', function () {
+    if (!('IntersectionObserver' in window)) return;
 
+    const selector = [
+        '.service-card',
+        '.harga-card',
+        '.layanan-item',
+        '.alur-step',
+        '.kartu-tech',
+        '.kartu-developer',
+        '.accordion-item',
+        '.info-item',
+        '.testimoni-card'
+    ].join(', ');
+
+    const targets = document.querySelectorAll(selector);
+    if (targets.length === 0) return;
+
+    targets.forEach(function (el, i) {
+        el.classList.add('reveal-init');
+        // Jeda kecil biar kartu sebaris gak muncul barengan kaku
+        el.style.transitionDelay = (i % 4) * 0.08 + 's';
+    });
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    targets.forEach(function (el) {
+        observer.observe(el);
+    });
+});
+
+</script>
+ 
 </body>
 </html>
