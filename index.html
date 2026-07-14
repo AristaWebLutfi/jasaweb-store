@@ -4,29 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasaweb_Store - Solusi Digital Terdepan</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Jasa pembuatan website, game, dan desain UI/UX profesional untuk UMKM dan bisnis Anda. Cepat, aman, dan terjangkau mulai dari Rp 953.930.">
-
-    <!-- Open Graph / Facebook, WhatsApp, dll -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Jasaweb_Store">
-    <meta property="og:title" content="Jasaweb_Store - Solusi Digital Terdepan">
-    <meta property="og:description" content="Jasa pembuatan website, game, dan desain UI/UX profesional untuk UMKM dan bisnis Anda. Cepat, aman, dan terjangkau mulai dari Rp 953.930.">
-    <meta property="og:image" content="https://aristaweblutfi.github.io/jasaweb-store/img/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://aristaweblutfi.github.io/jasaweb-store/index.html">
-    <meta property="og:locale" content="id_ID">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jasaweb_Store - Solusi Digital Terdepan">
-    <meta name="twitter:description" content="Jasa pembuatan website, game, dan desain UI/UX profesional untuk UMKM dan bisnis Anda. Cepat, aman, dan terjangkau mulai dari Rp 953.930.">
-    <meta name="twitter:image" content="https://aristaweblutfi.github.io/jasaweb-store/img/og-image.png">
     <!-- Menggunakan Font Awesome untuk Icon Teknologi -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
     <script>
         (function () {
             var saved = localStorage.getItem('jw-theme');
@@ -77,6 +58,10 @@
                     <div class="house-roof"></div>
                     <div class="house-body"></div>
                 </a>
+                <button class="nav-toggle-btn" id="nav-toggle-btn" type="button" aria-label="Buka menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-links-wrap" id="nav-links-wrap">
                 
                 <!-- Link Menu Navigasi -->
                 <a href="layanan.html" class="nav-link" data-i18n="nav.layanan">Layanan</a>
@@ -102,6 +87,7 @@
                             <button class="lang-option" data-lang="ms" type="button"><span class="flag-emoji">🇲🇾</span> Malaysia</button>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -180,52 +166,6 @@
                     <i class="fa-solid fa-palette"></i>
                     <h3 data-i18n="index.services.design.title">UI/UX & Branding</h3>
                     <p data-i18n="index.services.design.desc">Menghadirkan desain grafis memukau serta strategi branding visual lewat Figma, Photoshop, dan CorelDraw untuk menaikkan nilai jual bisnis Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimoni -->
-    <section class="testimoni">
-        <div class="container">
-            <center><h2 class="section-title" data-i18n="index.testimoni.title">Apa Kata Klien Kami</h2></center>
-            <p class="testimoni-subtitle" data-i18n="index.testimoni.subtitle">Cerita dari beberapa klien yang sudah mempercayakan proyek digital mereka kepada kami.</p>
-
-            <div class="testimoni-grid">
-                <div class="testimoni-card">
-                    <div class="testimoni-stars">★★★★★</div>
-                    <p class="testimoni-quote" data-i18n="index.testimoni.t1.quote">"Awalnya cuma mau bikin landing page sederhana buat toko kain saya, eh hasilnya jauh lebih rapi dari yang saya bayangkan. Prosesnya juga cepat, komunikasinya enak."</p>
-                    <div class="testimoni-person">
-                        <div class="testimoni-avatar">RS</div>
-                        <div>
-                            <h4 data-i18n="index.testimoni.t1.name">Rina Susanti</h4>
-                            <span data-i18n="index.testimoni.t1.role">Pemilik, Toko Kain Nusantara</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimoni-card">
-                    <div class="testimoni-stars">★★★★★</div>
-                    <p class="testimoni-quote" data-i18n="index.testimoni.t2.quote">"Fitur tombol WhatsApp-nya kepake banget buat kedai kopi saya, pelanggan jadi gampang order langsung dari website. Worth it buat UMKM kayak saya."</p>
-                    <div class="testimoni-person">
-                        <div class="testimoni-avatar">DK</div>
-                        <div>
-                            <h4 data-i18n="index.testimoni.t2.name">Dedi Kurniawan</h4>
-                            <span data-i18n="index.testimoni.t2.role">Founder, Kedai Kopi Lelaku</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimoni-card">
-                    <div class="testimoni-stars">★★★★★</div>
-                    <p class="testimoni-quote" data-i18n="index.testimoni.t3.quote">"Sejak website bengkel saya kepasang Google Analytics, saya jadi tahu jam-jam ramai pengunjung. Bantu banget buat atur jadwal montir."</p>
-                    <div class="testimoni-person">
-                        <div class="testimoni-avatar">YM</div>
-                        <div>
-                            <h4 data-i18n="index.testimoni.t3.name">Yuni Marlina</h4>
-                            <span data-i18n="index.testimoni.t3.role">Owner, Bengkel Yuni Motor</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -373,7 +313,142 @@
         </button>
     </div>
 
-    <script src="js/chat-widget.js"></script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Live Chat Widget (sederhana)
+   Bubble mengambang -> klik -> panel popup -> tombol lanjut ke WhatsApp
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const widget = document.getElementById('chat-widget');
+    const bubbleBtn = document.getElementById('chat-bubble-btn');
+    const closeBtn = document.getElementById('chat-panel-close');
+
+    if (!widget || !bubbleBtn) return;
+
+    function openWidget() {
+        widget.classList.add('open');
+    }
+
+    function closeWidget() {
+        widget.classList.remove('open');
+    }
+
+    bubbleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        widget.classList.contains('open') ? closeWidget() : openWidget();
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeWidget();
+        });
+    }
+
+    // Klik di luar widget otomatis nutup panel
+    document.addEventListener('click', function (e) {
+        if (!widget.contains(e.target)) closeWidget();
+    });
+
+    // Cegah klik di dalam panel ikut nutup panel
+    const panel = document.getElementById('chat-panel');
+    if (panel) {
+        panel.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Kasih perhatian dikit ke pengunjung baru: bubble "mikir" pelan 4 detik setelah halaman kebuka
+    setTimeout(function () {
+        if (!widget.classList.contains('open')) {
+            bubbleBtn.classList.add('chat-attention');
+            setTimeout(function () {
+                bubbleBtn.classList.remove('chat-attention');
+            }, 1600);
+        }
+    }, 4000);
+});
+
+</script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Hamburger Menu (mobile)
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const linksWrap = document.getElementById('nav-links-wrap');
+
+    if (!toggleBtn || !linksWrap) return;
+
+    toggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        linksWrap.classList.toggle('open');
+    });
+
+    // Otomatis nutup menu kalau salah satu link navigasi diklik
+    linksWrap.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            linksWrap.classList.remove('open');
+        });
+    });
+
+    // Klik di luar navbar otomatis nutup menu
+    document.addEventListener('click', function (e) {
+        if (!linksWrap.contains(e.target) && e.target !== toggleBtn && !toggleBtn.contains(e.target)) {
+            linksWrap.classList.remove('open');
+        }
+    });
+});
+
+</script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Scroll Reveal (fade-in saat discroll)
+   Aman dipakai tanpa JS: default elemen tetap kelihatan normal,
+   animasi cuma nyala kalau browser dukung IntersectionObserver.
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (!('IntersectionObserver' in window)) return;
+
+    const selector = [
+        '.service-card',
+        '.harga-card',
+        '.layanan-item',
+        '.alur-step',
+        '.kartu-tech',
+        '.kartu-developer',
+        '.accordion-item',
+        '.info-item',
+        '.testimoni-card'
+    ].join(', ');
+
+    const targets = document.querySelectorAll(selector);
+    if (targets.length === 0) return;
+
+    targets.forEach(function (el, i) {
+        el.classList.add('reveal-init');
+        // Jeda kecil biar kartu sebaris gak muncul barengan kaku
+        el.style.transitionDelay = (i % 4) * 0.08 + 's';
+    });
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    targets.forEach(function (el) {
+        observer.observe(el);
+    });
+});
+
+</script>
 
 
     <script>
@@ -473,18 +548,6 @@ const translations = {
     "index.cta.title": "Punya Proyek Seru Yang Ingin Diwujudkan?",
     "index.cta.desc": "Tim talenta muda berbakat kami dari SMKN 1 Panji siap merealisasikannya bersama Anda.",
     "index.cta.btn": "Kenali Tim Kami",
-
-    "index.testimoni.title": "Apa Kata Klien Kami",
-    "index.testimoni.subtitle": "Cerita dari beberapa klien yang sudah mempercayakan proyek digital mereka kepada kami.",
-    "index.testimoni.t1.quote": "\"Awalnya cuma mau bikin landing page sederhana buat toko kain saya, eh hasilnya jauh lebih rapi dari yang saya bayangkan. Prosesnya juga cepat, komunikasinya enak.\"",
-    "index.testimoni.t1.name": "Rina Susanti",
-    "index.testimoni.t1.role": "Pemilik, Toko Kain Nusantara",
-    "index.testimoni.t2.quote": "\"Fitur tombol WhatsApp-nya kepake banget buat kedai kopi saya, pelanggan jadi gampang order langsung dari website. Worth it buat UMKM kayak saya.\"",
-    "index.testimoni.t2.name": "Dedi Kurniawan",
-    "index.testimoni.t2.role": "Founder, Kedai Kopi Lelaku",
-    "index.testimoni.t3.quote": "\"Sejak website bengkel saya kepasang Google Analytics, saya jadi tahu jam-jam ramai pengunjung. Bantu banget buat atur jadwal montir.\"",
-    "index.testimoni.t3.name": "Yuni Marlina",
-    "index.testimoni.t3.role": "Owner, Bengkel Yuni Motor",
 
     "kontak.title": "Kontak Kami - Jasaweb_Store",
     "kontak.hero.title": "Hubungi Kami",
@@ -731,18 +794,6 @@ const translations = {
     "index.cta.desc": "Our talented young team from SMKN 1 Panji is ready to make it happen with you.",
     "index.cta.btn": "Meet Our Team",
 
-    "index.testimoni.title": "What Our Clients Say",
-    "index.testimoni.subtitle": "Stories from clients who have trusted their digital projects to us.",
-    "index.testimoni.t1.quote": "\"I originally just wanted a simple landing page for my fabric shop, but the result turned out much neater than I imagined. The process was fast and communication was smooth.\"",
-    "index.testimoni.t1.name": "Rina Susanti",
-    "index.testimoni.t1.role": "Owner, Toko Kain Nusantara",
-    "index.testimoni.t2.quote": "\"The WhatsApp button feature is really useful for my coffee shop, customers can easily order directly from the website. Worth it for a small business like mine.\"",
-    "index.testimoni.t2.name": "Dedi Kurniawan",
-    "index.testimoni.t2.role": "Founder, Kedai Kopi Lelaku",
-    "index.testimoni.t3.quote": "\"Since Google Analytics got installed on my workshop's website, I now know the busiest visitor hours. Really helps with scheduling my mechanics.\"",
-    "index.testimoni.t3.name": "Yuni Marlina",
-    "index.testimoni.t3.role": "Owner, Bengkel Yuni Motor",
-
     "kontak.title": "Contact Us - Jasaweb_Store",
     "kontak.hero.title": "Contact Us",
     "kontak.hero.desc": "Have a question or want to start a project? Send a message or visit our office directly.",
@@ -987,18 +1038,6 @@ const translations = {
     "index.cta.title": "Ada Projek Menarik Yang Ingin Direalisasikan?",
     "index.cta.desc": "Pasukan bertalenta muda kami dari SMKN 1 Panji sedia merealisasikannya bersama anda.",
     "index.cta.btn": "Kenali Pasukan Kami",
-
-    "index.testimoni.title": "Apa Kata Klien Kami",
-    "index.testimoni.subtitle": "Cerita daripada beberapa klien yang telah mempercayakan projek digital mereka kepada kami.",
-    "index.testimoni.t1.quote": "\"Pada mulanya saya cuma nak buat landing page ringkas untuk kedai kain saya, tapi hasilnya jauh lebih kemas daripada yang saya bayangkan. Prosesnya pantas, komunikasinya senang.\"",
-    "index.testimoni.t1.name": "Rina Susanti",
-    "index.testimoni.t1.role": "Pemilik, Toko Kain Nusantara",
-    "index.testimoni.t2.quote": "\"Butang WhatsApp sangat membantu untuk kedai kopi saya, pelanggan senang order terus dari laman web. Berbaloi untuk perniagaan kecil macam saya.\"",
-    "index.testimoni.t2.name": "Dedi Kurniawan",
-    "index.testimoni.t2.role": "Founder, Kedai Kopi Lelaku",
-    "index.testimoni.t3.quote": "\"Sejak laman web bengkel saya dipasang Google Analytics, saya jadi tahu waktu paling ramai pelawat. Sangat membantu untuk atur jadual mekanik.\"",
-    "index.testimoni.t3.name": "Yuni Marlina",
-    "index.testimoni.t3.role": "Owner, Bengkel Yuni Motor",
 
     "kontak.title": "Hubungi Kami - Jasaweb_Store",
     "kontak.hero.title": "Hubungi Kami",
@@ -1269,7 +1308,5 @@ function applyLanguage(lang) {
         }
     </script>
  
-    <script src="js/scroll-reveal.js"></script>
-
 </body>
 </html>
