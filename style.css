@@ -1312,6 +1312,7 @@ footer {
 [data-theme="dark"] .alur-step p,
 [data-theme="dark"] .kartu-tech p,
 [data-theme="dark"] .harga-ket,
+[data-theme="dark"] .harga-fitur li,
 [data-theme="dark"] .harga-subtitle,
 [data-theme="dark"] .info-item p,
 [data-theme="dark"] .seksi-tentang p,
@@ -2067,3 +2068,4 @@ footer {
 [data-theme="dark"] .tim-modal-status { background: #12141c; color: #DCD6F7; }
 [data-theme="dark"] .tim-modal-motto { background: #12141c; }
 [data-theme="dark"] .tim-modal-motto p { color: #c3c9db; }
+ 
