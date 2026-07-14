@@ -1,9 +1,3 @@
-/* =========================================================
-   Jasaweb_Store — Scroll Reveal (fade-in saat discroll)
-   Aman dipakai tanpa JS: default elemen tetap kelihatan normal,
-   animasi cuma nyala kalau browser dukung IntersectionObserver.
-   ========================================================= */
-
 document.addEventListener('DOMContentLoaded', function () {
     if (!('IntersectionObserver' in window)) return;
 
@@ -24,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     targets.forEach(function (el, i) {
         el.classList.add('reveal-init');
-        // Jeda kecil biar kartu sebaris gak muncul barengan kaku
+
         el.style.transitionDelay = (i % 4) * 0.08 + 's';
     });
 
