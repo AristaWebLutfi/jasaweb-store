@@ -5,29 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layanan Kami - Jasaweb_Store</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Web Development, Game Development, dan UI/UX & Branding — tiga bidang keahlian, satu tujuan: produk digital yang siap pakai.">
-
-    <!-- Open Graph / Facebook, WhatsApp, dll -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Jasaweb_Store">
-    <meta property="og:title" content="Layanan Kami - Jasaweb_Store">
-    <meta property="og:description" content="Web Development, Game Development, dan UI/UX & Branding — tiga bidang keahlian, satu tujuan: produk digital yang siap pakai.">
-    <meta property="og:image" content="https://aristaweblutfi.github.io/jasaweb-store/img/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://aristaweblutfi.github.io/jasaweb-store/layanan.html">
-    <meta property="og:locale" content="id_ID">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Layanan Kami - Jasaweb_Store">
-    <meta name="twitter:description" content="Web Development, Game Development, dan UI/UX & Branding — tiga bidang keahlian, satu tujuan: produk digital yang siap pakai.">
-    <meta name="twitter:image" content="https://aristaweblutfi.github.io/jasaweb-store/img/og-image.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script>
+     <script>
         (function () {
             var saved = localStorage.getItem('jw-theme');
             if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
@@ -71,6 +51,10 @@
                     <div class="house-roof"></div>
                     <div class="house-body"></div>
                 </a>
+                <button class="nav-toggle-btn" id="nav-toggle-btn" type="button" aria-label="Buka menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-links-wrap" id="nav-links-wrap">
 
                 <a href="layanan.html" class="nav-link" data-i18n="nav.layanan">Layanan</a>
                 <a href="kontak.html" class="nav-link" data-i18n="nav.kontak">Kontak</a>
@@ -95,6 +79,7 @@
                             <button class="lang-option" data-lang="ms" type="button"><span class="flag-emoji">🇲🇾</span> Malaysia</button>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -271,7 +256,142 @@
         </button>
     </div>
 
-    <script src="js/chat-widget.js"></script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Live Chat Widget (sederhana)
+   Bubble mengambang -> klik -> panel popup -> tombol lanjut ke WhatsApp
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const widget = document.getElementById('chat-widget');
+    const bubbleBtn = document.getElementById('chat-bubble-btn');
+    const closeBtn = document.getElementById('chat-panel-close');
+
+    if (!widget || !bubbleBtn) return;
+
+    function openWidget() {
+        widget.classList.add('open');
+    }
+
+    function closeWidget() {
+        widget.classList.remove('open');
+    }
+
+    bubbleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        widget.classList.contains('open') ? closeWidget() : openWidget();
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeWidget();
+        });
+    }
+
+    // Klik di luar widget otomatis nutup panel
+    document.addEventListener('click', function (e) {
+        if (!widget.contains(e.target)) closeWidget();
+    });
+
+    // Cegah klik di dalam panel ikut nutup panel
+    const panel = document.getElementById('chat-panel');
+    if (panel) {
+        panel.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Kasih perhatian dikit ke pengunjung baru: bubble "mikir" pelan 4 detik setelah halaman kebuka
+    setTimeout(function () {
+        if (!widget.classList.contains('open')) {
+            bubbleBtn.classList.add('chat-attention');
+            setTimeout(function () {
+                bubbleBtn.classList.remove('chat-attention');
+            }, 1600);
+        }
+    }, 4000);
+});
+
+</script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Hamburger Menu (mobile)
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const linksWrap = document.getElementById('nav-links-wrap');
+
+    if (!toggleBtn || !linksWrap) return;
+
+    toggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        linksWrap.classList.toggle('open');
+    });
+
+    // Otomatis nutup menu kalau salah satu link navigasi diklik
+    linksWrap.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            linksWrap.classList.remove('open');
+        });
+    });
+
+    // Klik di luar navbar otomatis nutup menu
+    document.addEventListener('click', function (e) {
+        if (!linksWrap.contains(e.target) && e.target !== toggleBtn && !toggleBtn.contains(e.target)) {
+            linksWrap.classList.remove('open');
+        }
+    });
+});
+
+</script>
+    <script>
+/* =========================================================
+   Jasaweb_Store — Scroll Reveal (fade-in saat discroll)
+   Aman dipakai tanpa JS: default elemen tetap kelihatan normal,
+   animasi cuma nyala kalau browser dukung IntersectionObserver.
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (!('IntersectionObserver' in window)) return;
+
+    const selector = [
+        '.service-card',
+        '.harga-card',
+        '.layanan-item',
+        '.alur-step',
+        '.kartu-tech',
+        '.kartu-developer',
+        '.accordion-item',
+        '.info-item',
+        '.testimoni-card'
+    ].join(', ');
+
+    const targets = document.querySelectorAll(selector);
+    if (targets.length === 0) return;
+
+    targets.forEach(function (el, i) {
+        el.classList.add('reveal-init');
+        // Jeda kecil biar kartu sebaris gak muncul barengan kaku
+        el.style.transitionDelay = (i % 4) * 0.08 + 's';
+    });
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    targets.forEach(function (el) {
+        observer.observe(el);
+    });
+});
+
+</script>
 
 
     <script>
@@ -1102,7 +1222,5 @@ function applyLanguage(lang) {
 })();
 
 </script>
-    <script src="js/scroll-reveal.js"></script>
-
 </body>
 </html>
