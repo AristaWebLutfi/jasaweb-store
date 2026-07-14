@@ -228,27 +228,6 @@
               background-color: #F4EEFF;
           }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -1772,3 +1751,319 @@ footer {
     background: #6b5b0f;
     color: #ffe9a8;
 }
+
+/* =============================
+   HAMBURGER MENU (mobile)
+   ============================= */
+
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 6px;
+}
+
+.nav-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 700px) {
+    .nav-menu-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-toggle-btn {
+        display: block;
+    }
+
+    .nav-links-wrap {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 16px;
+        padding: 14px 0 6px;
+    }
+
+    .nav-links-wrap.open {
+        display: flex;
+    }
+
+    .nav-tools {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .lang-switcher {
+        width: 100%;
+    }
+
+    .lang-current {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* =============================
+   SCROLL REVEAL (fade-in)
+   ============================= */
+
+.reveal-init {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =============================
+   TIM PENGEMBANG — kartu klik + modal profil
+   ============================= */
+
+.tim-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 15px auto 0;
+    max-width: 660px;
+}
+
+.tim-member {
+    background-color: rgba(220, 214, 247, 0.3);
+    border: 1px solid #DCD6F7;
+    border-radius: 12px;
+    padding: 22px 18px;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.tim-member:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(66, 72, 116, 0.18);
+    background-color: rgba(220, 214, 247, 0.55);
+}
+
+.tim-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #424874, #A6B1E1);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+    overflow: hidden;
+}
+
+.tim-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tim-avatar-fallback {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tim-member h3 {
+    margin: 0 0 4px 0;
+    color: #424874;
+    font-size: 1.02rem;
+}
+
+.tim-member p {
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.tim-lihat {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #424874;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tim-member i.fa-arrow-right {
+    font-size: 0.7rem;
+    transition: transform 0.2s ease;
+}
+
+.tim-member:hover i.fa-arrow-right {
+    transform: translateX(4px);
+}
+
+/* Modal overlay */
+.tim-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(30, 27, 60, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    padding: 20px;
+}
+
+.tim-modal-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tim-modal-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 36px 30px 30px;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transform: translateY(16px) scale(0.96);
+    transition: transform 0.25s ease;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.tim-modal-overlay.open .tim-modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.tim-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #F4EEFF;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #424874;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.tim-modal-close:hover {
+    background: #DCD6F7;
+}
+
+.tim-modal-avatar {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #424874, #A6B1E1);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    overflow: hidden;
+}
+
+.tim-modal-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tim-modal-name {
+    color: #424874;
+    font-size: 1.2rem;
+    margin: 0 0 4px;
+}
+
+.tim-modal-role {
+    color: #777;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.tim-modal-status {
+    display: inline-block;
+    background: #F4EEFF;
+    color: #424874;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.tim-modal-motto {
+    background: #F4EEFF;
+    border-radius: 12px;
+    padding: 18px 16px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.tim-modal-motto i {
+    color: #A6B1E1;
+    font-size: 1rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.tim-modal-motto p {
+    margin: 0;
+    font-size: 0.88rem;
+    font-style: italic;
+    color: #4a4a4a;
+    line-height: 1.55;
+}
+
+[data-theme="dark"] .tim-member {
+    background-color: #1c1f2b;
+    border-color: #2c3040;
+}
+
+[data-theme="dark"] .tim-member:hover {
+    background-color: #242838;
+}
+
+[data-theme="dark"] .tim-member h3 { color: #DCD6F7; }
+[data-theme="dark"] .tim-member p { color: #b9b6d8; }
+[data-theme="dark"] .tim-lihat { color: #A6B1E1; }
+
+[data-theme="dark"] .tim-modal-card { background: #1c1f2b; }
+[data-theme="dark"] .tim-modal-close { background: #12141c; color: #DCD6F7; }
+[data-theme="dark"] .tim-modal-close:hover { background: #2c3040; }
+[data-theme="dark"] .tim-modal-name { color: #e8ecf5; }
+[data-theme="dark"] .tim-modal-role { color: #8891a5; }
+[data-theme="dark"] .tim-modal-status { background: #12141c; color: #DCD6F7; }
+[data-theme="dark"] .tim-modal-motto { background: #12141c; }
+[data-theme="dark"] .tim-modal-motto p { color: #c3c9db; }
